@@ -1,0 +1,1635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Odds of Going Pro: What Are Your Chances?</title>
+  <meta
+    name="description"
+    content="Search your school and sport to estimate the odds of going pro, then compare your school against state and national baselines."
+  />
+
+  <meta property="og:title" content="The Odds of Going Pro: What Are Your Chances?" />
+  <meta property="og:description" content="Search your school and sport to estimate your odds of going pro." />
+  <meta property="og:type" content="website" />
+
+  <style>
+    :root {
+      --bg: #f5f7f6;
+      --card: rgba(255,255,255,0.92);
+      --text: #102019;
+      --muted: #667872;
+      --border: #dce6e1;
+      --brand-dark: #0c1713;
+      --brand-green: #1f9a64;
+      --brand-green-dark: #16774d;
+      --brand-green-soft: #e9f6ef;
+      --brand-charcoal: #17261f;
+      --shadow: 0 14px 36px rgba(13, 31, 24, 0.08);
+      --shadow-soft: 0 10px 24px rgba(13, 31, 24, 0.05);
+      --radius: 24px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(31, 154, 100, 0.08), transparent 25%),
+        radial-gradient(circle at top right, rgba(13, 31, 24, 0.06), transparent 22%),
+        linear-gradient(180deg, #edf3f0 0%, #f5f7f6 20%, #f5f7f6 100%);
+    }
+
+    .page {
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 20px 14px 72px;
+    }
+
+    .hero {
+      background:
+        radial-gradient(circle at 88% 20%, rgba(78, 214, 143, 0.22), transparent 16%),
+        radial-gradient(circle at 12% 90%, rgba(37, 184, 113, 0.16), transparent 18%),
+        linear-gradient(135deg, #0a1511 0%, #0f261d 42%, #17613f 100%);
+      color: #fff;
+      border-radius: 30px;
+      padding: 28px 20px 18px;
+      box-shadow: var(--shadow);
+      margin-bottom: 18px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      padding: 8px 13px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.11);
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: 54px;
+      line-height: 0.95;
+      max-width: 800px;
+      letter-spacing: -0.04em;
+    }
+
+    .subhead {
+      margin: 0;
+      max-width: 820px;
+      color: rgba(255,255,255,0.92);
+      font-size: 18px;
+      line-height: 1.42;
+    }
+
+    .search-panel {
+      margin-top: 20px;
+      background: rgba(255,255,255,0.10);
+      border: 1px solid rgba(255,255,255,0.14);
+      border-radius: 22px;
+      padding: 14px;
+    }
+
+    .search-box {
+      display: grid;
+      grid-template-columns: 1.5fr 0.9fr 0.8fr 0.9fr 0.9fr auto;
+      gap: 10px;
+      align-items: start;
+    }
+
+    .search-field {
+      position: relative;
+    }
+
+    .search-box input,
+    .search-box select {
+      width: 100%;
+      border: none;
+      border-radius: 16px;
+      padding: 16px 18px;
+      font-size: 15px;
+      outline: none;
+      color: var(--text);
+      background: #fff;
+    }
+
+    .search-box button,
+    .btn,
+    .toggle-btn,
+    .small-link-btn,
+    .share-btn {
+      border: none;
+      border-radius: 16px;
+      padding: 14px 18px;
+      font-size: 15px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+    }
+
+    .search-box button:hover,
+    .btn:hover,
+    .toggle-btn:hover,
+    .small-link-btn:hover,
+    .share-btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+    }
+
+    .search-box button {
+      background: #fff;
+      color: var(--brand-dark);
+      min-width: 116px;
+    }
+
+    .autocomplete {
+      position: absolute;
+      top: calc(100% + 8px);
+      left: 0;
+      right: 0;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      box-shadow: 0 16px 32px rgba(15, 31, 25, 0.12);
+      overflow: hidden;
+      z-index: 20;
+      max-height: 320px;
+      overflow-y: auto;
+    }
+
+    .autocomplete-item {
+      padding: 12px 14px;
+      border-bottom: 1px solid #eef2ef;
+      cursor: pointer;
+      background: #fff;
+    }
+
+    .autocomplete-item:last-child { border-bottom: none; }
+    .autocomplete-item:hover,
+    .autocomplete-item.active { background: #f5fbf8; }
+
+    .autocomplete-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.3;
+    }
+
+    .autocomplete-sub {
+      margin-top: 3px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .search-meta {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+      font-size: 14px;
+      color: rgba(255,255,255,0.84);
+    }
+
+    .loading,
+    .error {
+      margin-top: 10px;
+      padding: 12px 14px;
+      border-radius: 14px;
+      font-size: 14px;
+    }
+
+    .loading { background: rgba(255,255,255,0.12); color: #fff; }
+    .error { background: #fff1ef; color: #9f342a; }
+    .hidden { display: none !important; }
+
+    .jump-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 14px 0 18px;
+    }
+
+    .btn {
+      background: #ffffff;
+      color: var(--brand-charcoal);
+      box-shadow: 0 8px 20px rgba(18, 33, 27, 0.08);
+    }
+
+    .section-card {
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 18px;
+      box-shadow: var(--shadow-soft);
+      border: 1px solid var(--border);
+      margin-bottom: 16px;
+    }
+
+    .result-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 18px;
+    }
+
+    .result-title {
+      margin: 0;
+      font-size: 42px;
+      line-height: 0.98;
+      letter-spacing: -0.04em;
+    }
+
+    .result-summary {
+      margin: 12px 0 0;
+      color: var(--muted);
+      line-height: 1.45;
+      max-width: 680px;
+      font-size: 18px;
+    }
+
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 16px;
+      margin-bottom: 16px;
+    }
+
+    .pill {
+      display: inline-block;
+      padding: 9px 12px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 700;
+      background: #eef4f1;
+      color: #355147;
+    }
+
+    .score-card {
+      background: linear-gradient(135deg, #eef8f2 0%, #f8fcfa 100%);
+      border: 1px solid #d8e9df;
+      border-radius: 24px;
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: 250px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.7);
+    }
+
+    .score-label {
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      line-height: 1.35;
+      max-width: 280px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .score-value {
+      font-size: 82px;
+      line-height: 0.92;
+      font-weight: 800;
+      color: var(--brand-charcoal);
+      letter-spacing: -0.05em;
+      position: relative;
+      z-index: 1;
+    }
+
+    .score-sub {
+      margin-top: 10px;
+      font-size: 20px;
+      line-height: 1.2;
+      font-weight: 800;
+      color: var(--brand-green-dark);
+    }
+
+    .score-note {
+      margin-top: 12px;
+      font-size: 14px;
+      line-height: 1.5;
+      color: #51615c;
+      max-width: 340px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .share-row {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 16px;
+    }
+
+    .share-btn {
+      background: var(--brand-green);
+      color: #fff;
+    }
+
+    .mini-stats {
+      margin-top: 16px;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .mini-stat {
+      background: #f9fbfa;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 14px;
+    }
+
+    .mini-label {
+      font-size: 12px;
+      color: var(--muted);
+      margin-bottom: 8px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      line-height: 1.35;
+    }
+
+    .mini-value {
+      font-size: 34px;
+      font-weight: 800;
+      line-height: 1;
+      margin-bottom: 4px;
+      letter-spacing: -0.03em;
+    }
+
+    .mini-help {
+      font-size: 13px;
+      color: #6d7c77;
+      line-height: 1.38;
+    }
+
+    .bar-wrap {
+      margin-top: 16px;
+      background: #fbfcfc;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 14px;
+    }
+
+    .bar-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+      font-size: 14px;
+      font-weight: 700;
+      color: #455852;
+    }
+
+    .bar {
+      width: 100%;
+      height: 16px;
+      border-radius: 999px;
+      background: #e4ece8;
+      overflow: hidden;
+    }
+
+    .bar-fill {
+      width: 0%;
+      height: 100%;
+      border-radius: 999px;
+      transition: width 0.45s ease;
+      background: linear-gradient(90deg, var(--brand-green), #27b373);
+    }
+
+    .bar-scale {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 8px;
+      font-size: 11px;
+      color: #7a8984;
+    }
+
+    .explain-grid,
+    .findings-grid,
+    .top-grid,
+    .source-grid {
+      display: grid;
+      gap: 14px;
+    }
+
+    .explain-grid,
+    .top-grid { grid-template-columns: 1fr 1fr; }
+    .findings-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .source-grid { grid-template-columns: 1fr 1fr 1fr; }
+
+    .copy-box,
+    .finding,
+    .source-card {
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 16px;
+      background: #fff;
+    }
+
+    .copy-box h3,
+    .finding h3 {
+      margin: 0 0 8px;
+      font-size: 17px;
+    }
+
+    .copy-box p,
+    .finding p,
+    .source-card p {
+      margin: 0;
+      color: #53645f;
+      line-height: 1.55;
+      font-size: 15px;
+    }
+
+    .section-heading {
+      display: flex;
+      justify-content: space-between;
+      gap: 14px;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 12px;
+    }
+
+    .section-heading h2 {
+      margin: 0;
+      font-size: 32px;
+      line-height: 1.02;
+      letter-spacing: -0.03em;
+    }
+
+    .section-heading p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.42;
+      max-width: 760px;
+      font-size: 15px;
+    }
+
+    .ranking-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .ranking-item {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 12px;
+      align-items: center;
+      padding: 16px;
+      border-radius: 20px;
+      border: 1px solid var(--border);
+      background: linear-gradient(180deg, #ffffff 0%, #fbfdfc 100%);
+      min-height: 92px;
+    }
+
+    .ranking-number {
+      width: 42px;
+      height: 42px;
+      border-radius: 999px;
+      display: grid;
+      place-items: center;
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--brand-green-dark);
+      background: var(--brand-green-soft);
+      flex-shrink: 0;
+    }
+
+    .ranking-title {
+      font-weight: 800;
+      font-size: 15px;
+      line-height: 1.32;
+      color: #182822;
+      margin-bottom: 5px;
+    }
+
+    .ranking-sub {
+      font-size: 13px;
+      color: #687a75;
+      line-height: 1.45;
+    }
+
+    .ranking-toggle-row,
+    .ranking-search-row {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 12px;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .ranking-toggle {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .toggle-btn {
+      border: 1px solid #d6e3dc;
+      background: #fff;
+      color: #355147;
+      border-radius: 999px;
+      padding: 10px 14px;
+    }
+
+    .toggle-btn.active {
+      background: var(--brand-green);
+      color: #fff;
+      border-color: var(--brand-green);
+    }
+
+    .small-link-btn {
+      background: #eef4f1;
+      color: #355147;
+      padding: 10px 14px;
+      border-radius: 999px;
+    }
+
+    .ranking-search-row input {
+      flex: 1;
+      min-width: 220px;
+      border: 1px solid var(--border);
+      background: #fff;
+      border-radius: 14px;
+      padding: 13px 14px;
+      font-size: 15px;
+      outline: none;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      background: #fff;
+      max-height: 760px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 900px;
+    }
+
+    th, td {
+      padding: 14px;
+      text-align: left;
+      border-bottom: 1px solid #edf2ef;
+      vertical-align: top;
+    }
+
+    th {
+      background: #f7faf8;
+      font-size: 12px;
+      color: #61726d;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    }
+
+    td {
+      font-size: 14px;
+      color: #20312c;
+    }
+
+    tr:hover td {
+      background: #fbfdfc;
+    }
+
+    details {
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      background: #fff;
+      overflow: hidden;
+      margin-bottom: 12px;
+    }
+
+    summary {
+      list-style: none;
+      cursor: pointer;
+      padding: 16px 18px;
+      font-weight: 800;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    summary::-webkit-details-marker { display: none; }
+
+    .summary-sub {
+      display: block;
+      margin-top: 4px;
+      font-size: 14px;
+      color: var(--muted);
+      font-weight: 400;
+    }
+
+    .summary-mark {
+      font-size: 24px;
+      color: #6b7a75;
+      line-height: 1;
+    }
+
+    details[open] .summary-mark { transform: rotate(45deg); }
+
+    .accordion-body {
+      padding: 0 18px 18px;
+      color: #52635e;
+      font-size: 15px;
+      line-height: 1.58;
+    }
+
+    .footer-note {
+      margin-top: 12px;
+      color: #6e7e79;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 1080px) {
+      .search-box {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+
+      .result-grid,
+      .explain-grid,
+      .findings-grid,
+      .top-grid,
+      .source-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .page { padding: 14px 12px 40px; }
+      .hero { padding: 20px 15px 15px; border-radius: 24px; }
+      h1 { font-size: 34px; }
+      .subhead { font-size: 16px; }
+      .section-card { padding: 16px; }
+      .result-title { font-size: 30px; }
+      .result-summary { font-size: 17px; }
+      .score-value { font-size: 58px; }
+      .search-box { grid-template-columns: 1fr; }
+      .mini-stats { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page" id="top">
+    <header class="hero">
+      <div class="eyebrow">Going Pro Odds Index 2026</div>
+      <h1>The Odds of Going Pro: What Are Your Chances?</h1>
+      <p class="subhead">
+        Search your school and sport to estimate your chances of reaching the pros, then compare your program against state and national baselines.
+      </p>
+
+      <div class="search-panel">
+        <div class="search-box">
+          <div class="search-field">
+            <input
+              type="text"
+              id="schoolSearch"
+              placeholder="Search for a school"
+              autocomplete="off"
+            />
+            <div id="autocomplete" class="autocomplete hidden"></div>
+          </div>
+
+          <select id="sportSelect" aria-label="Select sport">
+            <option value="American Football">American Football</option>
+            <option value="Basketball">Basketball</option>
+            <option value="Baseball">Baseball</option>
+          </select>
+
+          <select id="yearSelect" aria-label="Select year">
+            <option value="Freshman">Freshman</option>
+            <option value="Sophomore">Sophomore</option>
+            <option value="Junior">Junior</option>
+            <option value="Senior">Senior</option>
+          </select>
+
+          <select id="playingLevelSelect" aria-label="Select playing level">
+            <option value="Starter">Starter</option>
+            <option value="Rotation">Rotation</option>
+            <option value="Bench">Bench</option>
+            <option value="Squad">Squad</option>
+          </select>
+
+          <select id="teamTierSelect" aria-label="Select team tier">
+            <option value="Elite / Ranked">Elite / Ranked</option>
+            <option value="Strong">Strong</option>
+            <option value="Average">Average</option>
+            <option value="Lower">Lower</option>
+          </select>
+
+          <button id="searchButton">Search</button>
+        </div>
+
+        <div class="search-meta">
+          <div id="searchHint">
+            Try: <strong>University of Alabama</strong>, <strong>Duke University</strong>, <strong>Vanderbilt University</strong>
+          </div>
+          <div id="datasetCount">Loading dataset...</div>
+        </div>
+
+        <div id="loadingState" class="loading">Loading school datasets...</div>
+        <div id="noResults" class="error hidden">No matching school found for that sport. Try a more exact school name.</div>
+      </div>
+    </header>
+
+    <div class="jump-row">
+      <button class="btn" onclick="scrollToSection('resultSection')">Result</button>
+      <button class="btn" onclick="scrollToSection('findingsSection')">Key findings</button>
+      <button class="btn" onclick="scrollToSection('topSection')">Top 10s</button>
+      <button class="btn" onclick="scrollToSection('rankingSection')">Full ranking</button>
+      <button class="btn" onclick="scrollToSection('methodSection')">Methodology</button>
+    </div>
+
+    <main>
+      <section id="resultSection" class="section-card hidden">
+        <div class="result-grid">
+          <div>
+            <h2 class="result-title" id="schoolTitle">School Name</h2>
+            <p class="result-summary" id="schoolIntro"></p>
+
+            <div class="pill-row">
+              <span class="pill" id="sportPill">Sport</span>
+              <span class="pill" id="statePill">State</span>
+              <span class="pill" id="conferencePill">Conference</span>
+            </div>
+
+            <div class="share-row">
+              <button class="share-btn" id="copyShareTextBtn">Copy share text</button>
+              <button class="small-link-btn" id="copyLinkBtn">Copy result link</button>
+            </div>
+          </div>
+
+          <div class="score-card">
+            <div class="score-label">Your Estimated Odds of Going Pro</div>
+            <div class="score-value" id="adjustedProbability">0%</div>
+            <div class="score-sub" id="adjustedOdds">1 in —</div>
+            <div class="score-note" id="scoreNote">
+              This estimate starts with your school’s historical pipeline and applies light profile adjustments.
+            </div>
+          </div>
+        </div>
+
+        <div class="mini-stats">
+          <div class="mini-stat">
+            <div class="mini-label">School Baseline</div>
+            <div class="mini-value" id="schoolBaselineOdds">1 in —</div>
+            <div class="mini-help" id="schoolBaselineProb">0%</div>
+          </div>
+
+          <div class="mini-stat">
+            <div class="mini-label">State Average</div>
+            <div class="mini-value" id="stateAverageOdds">1 in —</div>
+            <div class="mini-help" id="stateAverageProb">0%</div>
+          </div>
+
+          <div class="mini-stat">
+            <div class="mini-label">National Average</div>
+            <div class="mini-value" id="nationalAverageOdds">1 in —</div>
+            <div class="mini-help" id="nationalAverageProb">0%</div>
+          </div>
+
+          <div class="mini-stat">
+            <div class="mini-label">Rank in Sport</div>
+            <div class="mini-value" id="rankInSport">#—</div>
+            <div class="mini-help">School rank within the selected sport dataset.</div>
+          </div>
+
+          <div class="mini-stat">
+            <div class="mini-label">Pro Players Count</div>
+            <div class="mini-value" id="proPlayersCount">—</div>
+            <div class="mini-help">Number of pro players produced in the indexed time window.</div>
+          </div>
+
+          <div class="mini-stat">
+            <div class="mini-label">Estimated Athlete Pool</div>
+            <div class="mini-value" id="athletePool">—</div>
+            <div class="mini-help">Estimated athlete pool used to calculate the school pipeline rate.</div>
+          </div>
+        </div>
+
+        <div class="bar-wrap">
+          <div class="bar-head">
+            <span>Adjusted probability</span>
+            <span id="adjustedBarLabel">0%</span>
+          </div>
+          <div class="bar">
+            <div id="probabilityBar" class="bar-fill"></div>
+          </div>
+          <div class="bar-scale">
+            <span>Lower odds</span>
+            <span>Higher odds</span>
+          </div>
+        </div>
+
+        <div class="explain-grid">
+          <div class="copy-box">
+            <h3>How this estimate works</h3>
+            <p id="estimateExplanation"></p>
+          </div>
+
+          <div class="copy-box">
+            <h3>What changes your result</h3>
+            <p id="profileExplanation"></p>
+          </div>
+        </div>
+      </section>
+
+      <section id="findingsSection" class="section-card">
+        <div class="section-heading">
+          <div>
+            <h2>Key Findings</h2>
+            <p>The main story in this tool is not just talent. It is environment.</p>
+          </div>
+        </div>
+
+        <div class="findings-grid">
+          <div class="finding">
+            <h3>School matters more than most athletes think.</h3>
+            <p>Two players in the same sport can face very different odds depending on the school pipeline they enter. Program history changes the baseline dramatically.</p>
+          </div>
+
+          <div class="finding">
+            <h3>Even the best pipelines still produce long odds.</h3>
+            <p>Top schools outperform the national average, but reaching the pros remains rare. That tension between ambition and reality is the core story of the index.</p>
+          </div>
+
+          <div class="finding">
+            <h3>State context helps explain broader opportunity.</h3>
+            <p>Some states consistently outperform others in athlete-to-pro conversion, which helps explain why school odds sit above or below the national average.</p>
+          </div>
+
+          <div class="finding">
+            <h3>Profile inputs nudge the estimate, but do not override the data.</h3>
+            <p>Year, role, and team tier affect the estimate modestly. The school’s historical pipeline remains the foundation of the result.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="topSection" class="section-card">
+        <div class="top-grid">
+          <div>
+            <div class="section-heading">
+              <div>
+                <h2 id="topSchoolsTitle">Top 10 Schools</h2>
+                <p id="topSchoolsSubtitle">Schools with the strongest historical odds of producing pro athletes in the selected sport.</p>
+              </div>
+            </div>
+            <div id="topSchools" class="ranking-list"></div>
+          </div>
+
+          <div>
+            <div class="section-heading">
+              <div>
+                <h2 id="topStatesTitle">Top 10 States</h2>
+                <p id="topStatesSubtitle">States with the strongest pro progression rates in the selected sport.</p>
+              </div>
+            </div>
+            <div id="topStates" class="ranking-list"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="rankingSection" class="section-card">
+        <div class="section-heading">
+          <div>
+            <h2>Full Ranking</h2>
+            <p>Searchable school ranking for the selected sport.</p>
+          </div>
+        </div>
+
+        <div class="ranking-toggle-row">
+          <div class="ranking-toggle">
+            <button class="toggle-btn active" id="sortHighestBtn">Highest odds first</button>
+            <button class="toggle-btn" id="sortLowestBtn">Lowest odds first</button>
+          </div>
+
+          <button class="small-link-btn" onclick="scrollToSection('top')">Back to top</button>
+        </div>
+
+        <div class="ranking-search-row">
+          <input type="text" id="rankingSearch" placeholder="Search the ranking by school name" />
+          <button class="small-link-btn" id="clearRankingSearch">Clear</button>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Rank</th>
+                <th>School</th>
+                <th>State</th>
+                <th>Conference</th>
+                <th>Pro Players</th>
+                <th>Athlete Pool</th>
+                <th>Probability</th>
+                <th>Odds</th>
+              </tr>
+            </thead>
+            <tbody id="fullRankingBody"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="methodSection" class="section-card">
+        <details>
+          <summary>
+            <span>
+              How We Built This Tool
+              <span class="summary-sub">What comes from the underlying school and state datasets, and what this calculator adds.</span>
+            </span>
+            <span class="summary-mark">+</span>
+          </summary>
+          <div class="accordion-body">
+            <p>
+              This tool starts with school-level progression rates by sport. Each school’s baseline probability reflects historical pro output relative to its estimated athlete pool.
+            </p>
+            <p>
+              The page then compares that school baseline with the state average and national average for the same sport.
+            </p>
+            <p>
+              To make the tool more interactive, it also applies a light profile adjustment based on year, playing level, and team tier. These are directional estimate refinements, not guarantees.
+            </p>
+            <p>
+              In simple terms, the model is:
+              <strong>School Probability × Year Multiplier × Playing Level Multiplier × Team Tier Multiplier</strong>,
+              with the final result capped so the profile layer cannot overwhelm the school baseline.
+            </p>
+          </div>
+        </details>
+
+        <details>
+          <summary>
+            <span>
+              Sources
+              <span class="summary-sub">The school-level, state-level, and comparison data behind the tool.</span>
+            </span>
+            <span class="summary-mark">+</span>
+          </summary>
+          <div class="accordion-body">
+            <div class="source-grid">
+              <div class="source-card">
+                <strong>School-level data</strong>
+                <p>Football, basketball, and baseball school datasets with pro player counts, athlete pools, and school probabilities.</p>
+              </div>
+              <div class="source-card">
+                <strong>State-level data</strong>
+                <p>Sport-by-state pro progression probabilities used for state comparison.</p>
+              </div>
+              <div class="source-card">
+                <strong>Calculator layer</strong>
+                <p>Light profile multipliers based on year, playing level, and team tier to personalize the estimate.</p>
+              </div>
+            </div>
+
+            <div class="footer-note">
+              Data pipeline: school and state datasets → browser normalization → calculator and rankings.
+            </div>
+          </div>
+        </details>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    const DATA_FILES = {
+      football: "./data/football_data.json",
+      basketball: "./data/basketball_data.json",
+      baseball: "./data/baseball_data.json",
+      states: "./data/state_probs.json"
+    };
+
+    const YEAR_MULTIPLIERS = {
+      "Freshman": 0.88,
+      "Sophomore": 0.96,
+      "Junior": 1.05,
+      "Senior": 1.12
+    };
+
+    const PLAYING_LEVEL_MULTIPLIERS = {
+      "Starter": 1.20,
+      "Rotation": 1.00,
+      "Bench": 0.82,
+      "Squad": 0.68
+    };
+
+    const TEAM_TIER_MULTIPLIERS = {
+      "Elite / Ranked": 1.10,
+      "Strong": 1.04,
+      "Average": 1.00,
+      "Lower": 0.92
+    };
+
+    let allSchools = [];
+    let allStateProbs = [];
+    let currentSortMode = "highest";
+    let rankingSearchTerm = "";
+    let currentRenderedSchool = null;
+    let autocompleteIndex = -1;
+
+    function clamp(value, min = 0, max = 1) {
+      return Math.max(min, Math.min(value, max));
+    }
+
+    function escapeHtml(text) {
+      return String(text ?? "")
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+    }
+
+    function parseNumber(value) {
+      if (value === null || value === undefined || value === "") return null;
+      if (typeof value === "number") return Number.isFinite(value) ? value : null;
+
+      let str = String(value).trim();
+      if (!str) return null;
+
+      str = str.replace(/,/g, "");
+
+      if (str.endsWith("%")) {
+        const num = Number(str.replace("%", ""));
+        return Number.isFinite(num) ? num / 100 : null;
+      }
+
+      const num = Number(str);
+      return Number.isFinite(num) ? num : null;
+    }
+
+    function formatPercent(prob) {
+      const p = parseNumber(prob);
+      if (p === null) return "—";
+      return `${(p * 100).toFixed(p * 100 >= 1 ? 1 : 2)}%`;
+    }
+
+    function formatOddsFromProb(prob) {
+      const p = parseNumber(prob);
+      if (p === null || p <= 0) return "1 in —";
+      const odds = 1 / p;
+      if (odds >= 100) return `1 in ${Math.round(odds).toLocaleString()}`;
+      return `1 in ${odds.toFixed(1)}`;
+    }
+
+    function formatWhole(value) {
+      const n = parseNumber(value);
+      if (n === null) return "—";
+      return Math.round(n).toLocaleString();
+    }
+
+    function normalizeSport(value) {
+      const raw = String(value ?? "").trim().toLowerCase();
+      if (!raw) return "";
+      if (raw.includes("football")) return "American Football";
+      if (raw.includes("basketball")) return "Basketball";
+      if (raw.includes("baseball") || raw.includes("mlb")) return "Baseball";
+      return value;
+    }
+
+    function normalizeState(value) {
+      return String(value ?? "").trim();
+    }
+
+    function getValue(obj, keys) {
+      for (const key of keys) {
+        if (obj[key] !== undefined && obj[key] !== null && obj[key] !== "") return obj[key];
+      }
+      return null;
+    }
+
+    function normalizeSchoolRecord(row, sport) {
+      const schoolName = getValue(row, ["school_name", "School name", "School_Name", "Drafted Out of"]);
+      const state = getValue(row, ["state", "State"]);
+      const conference = getValue(row, ["conference", "Conference"]) || "—";
+      const estimatedAthletePool = parseNumber(getValue(row, ["estimated_athlete_pool", "Estimated Athlete pool", "Estimated Athlete Pool"]));
+      const proPlayersCount = parseNumber(getValue(row, ["pro_players_count", "Pro Players Count"]));
+      const schoolProbability = parseNumber(getValue(row, ["school_probability", "Draft Probability", "Pro_Probability"]));
+      const nationalProbability = parseNumber(getValue(row, ["national_probability", "National Average", "College_to_Pro_Percentage"]));
+      const vsNational = parseNumber(getValue(row, ["vs_national_average", "Vs_National_Average", "Vs National Average"]));
+
+      return {
+        school_name: String(schoolName ?? "").trim(),
+        sport,
+        state: normalizeState(state),
+        conference: String(conference ?? "—").trim() || "—",
+        estimated_athlete_pool: estimatedAthletePool,
+        pro_players_count: proPlayersCount,
+        school_probability: schoolProbability,
+        national_probability: nationalProbability,
+        vs_national_average: vsNational,
+        rank_in_sport: null
+      };
+    }
+
+    function normalizeStateRecord(row) {
+      return {
+        state: normalizeState(getValue(row, ["state", "State"])),
+        sport: normalizeSport(getValue(row, ["sport", "Sport"])),
+        state_probability: parseNumber(getValue(row, ["state_probability", "Pro probability", "State_Probability"]))
+      };
+    }
+
+    function buildRankings() {
+      const sports = ["American Football", "Basketball", "Baseball"];
+      sports.forEach(sport => {
+        const rows = allSchools
+          .filter(row => row.sport === sport && row.school_probability !== null)
+          .sort((a, b) => (b.school_probability ?? -1) - (a.school_probability ?? -1));
+
+        rows.forEach((row, index) => {
+          row.rank_in_sport = index + 1;
+        });
+      });
+    }
+
+    function getSportSchools(sport) {
+      return allSchools.filter(row => row.sport === sport);
+    }
+
+    function getSelectedSport() {
+      return document.getElementById("sportSelect").value;
+    }
+
+    function getSelectedYear() {
+      return document.getElementById("yearSelect").value;
+    }
+
+    function getSelectedPlayingLevel() {
+      return document.getElementById("playingLevelSelect").value;
+    }
+
+    function getSelectedTeamTier() {
+      return document.getElementById("teamTierSelect").value;
+    }
+
+    function getProfileMultiplier() {
+      const year = YEAR_MULTIPLIERS[getSelectedYear()] ?? 1;
+      const level = PLAYING_LEVEL_MULTIPLIERS[getSelectedPlayingLevel()] ?? 1;
+      const tier = TEAM_TIER_MULTIPLIERS[getSelectedTeamTier()] ?? 1;
+      return year * level * tier;
+    }
+
+    function getAdjustedProbability(record) {
+      const base = parseNumber(record.school_probability);
+      if (base === null) return null;
+      const rawAdjusted = base * getProfileMultiplier();
+      const min = base * 0.60;
+      const max = base * 1.50;
+      return clamp(Math.max(min, Math.min(max, rawAdjusted)), 0, 1);
+    }
+
+    function getStateProbability(state, sport) {
+      const match = allStateProbs.find(
+        row => row.state === state && row.sport === sport
+      );
+      return match ? match.state_probability : null;
+    }
+
+    function buildIntro(record) {
+      const adjusted = getAdjustedProbability(record);
+      const stateProb = getStateProbability(record.state, record.sport);
+      return `${record.school_name} in ${record.sport} has a school baseline of ${formatOddsFromProb(record.school_probability)}. With your selected profile, the estimate shifts to ${formatOddsFromProb(adjusted)} (${formatPercent(adjusted)}). The ${record.state} state average is ${formatOddsFromProb(stateProb)}, while the national average is ${formatOddsFromProb(record.national_probability)}.`;
+    }
+
+    function buildEstimateExplanation(record) {
+      const adjusted = getAdjustedProbability(record);
+      return `This result starts with ${record.school_name}'s historical school-level probability in ${record.sport}: ${formatPercent(record.school_probability)} (${formatOddsFromProb(record.school_probability)}). Your profile then nudges that estimate to ${formatPercent(adjusted)} (${formatOddsFromProb(adjusted)}), while keeping the school pipeline as the core driver.`;
+    }
+
+    function buildProfileExplanation(record) {
+      const base = parseNumber(record.school_probability);
+      const adjusted = getAdjustedProbability(record);
+      if (base === null || adjusted === null) return "Your profile adjustment is unavailable for this school.";
+
+      const diff = adjusted - base;
+      const direction = diff > 0.00001 ? "above" : diff < -0.00001 ? "below" : "roughly in line with";
+      return `As a ${getSelectedYear().toLowerCase()} player in a ${getSelectedPlayingLevel().toLowerCase()} role on a ${getSelectedTeamTier().toLowerCase()} team, your estimate sits ${direction} the school baseline. These profile changes are directional estimate refinements, not guarantees.`;
+    }
+
+    function buildShareText(record) {
+      const adjusted = getAdjustedProbability(record);
+      return `At ${record.school_name}, the baseline odds of going pro in ${record.sport} are ${formatOddsFromProb(record.school_probability)}. Based on my profile, my estimated odds are ${formatOddsFromProb(adjusted)} (${formatPercent(adjusted)}).`;
+    }
+
+    function createRankingItem(rankNumber, title, subtitle) {
+      return `
+        <div class="ranking-item">
+          <div class="ranking-number">${rankNumber}</div>
+          <div>
+            <div class="ranking-title">${escapeHtml(title)}</div>
+            <div class="ranking-sub">${subtitle}</div>
+          </div>
+        </div>
+      `;
+    }
+
+    function renderTopSchools() {
+      const sport = getSelectedSport();
+      const rows = getSportSchools(sport)
+        .filter(row => row.school_probability !== null)
+        .sort((a, b) => (b.school_probability ?? -1) - (a.school_probability ?? -1))
+        .slice(0, 10);
+
+      document.getElementById("topSchoolsTitle").textContent = `Top 10 Schools in ${sport}`;
+      document.getElementById("topSchoolsSubtitle").textContent = `Schools with the strongest historical odds of producing pro athletes in ${sport}.`;
+
+      document.getElementById("topSchools").innerHTML = rows.map((row, index) =>
+        createRankingItem(
+          index + 1,
+          row.school_name,
+          `${row.state} · ${row.conference} · ${formatOddsFromProb(row.school_probability)} · ${formatPercent(row.school_probability)}`
+        )
+      ).join("");
+    }
+
+    function renderTopStates() {
+      const sport = getSelectedSport();
+      const rows = allStateProbs
+        .filter(row => row.sport === sport && row.state_probability !== null)
+        .sort((a, b) => (b.state_probability ?? -1) - (a.state_probability ?? -1))
+        .slice(0, 10);
+
+      document.getElementById("topStatesTitle").textContent = `Top 10 States in ${sport}`;
+      document.getElementById("topStatesSubtitle").textContent = `States with the strongest pro progression rates in ${sport}.`;
+
+      document.getElementById("topStates").innerHTML = rows.map((row, index) =>
+        createRankingItem(
+          index + 1,
+          row.state,
+          `${formatOddsFromProb(row.state_probability)} · ${formatPercent(row.state_probability)}`
+        )
+      ).join("");
+    }
+
+    function setSortButtons() {
+      document.getElementById("sortHighestBtn").classList.toggle("active", currentSortMode === "highest");
+      document.getElementById("sortLowestBtn").classList.toggle("active", currentSortMode === "lowest");
+    }
+
+    function getFilteredRankingRows() {
+      let rows = getSportSchools(getSelectedSport()).slice();
+
+      rows = rows.filter(row =>
+        row.school_name &&
+        row.school_probability !== null
+      );
+
+      rows.sort((a, b) => {
+        if (currentSortMode === "highest") {
+          return (b.school_probability ?? -1) - (a.school_probability ?? -1);
+        }
+        return (a.school_probability ?? Infinity) - (b.school_probability ?? Infinity);
+      });
+
+      const q = rankingSearchTerm.trim().toLowerCase();
+      if (q) {
+        rows = rows.filter(row => row.school_name.toLowerCase().includes(q));
+      }
+
+      return rows;
+    }
+
+    function renderFullRanking() {
+      const rows = getFilteredRankingRows();
+
+      document.getElementById("fullRankingBody").innerHTML = rows.length ? rows.map((row, index) => `
+        <tr>
+          <td>${index + 1}</td>
+          <td><strong>${escapeHtml(row.school_name)}</strong></td>
+          <td>${escapeHtml(row.state || "—")}</td>
+          <td>${escapeHtml(row.conference || "—")}</td>
+          <td>${formatWhole(row.pro_players_count)}</td>
+          <td>${formatWhole(row.estimated_athlete_pool)}</td>
+          <td>${formatPercent(row.school_probability)}</td>
+          <td>${formatOddsFromProb(row.school_probability)}</td>
+        </tr>
+      `).join("") : `
+        <tr><td colspan="8">No matching schools found.</td></tr>
+      `;
+    }
+
+    function renderResult(record) {
+      currentRenderedSchool = record;
+      const adjusted = getAdjustedProbability(record);
+      const stateProb = getStateProbability(record.state, record.sport);
+
+      document.getElementById("resultSection").classList.remove("hidden");
+      document.getElementById("noResults").classList.add("hidden");
+
+      document.getElementById("schoolTitle").textContent = record.school_name;
+      document.getElementById("schoolIntro").textContent = buildIntro(record);
+
+      document.getElementById("sportPill").textContent = record.sport;
+      document.getElementById("statePill").textContent = record.state || "—";
+      document.getElementById("conferencePill").textContent = record.conference || "—";
+
+      document.getElementById("adjustedProbability").textContent = formatPercent(adjusted);
+      document.getElementById("adjustedOdds").textContent = formatOddsFromProb(adjusted);
+      document.getElementById("adjustedBarLabel").textContent = formatPercent(adjusted);
+      document.getElementById("probabilityBar").style.width = `${clamp(parseNumber(adjusted) ?? 0) * 100}%`;
+
+      document.getElementById("schoolBaselineOdds").textContent = formatOddsFromProb(record.school_probability);
+      document.getElementById("schoolBaselineProb").textContent = formatPercent(record.school_probability);
+
+      document.getElementById("stateAverageOdds").textContent = formatOddsFromProb(stateProb);
+      document.getElementById("stateAverageProb").textContent = formatPercent(stateProb);
+
+      document.getElementById("nationalAverageOdds").textContent = formatOddsFromProb(record.national_probability);
+      document.getElementById("nationalAverageProb").textContent = formatPercent(record.national_probability);
+
+      document.getElementById("rankInSport").textContent = record.rank_in_sport ? `#${record.rank_in_sport}` : "—";
+      document.getElementById("proPlayersCount").textContent = formatWhole(record.pro_players_count);
+      document.getElementById("athletePool").textContent = formatWhole(record.estimated_athlete_pool);
+
+      document.getElementById("estimateExplanation").textContent = buildEstimateExplanation(record);
+      document.getElementById("profileExplanation").textContent = buildProfileExplanation(record);
+
+      document.getElementById("copyShareTextBtn").onclick = () => copyText(buildShareText(record), "Share text copied.");
+      document.getElementById("copyLinkBtn").onclick = () => copyText(window.location.href, "Result link copied.");
+
+      updateUrl(record.school_name, record.sport);
+    }
+
+    function copyText(text, message) {
+      navigator.clipboard.writeText(text).then(() => {
+        alert(message);
+      }).catch(() => {
+        alert("Could not copy automatically. Please try again.");
+      });
+    }
+
+    function findSchoolRecord(schoolName, sport) {
+      const q = String(schoolName ?? "").trim().toLowerCase();
+      const rows = getSportSchools(sport);
+
+      let match = rows.find(row => row.school_name.toLowerCase() === q);
+      if (match) return match;
+
+      match = rows.find(row => row.school_name.toLowerCase().startsWith(q));
+      if (match) return match;
+
+      match = rows.find(row => row.school_name.toLowerCase().includes(q));
+      return match || null;
+    }
+
+    function getAutocompleteMatches(searchTerm) {
+      const q = String(searchTerm ?? "").trim().toLowerCase();
+      if (!q) return [];
+
+      return getSportSchools(getSelectedSport())
+        .filter(row => row.school_name.toLowerCase().includes(q))
+        .slice(0, 8);
+    }
+
+    function renderAutocomplete(matches) {
+      const box = document.getElementById("autocomplete");
+      if (!matches.length) {
+        hideAutocomplete();
+        return;
+      }
+
+      box.innerHTML = matches.map((row, index) => `
+        <div class="autocomplete-item ${index === autocompleteIndex ? "active" : ""}" data-school="${escapeHtml(row.school_name)}">
+          <div class="autocomplete-title">${escapeHtml(row.school_name)}</div>
+          <div class="autocomplete-sub">${escapeHtml(row.state)} · ${escapeHtml(row.conference || "—")} · ${formatOddsFromProb(row.school_probability)}</div>
+        </div>
+      `).join("");
+
+      box.classList.remove("hidden");
+
+      box.querySelectorAll(".autocomplete-item").forEach(item => {
+        item.addEventListener("mousedown", function (e) {
+          e.preventDefault();
+          selectAutocomplete(this.getAttribute("data-school"));
+        });
+      });
+    }
+
+    function hideAutocomplete() {
+      const box = document.getElementById("autocomplete");
+      box.classList.add("hidden");
+      box.innerHTML = "";
+      autocompleteIndex = -1;
+    }
+
+    function selectAutocomplete(schoolName) {
+      document.getElementById("schoolSearch").value = schoolName;
+      hideAutocomplete();
+      const record = findSchoolRecord(schoolName, getSelectedSport());
+      if (record) renderResult(record);
+    }
+
+    function runSearch() {
+      const schoolName = document.getElementById("schoolSearch").value;
+      const record = findSchoolRecord(schoolName, getSelectedSport());
+      if (record) {
+        renderResult(record);
+        hideAutocomplete();
+      } else {
+        document.getElementById("resultSection").classList.add("hidden");
+        document.getElementById("noResults").classList.remove("hidden");
+      }
+    }
+
+    function scrollToSection(id) {
+      const el = document.getElementById(id);
+      if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+
+    window.scrollToSection = scrollToSection;
+
+    function updateUrl(schoolName = "", sport = "") {
+      const url = new URL(window.location);
+      if (schoolName) url.searchParams.set("school", schoolName);
+      else url.searchParams.delete("school");
+
+      if (sport) url.searchParams.set("sport", sport);
+      else url.searchParams.delete("sport");
+
+      history.replaceState({}, "", url);
+    }
+
+    function applyUrlParams() {
+      const params = new URLSearchParams(window.location.search);
+      const school = params.get("school");
+      const sport = params.get("sport");
+
+      if (sport) {
+        const select = document.getElementById("sportSelect");
+        const exists = [...select.options].some(option => option.value === sport);
+        if (exists) select.value = sport;
+      }
+
+      renderTopSchools();
+      renderTopStates();
+      renderFullRanking();
+
+      if (school) {
+        document.getElementById("schoolSearch").value = school;
+        const record = findSchoolRecord(school, getSelectedSport());
+        if (record) {
+          renderResult(record);
+          return;
+        }
+      }
+
+      const defaultRecord = getSportSchools(getSelectedSport())
+        .filter(row => row.school_probability !== null)
+        .sort((a, b) => (b.school_probability ?? -1) - (a.school_probability ?? -1))[0];
+
+      if (defaultRecord) renderResult(defaultRecord);
+    }
+
+    async function loadData() {
+      try {
+        const [football, basketball, baseball, states] = await Promise.all([
+          fetch(DATA_FILES.football).then(r => r.json()),
+          fetch(DATA_FILES.basketball).then(r => r.json()),
+          fetch(DATA_FILES.baseball).then(r => r.json()),
+          fetch(DATA_FILES.states).then(r => r.json())
+        ]);
+
+        allSchools = [
+          ...football.map(row => normalizeSchoolRecord(row, "American Football")),
+          ...basketball.map(row => normalizeSchoolRecord(row, "Basketball")),
+          ...baseball.map(row => normalizeSchoolRecord(row, "Baseball"))
+        ].filter(row => row.school_name);
+
+        allStateProbs = states
+          .map(normalizeStateRecord)
+          .filter(row => row.state && row.sport);
+
+        buildRankings();
+
+        document.getElementById("loadingState").classList.add("hidden");
+        document.getElementById("datasetCount").textContent = `${allSchools.length} school-sport records loaded`;
+
+        applyUrlParams();
+      } catch (error) {
+        console.error(error);
+        document.getElementById("loadingState").classList.add("hidden");
+        document.getElementById("datasetCount").textContent = "Dataset unavailable";
+        document.getElementById("noResults").classList.remove("hidden");
+        document.getElementById("noResults").textContent = "Could not load the school datasets. Check that the JSON files are in the data folder.";
+      }
+    }
+
+    document.getElementById("searchButton").addEventListener("click", runSearch);
+
+    document.getElementById("schoolSearch").addEventListener("input", function (e) {
+      autocompleteIndex = -1;
+      renderAutocomplete(getAutocompleteMatches(e.target.value));
+    });
+
+    document.getElementById("schoolSearch").addEventListener("keydown", function (e) {
+      const matches = getAutocompleteMatches(e.target.value);
+
+      if (e.key === "ArrowDown" && matches.length) {
+        e.preventDefault();
+        autocompleteIndex = (autocompleteIndex + 1) % matches.length;
+        renderAutocomplete(matches);
+        return;
+      }
+
+      if (e.key === "ArrowUp" && matches.length) {
+        e.preventDefault();
+        autocompleteIndex = autocompleteIndex <= 0 ? matches.length - 1 : autocompleteIndex - 1;
+        renderAutocomplete(matches);
+        return;
+      }
+
+      if (e.key === "Enter") {
+        if (matches.length && autocompleteIndex >= 0) {
+          e.preventDefault();
+          selectAutocomplete(matches[autocompleteIndex].school_name);
+          return;
+        }
+        runSearch();
+      }
+
+      if (e.key === "Escape") {
+        hideAutocomplete();
+      }
+    });
+
+    document.addEventListener("click", function (e) {
+      const wrap = document.querySelector(".search-field");
+      if (wrap && !wrap.contains(e.target)) hideAutocomplete();
+    });
+
+    document.getElementById("sportSelect").addEventListener("change", function () {
+      hideAutocomplete();
+      renderTopSchools();
+      renderTopStates();
+      renderFullRanking();
+
+      const schoolInput = document.getElementById("schoolSearch").value.trim();
+      if (schoolInput) {
+        const record = findSchoolRecord(schoolInput, getSelectedSport());
+        if (record) renderResult(record);
+      } else {
+        const defaultRecord = getSportSchools(getSelectedSport())
+          .filter(row => row.school_probability !== null)
+          .sort((a, b) => (b.school_probability ?? -1) - (a.school_probability ?? -1))[0];
+        if (defaultRecord) renderResult(defaultRecord);
+      }
+    });
+
+    ["yearSelect", "playingLevelSelect", "teamTierSelect"].forEach(id => {
+      document.getElementById(id).addEventListener("change", function () {
+        if (currentRenderedSchool) renderResult(currentRenderedSchool);
+      });
+    });
+
+    document.getElementById("sortHighestBtn").addEventListener("click", function () {
+      currentSortMode = "highest";
+      setSortButtons();
+      renderFullRanking();
+    });
+
+    document.getElementById("sortLowestBtn").addEventListener("click", function () {
+      currentSortMode = "lowest";
+      setSortButtons();
+      renderFullRanking();
+    });
+
+    document.getElementById("rankingSearch").addEventListener("input", function (e) {
+      rankingSearchTerm = e.target.value;
+      renderFullRanking();
+    });
+
+    document.getElementById("clearRankingSearch").addEventListener("click", function () {
+      rankingSearchTerm = "";
+      document.getElementById("rankingSearch").value = "";
+      renderFullRanking();
+    });
+
+    loadData();
+    setSortButtons();
+  </script>
+</body>
+</html>
