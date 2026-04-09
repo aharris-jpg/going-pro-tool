@@ -1,0 +1,702 @@
+[
+  {
+    "State": "AL",
+    "Sport": "American Football",
+    "Total Estimated Athlete pool": 4944,
+    "Total Pro Players Count": 149,
+    "Pro probability": "3.01%"
+  },
+  {
+    "State": "AL",
+    "Sport": "Basketball",
+    "Total Estimated Athlete pool": 1508,
+    "Total Pro Players Count": 14,
+    "Pro probability": "0.93%"
+  },
+  {
+    "State": "AR",
+    "Sport": "American Football",
+    "Total Estimated Athlete pool": 2430,
+    "Total Pro Players Count": 29,
+    "Pro probability": "1.19%"
+  },
+  {
+    "State": "AR",
+    "Sport": "Basketball",
+    "Total Estimated Athlete pool": 728,
+    "Total Pro Players Count": 8,
+    "Pro probability": "1.10%"
+  },
+  {
+    "State": "AZ",
+    "Sport": "American Football",
+    "Total Estimated Athlete pool": 2253,
+    "Total Pro Players Count": 30,
+    "Pro probability": "1.33%"
+  },
+  {
+    "State": "AZ",
+    "Sport": "Basketball",
+    "Total Estimated Athlete pool": 594,
+    "Total Pro Players Count": 12,
+    "Pro probability": "2.02%"
+  },
+  {
+    "State": "CA",
+    "Sport": "American Football",
+    "Total Estimated Athlete pool": 7797,
+    "Total Pro Players Count": 158,
+    "Pro probability": "2.03%"
+  },
+  {
+    "State": "CA",
+    "Sport": "Basketball",
+    "Total Estimated Athlete pool": 3806,
+    "Total Pro Players Count": 36,
+    "Pro probability": "0.95%"
+  },
+  {
+    "State": "CO",
+    "Sport": "American Football",
+    "Total Estimated Athlete pool": 2210,
+    "Total Pro Players Count": 24,
+    "Pro probability": "1.09%"
+  },
+  {
+    "State": "CO",
+    "Sport": "Basketball",
+    "Total Estimated Athlete pool": 726,
+    "Total Pro Players Count": 9,
+    "Pro probability": "1.24%"
+  },
+  {
+    "State": "CT",
+    "Sport": "American Football",
+    "Total Estimated Athlete pool": 1117,
+    "Total Pro Players Count": 9,
+    "Pro probability": "0.81%"
+  },
+  {
+    "State": "CT",
+    "Sport": "Basketball",
+    "Total Estimated Athlete pool": 867,
+    "Total Pro Players Count": 11,
+    "Pro probability": "1.27%"
+  },
+  {
+    "State": "DC",
+    "Sport": "American Football",
+    "Total Estimated Athlete pool": 0,
+    "Total Pro Players Count": 0,
+    "Pro probability": "0.00%"
+  },
+  {
+    "State": "DC",
+    "Sport": "Basketball",
+    "Total Estimated Athlete pool": 614,
+    "Total Pro Players Count": 2,
+    "Pro probability": "0.33%"
+  },
+  {
+    "State": "DE",
+    "Sport": "American Football",
+    "Total Estimated Athlete pool": 1100,
+    "Total Pro Players Count": 2,
+    "Pro probability": "0.18%"
+  },
+  {
+    "State": "DE",
+    "Sport": "Basketball",
+    "Total Estimated Athlete pool": 290,
+    "Total Pro Players Count": 0,
+    "Pro probability": "0.00%"
+  },
+  {
+    "State": "FL",
+    "Sport": "American Football",
+    "Total Estimated Athlete pool": 8186,
+    "Total Pro Players Count": 165,
+    "Pro probability": "2.02%"
+  },
+  {
+    "State": "FL",
+    "Sport": "Basketball",
+    "Total Estimated Athlete pool": 1898,
+    "Total Pro Players Count": 24,
+    "Pro probability": "1.26%"
+  },
+  {
+    "State": "GA",
+    "Sport": "American Football",
+    "Total Estimated Athlete pool": 5924,
+    "Total Pro Players Count": 97,
+    "Pro probability": "1.64%"
+  },
+  {
+    "State": "GA",
+    "Sport": "Basketball",
+    "Total Estimated Athlete pool": 880,
+    "Total Pro Players Count": 4,
+    "Pro probability": "0.45%"
+  },
+  {
+    "State": "HI",
+    "Sport": "American Football",
+    "Total Estimated Athlete pool": 1167,
+    "Total Pro Players Count": 3,
+    "Pro probability": "0.26%"
+  },
+  {
+    "State": "HI",
+    "Sport": "Basketball",
+    "Total Estimated Athlete pool": 133,
+    "Total Pro Players Count": 0,
+    "Pro probability": "0.00%"
+  },
+  {
+    "State": "IA",
+    "Sport": "American Football",
+    "Total Estimated Athlete pool": 2504,
+    "Total Pro Players Count": 58,
+    "Pro probability": "2.32%"
+  },
+  {
+    "State": "IA",
+    "Sport": "Basketball",
+    "Total Estimated Athlete pool": 547,
+    "Total Pro Players Count": 4,
+    "Pro probability": "0.73%"
+  },
+  {
+    "State": "ID",
+    "Sport": "American Football",
+    "Total Estimated Athlete pool": 1120,
+    "Total Pro Players Count": 18,
+    "Pro probability": "1.61%"
+  },
+  {
+    "State": "ID",
+    "Sport": "Basketball",
+    "Total Estimated Athlete pool": 424,
+    "Total Pro Players Count": 2,
+    "Pro probability": "0.47%"
+  },
+  {
+    "State": "IL",
+    "Sport": "American Football",
+    "Total Estimated Athlete pool": 3421,
+    "Total Pro Players Count": 40,
+    "Pro probability": "1.17%"
+  },
+  {
+    "State": "IL",
+    "Sport": "Basketball",
+    "Total Estimated Athlete pool": 1848,
+    "Total Pro Players Count": 6,
+    "Pro probability": "0.32%"
+  },
+  {
+    "State": "IN",
+    "Sport": "American Football",
+    "Total Estimated Athlete pool": 4633,
+    "Total Pro Players Count": 84,
+    "Pro probability": "1.81%"
+  },
+  {
+    "State": "IN",
+    "Sport": "Basketball",
+    "Total Estimated Athlete pool": 1610,
+    "Total Pro Players Count": 13,
+    "Pro probability": "0.81%"
+  },
+  {
+    "State": "KS",
+    "Sport": "American Football",
+    "Total Estimated Athlete pool": 2367,
+    "Total Pro Players Count": 26,
+    "Pro probability": "1.10%"
+  },
+  {
+    "State": "KS",
+    "Sport": "Basketball",
+    "Total Estimated Athlete pool": 423,
+    "Total Pro Players Count": 15,
+    "Pro probability": "3.55%"
+  },
+  {
+    "State": "KY",
+    "Sport": "American Football",
+    "Total Estimated Athlete pool": 3387,
+    "Total Pro Players Count": 62,
+    "Pro probability": "1.83%"
+  },
+  {
+    "State": "KY",
+    "Sport": "Basketball",
+    "Total Estimated Athlete pool": 1141,
+    "Total Pro Players Count": 34,
+    "Pro probability": "2.98%"
+  },
+  {
+    "State": "LA",
+    "Sport": "American Football",
+    "Total Estimated Athlete pool": 3513,
+    "Total Pro Players Count": 113,
+    "Pro probability": "3.22%"
+  },
+  {
+    "State": "LA",
+    "Sport": "Basketball",
+    "Total Estimated Athlete pool": 1713,
+    "Total Pro Players Count": 1,
+    "Pro probability": "0.06%"
+  },
+  {
+    "State": "MA",
+    "Sport": "American Football",
+    "Total Estimated Athlete pool": 2290,
+    "Total Pro Players Count": 27,
+    "Pro probability": "1.18%"
+  },
+  {
+    "State": "MA",
+    "Sport": "Basketball",
+    "Total Estimated Athlete pool": 1293,
+    "Total Pro Players Count": 2,
+    "Pro probability": "0.15%"
+  },
+  {
+    "State": "MD",
+    "Sport": "American Football",
+    "Total Estimated Athlete pool": 1137,
+    "Total Pro Players Count": 31,
+    "Pro probability": "2.73%"
+  },
+  {
+    "State": "MD",
+    "Sport": "Basketball",
+    "Total Estimated Athlete pool": 1391,
+    "Total Pro Players Count": 9,
+    "Pro probability": "0.65%"
+  },
+  {
+    "State": "ME",
+    "Sport": "American Football",
+    "Total Estimated Athlete pool": 0,
+    "Total Pro Players Count": 2,
+    "Pro probability": "0.00%"
+  },
+  {
+    "State": "ME",
+    "Sport": "Basketball",
+    "Total Estimated Athlete pool": 143,
+    "Total Pro Players Count": 0,
+    "Pro probability": "0.00%"
+  },
+  {
+    "State": "MI",
+    "Sport": "American Football",
+    "Total Estimated Athlete pool": 5836,
+    "Total Pro Players Count": 119,
+    "Pro probability": "2.04%"
+  },
+  {
+    "State": "MI",
+    "Sport": "Basketball",
+    "Total Estimated Athlete pool": 1007,
+    "Total Pro Players Count": 22,
+    "Pro probability": "2.18%"
+  },
+  {
+    "State": "MN",
+    "Sport": "American Football",
+    "Total Estimated Athlete pool": 1133,
+    "Total Pro Players Count": 22,
+    "Pro probability": "1.94%"
+  },
+  {
+    "State": "MN",
+    "Sport": "Basketball",
+    "Total Estimated Athlete pool": 287,
+    "Total Pro Players Count": 2,
+    "Pro probability": "0.70%"
+  },
+  {
+    "State": "MO",
+    "Sport": "American Football",
+    "Total Estimated Athlete pool": 2167,
+    "Total Pro Players Count": 29,
+    "Pro probability": "1.34%"
+  },
+  {
+    "State": "MO",
+    "Sport": "Basketball",
+    "Total Estimated Athlete pool": 860,
+    "Total Pro Players Count": 1,
+    "Pro probability": "0.12%"
+  },
+  {
+    "State": "MS",
+    "Sport": "American Football",
+    "Total Estimated Athlete pool": 3463,
+    "Total Pro Players Count": 78,
+    "Pro probability": "2.25%"
+  },
+  {
+    "State": "MS",
+    "Sport": "Basketball",
+    "Total Estimated Athlete pool": 916,
+    "Total Pro Players Count": 3,
+    "Pro probability": "0.33%"
+  },
+  {
+    "State": "MT",
+    "Sport": "American Football",
+    "Total Estimated Athlete pool": 0,
+    "Total Pro Players Count": 6,
+    "Pro probability": "0.00%"
+  },
+  {
+    "State": "MT",
+    "Sport": "Basketball",
+    "Total Estimated Athlete pool": 280,
+    "Total Pro Players Count": 0,
+    "Pro probability": "0.00%"
+  },
+  {
+    "State": "NC",
+    "Sport": "American Football",
+    "Total Estimated Athlete pool": 8347,
+    "Total Pro Players Count": 99,
+    "Pro probability": "1.19%"
+  },
+  {
+    "State": "NC",
+    "Sport": "Basketball",
+    "Total Estimated Athlete pool": 2793,
+    "Total Pro Players Count": 44,
+    "Pro probability": "1.58%"
+  },
+  {
+    "State": "ND",
+    "Sport": "American Football",
+    "Total Estimated Athlete pool": 0,
+    "Total Pro Players Count": 12,
+    "Pro probability": "0.00%"
+  },
+  {
+    "State": "ND",
+    "Sport": "Basketball",
+    "Total Estimated Athlete pool": 264,
+    "Total Pro Players Count": 0,
+    "Pro probability": "0.00%"
+  },
+  {
+    "State": "NE",
+    "Sport": "American Football",
+    "Total Estimated Athlete pool": 1383,
+    "Total Pro Players Count": 17,
+    "Pro probability": "1.23%"
+  },
+  {
+    "State": "NE",
+    "Sport": "Basketball",
+    "Total Estimated Athlete pool": 416,
+    "Total Pro Players Count": 8,
+    "Pro probability": "1.92%"
+  },
+  {
+    "State": "NH",
+    "Sport": "American Football",
+    "Total Estimated Athlete pool": 0,
+    "Total Pro Players Count": 1,
+    "Pro probability": "0.00%"
+  },
+  {
+    "State": "NH",
+    "Sport": "Basketball",
+    "Total Estimated Athlete pool": 277,
+    "Total Pro Players Count": 0,
+    "Pro probability": "0.00%"
+  },
+  {
+    "State": "NJ",
+    "Sport": "American Football",
+    "Total Estimated Athlete pool": 1327,
+    "Total Pro Players Count": 14,
+    "Pro probability": "1.06%"
+  },
+  {
+    "State": "NJ",
+    "Sport": "Basketball",
+    "Total Estimated Athlete pool": 1185,
+    "Total Pro Players Count": 4,
+    "Pro probability": "0.34%"
+  },
+  {
+    "State": "NM",
+    "Sport": "American Football",
+    "Total Estimated Athlete pool": 2273,
+    "Total Pro Players Count": 4,
+    "Pro probability": "0.18%"
+  },
+  {
+    "State": "NM",
+    "Sport": "Basketball",
+    "Total Estimated Athlete pool": 270,
+    "Total Pro Players Count": 1,
+    "Pro probability": "0.37%"
+  },
+  {
+    "State": "NV",
+    "Sport": "American Football",
+    "Total Estimated Athlete pool": 2190,
+    "Total Pro Players Count": 5,
+    "Pro probability": "0.23%"
+  },
+  {
+    "State": "NV",
+    "Sport": "Basketball",
+    "Total Estimated Athlete pool": 270,
+    "Total Pro Players Count": 5,
+    "Pro probability": "1.85%"
+  },
+  {
+    "State": "NY",
+    "Sport": "American Football",
+    "Total Estimated Athlete pool": 2280,
+    "Total Pro Players Count": 19,
+    "Pro probability": "0.83%"
+  },
+  {
+    "State": "NY",
+    "Sport": "Basketball",
+    "Total Estimated Athlete pool": 3116,
+    "Total Pro Players Count": 5,
+    "Pro probability": "0.16%"
+  },
+  {
+    "State": "OH",
+    "Sport": "American Football",
+    "Total Estimated Athlete pool": 8984,
+    "Total Pro Players Count": 134,
+    "Pro probability": "1.49%"
+  },
+  {
+    "State": "OH",
+    "Sport": "Basketball",
+    "Total Estimated Athlete pool": 1836,
+    "Total Pro Players Count": 14,
+    "Pro probability": "0.76%"
+  },
+  {
+    "State": "OK",
+    "Sport": "American Football",
+    "Total Estimated Athlete pool": 2483,
+    "Total Pro Players Count": 73,
+    "Pro probability": "2.94%"
+  },
+  {
+    "State": "OK",
+    "Sport": "Basketball",
+    "Total Estimated Athlete pool": 576,
+    "Total Pro Players Count": 4,
+    "Pro probability": "0.69%"
+  },
+  {
+    "State": "OR",
+    "Sport": "American Football",
+    "Total Estimated Athlete pool": 2393,
+    "Total Pro Players Count": 56,
+    "Pro probability": "2.34%"
+  },
+  {
+    "State": "OR",
+    "Sport": "Basketball",
+    "Total Estimated Athlete pool": 594,
+    "Total Pro Players Count": 8,
+    "Pro probability": "1.35%"
+  },
+  {
+    "State": "PA",
+    "Sport": "American Football",
+    "Total Estimated Athlete pool": 3593,
+    "Total Pro Players Count": 108,
+    "Pro probability": "3.01%"
+  },
+  {
+    "State": "PA",
+    "Sport": "Basketball",
+    "Total Estimated Athlete pool": 2031,
+    "Total Pro Players Count": 16,
+    "Pro probability": "0.79%"
+  },
+  {
+    "State": "RI",
+    "Sport": "American Football",
+    "Total Estimated Athlete pool": 0,
+    "Total Pro Players Count": 1,
+    "Pro probability": "0.00%"
+  },
+  {
+    "State": "RI",
+    "Sport": "Basketball",
+    "Total Estimated Athlete pool": 597,
+    "Total Pro Players Count": 3,
+    "Pro probability": "0.50%"
+  },
+  {
+    "State": "SC",
+    "Sport": "American Football",
+    "Total Estimated Athlete pool": 3624,
+    "Total Pro Players Count": 92,
+    "Pro probability": "2.54%"
+  },
+  {
+    "State": "SC",
+    "Sport": "Basketball",
+    "Total Estimated Athlete pool": 1711,
+    "Total Pro Players Count": 8,
+    "Pro probability": "0.47%"
+  },
+  {
+    "State": "SD",
+    "Sport": "American Football",
+    "Total Estimated Athlete pool": 0,
+    "Total Pro Players Count": 8,
+    "Pro probability": "0.00%"
+  },
+  {
+    "State": "SD",
+    "Sport": "Basketball",
+    "Total Estimated Athlete pool": 267,
+    "Total Pro Players Count": 0,
+    "Pro probability": "0.00%"
+  },
+  {
+    "State": "TN",
+    "Sport": "American Football",
+    "Total Estimated Athlete pool": 4714,
+    "Total Pro Players Count": 57,
+    "Pro probability": "1.21%"
+  },
+  {
+    "State": "TN",
+    "Sport": "Basketball",
+    "Total Estimated Athlete pool": 1748,
+    "Total Pro Players Count": 21,
+    "Pro probability": "1.20%"
+  },
+  {
+    "State": "TX",
+    "Sport": "American Football",
+    "Total Estimated Athlete pool": 15332,
+    "Total Pro Players Count": 206,
+    "Pro probability": "1.34%"
+  },
+  {
+    "State": "TX",
+    "Sport": "Basketball",
+    "Total Estimated Athlete pool": 3573,
+    "Total Pro Players Count": 29,
+    "Pro probability": "0.81%"
+  },
+  {
+    "State": "UT",
+    "Sport": "American Football",
+    "Total Estimated Athlete pool": 3473,
+    "Total Pro Players Count": 56,
+    "Pro probability": "1.61%"
+  },
+  {
+    "State": "UT",
+    "Sport": "Basketball",
+    "Total Estimated Athlete pool": 1017,
+    "Total Pro Players Count": 7,
+    "Pro probability": "0.69%"
+  },
+  {
+    "State": "VA",
+    "Sport": "American Football",
+    "Total Estimated Athlete pool": 5834,
+    "Total Pro Players Count": 51,
+    "Pro probability": "0.87%"
+  },
+  {
+    "State": "VA",
+    "Sport": "Basketball",
+    "Total Estimated Athlete pool": 2024,
+    "Total Pro Players Count": 11,
+    "Pro probability": "0.54%"
+  },
+  {
+    "State": "VT",
+    "Sport": "American Football",
+    "Total Estimated Athlete pool": 0,
+    "Total Pro Players Count": 0,
+    "Pro probability": "0.00%"
+  },
+  {
+    "State": "VT",
+    "Sport": "Basketball",
+    "Total Estimated Athlete pool": 137,
+    "Total Pro Players Count": 0,
+    "Pro probability": "0.00%"
+  },
+  {
+    "State": "WA",
+    "Sport": "American Football",
+    "Total Estimated Athlete pool": 2336,
+    "Total Pro Players Count": 57,
+    "Pro probability": "2.44%"
+  },
+  {
+    "State": "WA",
+    "Sport": "Basketball",
+    "Total Estimated Athlete pool": 689,
+    "Total Pro Players Count": 23,
+    "Pro probability": "3.34%"
+  },
+  {
+    "State": "WI",
+    "Sport": "American Football",
+    "Total Estimated Athlete pool": 1180,
+    "Total Pro Players Count": 33,
+    "Pro probability": "2.80%"
+  },
+  {
+    "State": "WI",
+    "Sport": "Basketball",
+    "Total Estimated Athlete pool": 609,
+    "Total Pro Players Count": 8,
+    "Pro probability": "1.31%"
+  },
+  {
+    "State": "WV",
+    "Sport": "American Football",
+    "Total Estimated Athlete pool": 2374,
+    "Total Pro Players Count": 26,
+    "Pro probability": "1.10%"
+  },
+  {
+    "State": "WV",
+    "Sport": "Basketball",
+    "Total Estimated Athlete pool": 280,
+    "Total Pro Players Count": 3,
+    "Pro probability": "1.07%"
+  },
+  {
+    "State": "WY",
+    "Sport": "American Football",
+    "Total Estimated Athlete pool": 1163,
+    "Total Pro Players Count": 7,
+    "Pro probability": "0.60%"
+  },
+  {
+    "State": "WY",
+    "Sport": "Basketball",
+    "Total Estimated Athlete pool": 140,
+    "Total Pro Players Count": 1,
+    "Pro probability": "0.71%"
+  }
+]
