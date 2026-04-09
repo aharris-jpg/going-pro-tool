@@ -1,0 +1,302 @@
+[
+  {
+    "State": "AL",
+    "SUM of Estimated Athlete pool": "6,452",
+    "SUM of Pro Players Count": 163,
+    "Pro_Probability": "2.53%"
+  },
+  {
+    "State": "AR",
+    "SUM of Estimated Athlete pool": "3,158",
+    "SUM of Pro Players Count": 37,
+    "Pro_Probability": "1.17%"
+  },
+  {
+    "State": "AZ",
+    "SUM of Estimated Athlete pool": "2,847",
+    "SUM of Pro Players Count": 42,
+    "Pro_Probability": "1.48%"
+  },
+  {
+    "State": "CA",
+    "SUM of Estimated Athlete pool": "11,603",
+    "SUM of Pro Players Count": 194,
+    "Pro_Probability": "1.67%"
+  },
+  {
+    "State": "CO",
+    "SUM of Estimated Athlete pool": "2,936",
+    "SUM of Pro Players Count": 33,
+    "Pro_Probability": "1.12%"
+  },
+  {
+    "State": "CT",
+    "SUM of Estimated Athlete pool": "1,984",
+    "SUM of Pro Players Count": 20,
+    "Pro_Probability": "1.01%"
+  },
+  {
+    "State": "DC",
+    "SUM of Estimated Athlete pool": 614,
+    "SUM of Pro Players Count": 2,
+    "Pro_Probability": "0.33%"
+  },
+  {
+    "State": "DE",
+    "SUM of Estimated Athlete pool": "1,390",
+    "SUM of Pro Players Count": 2,
+    "Pro_Probability": "0.14%"
+  },
+  {
+    "State": "FL",
+    "SUM of Estimated Athlete pool": "10,084",
+    "SUM of Pro Players Count": 189,
+    "Pro_Probability": "1.87%"
+  },
+  {
+    "State": "GA",
+    "SUM of Estimated Athlete pool": "6,804",
+    "SUM of Pro Players Count": 101,
+    "Pro_Probability": "1.48%"
+  },
+  {
+    "State": "HI",
+    "SUM of Estimated Athlete pool": "1,300",
+    "SUM of Pro Players Count": 3,
+    "Pro_Probability": "0.23%"
+  },
+  {
+    "State": "IA",
+    "SUM of Estimated Athlete pool": "3,051",
+    "SUM of Pro Players Count": 62,
+    "Pro_Probability": "2.03%"
+  },
+  {
+    "State": "ID",
+    "SUM of Estimated Athlete pool": "1,544",
+    "SUM of Pro Players Count": 20,
+    "Pro_Probability": "1.30%"
+  },
+  {
+    "State": "IL",
+    "SUM of Estimated Athlete pool": "5,269",
+    "SUM of Pro Players Count": 46,
+    "Pro_Probability": "0.87%"
+  },
+  {
+    "State": "IN",
+    "SUM of Estimated Athlete pool": "6,243",
+    "SUM of Pro Players Count": 97,
+    "Pro_Probability": "1.55%"
+  },
+  {
+    "State": "KS",
+    "SUM of Estimated Athlete pool": "2,790",
+    "SUM of Pro Players Count": 41,
+    "Pro_Probability": "1.47%"
+  },
+  {
+    "State": "KY",
+    "SUM of Estimated Athlete pool": "4,528",
+    "SUM of Pro Players Count": 96,
+    "Pro_Probability": "2.12%"
+  },
+  {
+    "State": "LA",
+    "SUM of Estimated Athlete pool": "5,226",
+    "SUM of Pro Players Count": 114,
+    "Pro_Probability": "2.18%"
+  },
+  {
+    "State": "MA",
+    "SUM of Estimated Athlete pool": "3,583",
+    "SUM of Pro Players Count": 29,
+    "Pro_Probability": "0.81%"
+  },
+  {
+    "State": "MD",
+    "SUM of Estimated Athlete pool": "2,528",
+    "SUM of Pro Players Count": 40,
+    "Pro_Probability": "1.58%"
+  },
+  {
+    "State": "ME",
+    "SUM of Estimated Athlete pool": 143,
+    "SUM of Pro Players Count": 2,
+    "Pro_Probability": "1.40%"
+  },
+  {
+    "State": "MI",
+    "SUM of Estimated Athlete pool": "6,843",
+    "SUM of Pro Players Count": 141,
+    "Pro_Probability": "2.06%"
+  },
+  {
+    "State": "MN",
+    "SUM of Estimated Athlete pool": "1,420",
+    "SUM of Pro Players Count": 24,
+    "Pro_Probability": "1.69%"
+  },
+  {
+    "State": "MO",
+    "SUM of Estimated Athlete pool": "3,027",
+    "SUM of Pro Players Count": 30,
+    "Pro_Probability": "0.99%"
+  },
+  {
+    "State": "MS",
+    "SUM of Estimated Athlete pool": "4,379",
+    "SUM of Pro Players Count": 81,
+    "Pro_Probability": "1.85%"
+  },
+  {
+    "State": "MT",
+    "SUM of Estimated Athlete pool": 280,
+    "SUM of Pro Players Count": 6,
+    "Pro_Probability": "2.14%"
+  },
+  {
+    "State": "NC",
+    "SUM of Estimated Athlete pool": "11,140",
+    "SUM of Pro Players Count": 143,
+    "Pro_Probability": "1.28%"
+  },
+  {
+    "State": "ND",
+    "SUM of Estimated Athlete pool": 264,
+    "SUM of Pro Players Count": 12,
+    "Pro_Probability": "4.55%"
+  },
+  {
+    "State": "NE",
+    "SUM of Estimated Athlete pool": "1,799",
+    "SUM of Pro Players Count": 25,
+    "Pro_Probability": "1.39%"
+  },
+  {
+    "State": "NH",
+    "SUM of Estimated Athlete pool": 277,
+    "SUM of Pro Players Count": 1,
+    "Pro_Probability": "0.36%"
+  },
+  {
+    "State": "NJ",
+    "SUM of Estimated Athlete pool": "2,512",
+    "SUM of Pro Players Count": 18,
+    "Pro_Probability": "0.72%"
+  },
+  {
+    "State": "NM",
+    "SUM of Estimated Athlete pool": "2,543",
+    "SUM of Pro Players Count": 5,
+    "Pro_Probability": "0.20%"
+  },
+  {
+    "State": "NV",
+    "SUM of Estimated Athlete pool": "2,460",
+    "SUM of Pro Players Count": 10,
+    "Pro_Probability": "0.41%"
+  },
+  {
+    "State": "NY",
+    "SUM of Estimated Athlete pool": "5,396",
+    "SUM of Pro Players Count": 24,
+    "Pro_Probability": "0.44%"
+  },
+  {
+    "State": "OH",
+    "SUM of Estimated Athlete pool": "10,820",
+    "SUM of Pro Players Count": 148,
+    "Pro_Probability": "1.37%"
+  },
+  {
+    "State": "OK",
+    "SUM of Estimated Athlete pool": "3,059",
+    "SUM of Pro Players Count": 77,
+    "Pro_Probability": "2.52%"
+  },
+  {
+    "State": "OR",
+    "SUM of Estimated Athlete pool": "2,987",
+    "SUM of Pro Players Count": 64,
+    "Pro_Probability": "2.14%"
+  },
+  {
+    "State": "PA",
+    "SUM of Estimated Athlete pool": "5,624",
+    "SUM of Pro Players Count": 124,
+    "Pro_Probability": "2.20%"
+  },
+  {
+    "State": "RI",
+    "SUM of Estimated Athlete pool": 597,
+    "SUM of Pro Players Count": 4,
+    "Pro_Probability": "0.67%"
+  },
+  {
+    "State": "SC",
+    "SUM of Estimated Athlete pool": "5,335",
+    "SUM of Pro Players Count": 100,
+    "Pro_Probability": "1.87%"
+  },
+  {
+    "State": "SD",
+    "SUM of Estimated Athlete pool": 267,
+    "SUM of Pro Players Count": 8,
+    "Pro_Probability": "3.00%"
+  },
+  {
+    "State": "TN",
+    "SUM of Estimated Athlete pool": "6,462",
+    "SUM of Pro Players Count": 78,
+    "Pro_Probability": "1.21%"
+  },
+  {
+    "State": "TX",
+    "SUM of Estimated Athlete pool": "18,905",
+    "SUM of Pro Players Count": 235,
+    "Pro_Probability": "1.24%"
+  },
+  {
+    "State": "UT",
+    "SUM of Estimated Athlete pool": "4,490",
+    "SUM of Pro Players Count": 63,
+    "Pro_Probability": "1.40%"
+  },
+  {
+    "State": "VA",
+    "SUM of Estimated Athlete pool": "7,858",
+    "SUM of Pro Players Count": 62,
+    "Pro_Probability": "0.79%"
+  },
+  {
+    "State": "VT",
+    "SUM of Estimated Athlete pool": 137,
+    "SUM of Pro Players Count": 0,
+    "Pro_Probability": "0.00%"
+  },
+  {
+    "State": "WA",
+    "SUM of Estimated Athlete pool": "3,025",
+    "SUM of Pro Players Count": 80,
+    "Pro_Probability": "2.64%"
+  },
+  {
+    "State": "WI",
+    "SUM of Estimated Athlete pool": "1,789",
+    "SUM of Pro Players Count": 41,
+    "Pro_Probability": "2.29%"
+  },
+  {
+    "State": "WV",
+    "SUM of Estimated Athlete pool": "2,654",
+    "SUM of Pro Players Count": 29,
+    "Pro_Probability": "1.09%"
+  },
+  {
+    "State": "WY",
+    "SUM of Estimated Athlete pool": "1,303",
+    "SUM of Pro Players Count": 8,
+    "Pro_Probability": "0.61%"
+  }
+]
