@@ -1,0 +1,3612 @@
+[
+  {
+    "School name": "Duke",
+    "State": "NC",
+    "Conference": "Atlantic Coast Conference",
+    "Estimated Athlete pool": 140,
+    "Pro Players Count": 30,
+    "Draft Probability": "21.43%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "20.57%"
+  },
+  {
+    "School name": "Kentucky",
+    "State": "KY",
+    "Conference": "Southeastern Conference",
+    "Estimated Athlete pool": 157,
+    "Pro Players Count": 27,
+    "Draft Probability": "17.20%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "16.34%"
+  },
+  {
+    "School name": "Gonzaga",
+    "State": "WA",
+    "Conference": "West Coast Conference",
+    "Estimated Athlete pool": 140,
+    "Pro Players Count": 12,
+    "Draft Probability": "8.57%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "7.71%"
+  },
+  {
+    "School name": "UCLA",
+    "State": "CA",
+    "Conference": "Big Ten Conference",
+    "Estimated Athlete pool": 133,
+    "Pro Players Count": 11,
+    "Draft Probability": "8.27%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "7.41%"
+  },
+  {
+    "School name": "Kansas",
+    "State": "KS",
+    "Conference": "Big 12 Conference",
+    "Estimated Athlete pool": 153,
+    "Pro Players Count": 12,
+    "Draft Probability": "7.84%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "6.98%"
+  },
+  {
+    "School name": "Michigan",
+    "State": "MI",
+    "Conference": "Big Ten Conference",
+    "Estimated Athlete pool": 157,
+    "Pro Players Count": 12,
+    "Draft Probability": "7.64%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "6.78%"
+  },
+  {
+    "School name": "North Carolina",
+    "State": "NC",
+    "Conference": "Atlantic Coast Conference",
+    "Estimated Athlete pool": 147,
+    "Pro Players Count": 11,
+    "Draft Probability": "7.48%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "6.62%"
+  },
+  {
+    "School name": "UConn",
+    "State": "CT",
+    "Conference": "Big East Conference",
+    "Estimated Athlete pool": 137,
+    "Pro Players Count": 10,
+    "Draft Probability": "7.30%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "6.44%"
+  },
+  {
+    "School name": "Villanova",
+    "State": "PA",
+    "Conference": "Big East Conference",
+    "Estimated Athlete pool": 127,
+    "Pro Players Count": 9,
+    "Draft Probability": "7.09%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "6.23%"
+  },
+  {
+    "School name": "Baylor",
+    "State": "TX",
+    "Conference": "Big 12 Conference",
+    "Estimated Athlete pool": 133,
+    "Pro Players Count": 9,
+    "Draft Probability": "6.77%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "5.91%"
+  },
+  {
+    "School name": "Florida State",
+    "State": "FL",
+    "Conference": "Atlantic Coast Conference",
+    "Estimated Athlete pool": 167,
+    "Pro Players Count": 11,
+    "Draft Probability": "6.59%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "5.73%"
+  },
+  {
+    "School name": "Arizona",
+    "State": "AZ",
+    "Conference": "Big 12 Conference",
+    "Estimated Athlete pool": 167,
+    "Pro Players Count": 11,
+    "Draft Probability": "6.59%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "5.73%"
+  },
+  {
+    "School name": "Tennessee",
+    "State": "TN",
+    "Conference": "Southeastern Conference",
+    "Estimated Athlete pool": 153,
+    "Pro Players Count": 10,
+    "Draft Probability": "6.54%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "5.67%"
+  },
+  {
+    "School name": "Michigan State",
+    "State": "MI",
+    "Conference": "Big Ten Conference",
+    "Estimated Athlete pool": 140,
+    "Pro Players Count": 8,
+    "Draft Probability": "5.71%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "4.85%"
+  },
+  {
+    "School name": "Maryland",
+    "State": "MD",
+    "Conference": "Big Ten Conference",
+    "Estimated Athlete pool": 143,
+    "Pro Players Count": 8,
+    "Draft Probability": "5.59%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "4.73%"
+  },
+  {
+    "School name": "Miami (Florida)",
+    "State": "FL",
+    "Conference": "Atlantic Coast Conference",
+    "Estimated Athlete pool": 130,
+    "Pro Players Count": 7,
+    "Draft Probability": "5.38%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "4.52%"
+  },
+  {
+    "School name": "Arkansas",
+    "State": "AR",
+    "Conference": "Southeastern Conference",
+    "Estimated Athlete pool": 150,
+    "Pro Players Count": 8,
+    "Draft Probability": "5.33%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "4.47%"
+  },
+  {
+    "School name": "USC",
+    "State": "CA",
+    "Conference": "Big Ten Conference",
+    "Estimated Athlete pool": 160,
+    "Pro Players Count": 8,
+    "Draft Probability": "5.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "4.14%"
+  },
+  {
+    "School name": "Virginia",
+    "State": "VA",
+    "Conference": "Atlantic Coast Conference",
+    "Estimated Athlete pool": 140,
+    "Pro Players Count": 7,
+    "Draft Probability": "5.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "4.14%"
+  },
+  {
+    "School name": "Washington",
+    "State": "WA",
+    "Conference": "Big Ten Conference",
+    "Estimated Athlete pool": 143,
+    "Pro Players Count": 7,
+    "Draft Probability": "4.90%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "4.03%"
+  },
+  {
+    "School name": "Oregon",
+    "State": "OR",
+    "Conference": "Big Ten Conference",
+    "Estimated Athlete pool": 167,
+    "Pro Players Count": 8,
+    "Draft Probability": "4.79%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "3.93%"
+  },
+  {
+    "School name": "Alabama",
+    "State": "AL",
+    "Conference": "Southeastern Conference",
+    "Estimated Athlete pool": 147,
+    "Pro Players Count": 7,
+    "Draft Probability": "4.76%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "3.90%"
+  },
+  {
+    "School name": "Texas",
+    "State": "TX",
+    "Conference": "Southeastern Conference",
+    "Estimated Athlete pool": 147,
+    "Pro Players Count": 7,
+    "Draft Probability": "4.76%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "3.90%"
+  },
+  {
+    "School name": "Colorado",
+    "State": "CO",
+    "Conference": "Big 12 Conference",
+    "Estimated Athlete pool": 153,
+    "Pro Players Count": 7,
+    "Draft Probability": "4.58%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "3.71%"
+  },
+  {
+    "School name": "Auburn",
+    "State": "AL",
+    "Conference": "Southeastern Conference",
+    "Estimated Athlete pool": 167,
+    "Pro Players Count": 7,
+    "Draft Probability": "4.19%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "3.33%"
+  },
+  {
+    "School name": "Indiana",
+    "State": "IN",
+    "Conference": "Big Ten Conference",
+    "Estimated Athlete pool": 147,
+    "Pro Players Count": 6,
+    "Draft Probability": "4.08%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "3.22%"
+  },
+  {
+    "School name": "Purdue",
+    "State": "IN",
+    "Conference": "Big Ten Conference",
+    "Estimated Athlete pool": 163,
+    "Pro Players Count": 6,
+    "Draft Probability": "3.68%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "2.82%"
+  },
+  {
+    "School name": "Creighton",
+    "State": "NE",
+    "Conference": "Big East Conference",
+    "Estimated Athlete pool": 140,
+    "Pro Players Count": 5,
+    "Draft Probability": "3.57%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "2.71%"
+  },
+  {
+    "School name": "Louisville",
+    "State": "KY",
+    "Conference": "Atlantic Coast Conference",
+    "Estimated Athlete pool": 150,
+    "Pro Players Count": 5,
+    "Draft Probability": "3.33%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "2.47%"
+  },
+  {
+    "School name": "Florida",
+    "State": "FL",
+    "Conference": "Southeastern Conference",
+    "Estimated Athlete pool": 153,
+    "Pro Players Count": 5,
+    "Draft Probability": "3.27%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "2.41%"
+  },
+  {
+    "School name": "Vanderbilt",
+    "State": "TN",
+    "Conference": "Southeastern Conference",
+    "Estimated Athlete pool": 157,
+    "Pro Players Count": 5,
+    "Draft Probability": "3.18%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "2.32%"
+  },
+  {
+    "School name": "Houston",
+    "State": "TX",
+    "Conference": "Big 12 Conference",
+    "Estimated Athlete pool": 127,
+    "Pro Players Count": 4,
+    "Draft Probability": "3.15%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "2.29%"
+  },
+  {
+    "School name": "Marquette",
+    "State": "WI",
+    "Conference": "Big East Conference",
+    "Estimated Athlete pool": 160,
+    "Pro Players Count": 5,
+    "Draft Probability": "3.13%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "2.26%"
+  },
+  {
+    "School name": "Illinois",
+    "State": "IL",
+    "Conference": "Big Ten Conference",
+    "Estimated Athlete pool": 130,
+    "Pro Players Count": 4,
+    "Draft Probability": "3.08%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "2.22%"
+  },
+  {
+    "School name": "California",
+    "State": "CA",
+    "Conference": "Atlantic Coast Conference",
+    "Estimated Athlete pool": 163,
+    "Pro Players Count": 5,
+    "Draft Probability": "3.07%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "2.21%"
+  },
+  {
+    "School name": "Washington State",
+    "State": "WA",
+    "Conference": "Pac-12 Conference",
+    "Estimated Athlete pool": 133,
+    "Pro Players Count": 4,
+    "Draft Probability": "3.01%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "2.15%"
+  },
+  {
+    "School name": "Penn State",
+    "State": "PA",
+    "Conference": "Big Ten Conference",
+    "Estimated Athlete pool": 140,
+    "Pro Players Count": 4,
+    "Draft Probability": "2.86%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "2.00%"
+  },
+  {
+    "School name": "Memphis",
+    "State": "TN",
+    "Conference": "American Conference",
+    "Estimated Athlete pool": 140,
+    "Pro Players Count": 4,
+    "Draft Probability": "2.86%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "2.00%"
+  },
+  {
+    "School name": "Iowa",
+    "State": "IA",
+    "Conference": "Big Ten Conference",
+    "Estimated Athlete pool": 143,
+    "Pro Players Count": 4,
+    "Draft Probability": "2.80%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "1.94%"
+  },
+  {
+    "School name": "Oklahoma",
+    "State": "OK",
+    "Conference": "Southeastern Conference",
+    "Estimated Athlete pool": 143,
+    "Pro Players Count": 4,
+    "Draft Probability": "2.80%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "1.94%"
+  },
+  {
+    "School name": "Syracuse",
+    "State": "NY",
+    "Conference": "Atlantic Coast Conference",
+    "Estimated Athlete pool": 147,
+    "Pro Players Count": 4,
+    "Draft Probability": "2.72%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "1.86%"
+  },
+  {
+    "School name": "Ohio State",
+    "State": "OH",
+    "Conference": "Big Ten Conference",
+    "Estimated Athlete pool": 150,
+    "Pro Players Count": 4,
+    "Draft Probability": "2.67%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "1.81%"
+  },
+  {
+    "School name": "Stanford",
+    "State": "CA",
+    "Conference": "Atlantic Coast Conference",
+    "Estimated Athlete pool": 153,
+    "Pro Players Count": 4,
+    "Draft Probability": "2.61%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "1.75%"
+  },
+  {
+    "School name": "Dayton",
+    "State": "OH",
+    "Conference": "Atlantic 10 Conference",
+    "Estimated Athlete pool": 160,
+    "Pro Players Count": 4,
+    "Draft Probability": "2.50%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "1.64%"
+  },
+  {
+    "School name": "VCU",
+    "State": "VA",
+    "Conference": "Atlantic 10 Conference",
+    "Estimated Athlete pool": 127,
+    "Pro Players Count": 3,
+    "Draft Probability": "2.36%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "1.50%"
+  },
+  {
+    "School name": "Texas Tech",
+    "State": "TX",
+    "Conference": "Big 12 Conference",
+    "Estimated Athlete pool": 133,
+    "Pro Players Count": 3,
+    "Draft Probability": "2.26%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "1.39%"
+  },
+  {
+    "School name": "Nevada",
+    "State": "NV",
+    "Conference": "Mountain West Conference",
+    "Estimated Athlete pool": 133,
+    "Pro Players Count": 3,
+    "Draft Probability": "2.26%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "1.39%"
+  },
+  {
+    "School name": "West Virginia",
+    "State": "WV",
+    "Conference": "Big 12 Conference",
+    "Estimated Athlete pool": 133,
+    "Pro Players Count": 3,
+    "Draft Probability": "2.26%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "1.39%"
+  },
+  {
+    "School name": "SMU",
+    "State": "TX",
+    "Conference": "Atlantic Coast Conference",
+    "Estimated Athlete pool": 140,
+    "Pro Players Count": 3,
+    "Draft Probability": "2.14%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "1.28%"
+  },
+  {
+    "School name": "Georgia",
+    "State": "GA",
+    "Conference": "Southeastern Conference",
+    "Estimated Athlete pool": 140,
+    "Pro Players Count": 3,
+    "Draft Probability": "2.14%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "1.28%"
+  },
+  {
+    "School name": "South Carolina",
+    "State": "SC",
+    "Conference": "Southeastern Conference",
+    "Estimated Athlete pool": 140,
+    "Pro Players Count": 3,
+    "Draft Probability": "2.14%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "1.28%"
+  },
+  {
+    "School name": "Nebraska",
+    "State": "NE",
+    "Conference": "Big Ten Conference",
+    "Estimated Athlete pool": 143,
+    "Pro Players Count": 3,
+    "Draft Probability": "2.10%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "1.24%"
+  },
+  {
+    "School name": "Providence",
+    "State": "RI",
+    "Conference": "Big East Conference",
+    "Estimated Athlete pool": 147,
+    "Pro Players Count": 3,
+    "Draft Probability": "2.04%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "1.18%"
+  },
+  {
+    "School name": "Mississippi State",
+    "State": "MS",
+    "Conference": "Southeastern Conference",
+    "Estimated Athlete pool": 150,
+    "Pro Players Count": 3,
+    "Draft Probability": "2.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "1.14%"
+  },
+  {
+    "School name": "Belmont",
+    "State": "TN",
+    "Conference": "Missouri Valley Conference",
+    "Estimated Athlete pool": 130,
+    "Pro Players Count": 2,
+    "Draft Probability": "1.54%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "0.68%"
+  },
+  {
+    "School name": "Colorado State",
+    "State": "CO",
+    "Conference": "Mountain West Conference",
+    "Estimated Athlete pool": 133,
+    "Pro Players Count": 2,
+    "Draft Probability": "1.50%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "0.64%"
+  },
+  {
+    "School name": "Kansas State",
+    "State": "KS",
+    "Conference": "Big 12 Conference",
+    "Estimated Athlete pool": 133,
+    "Pro Players Count": 2,
+    "Draft Probability": "1.50%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "0.64%"
+  },
+  {
+    "School name": "Boise State",
+    "State": "ID",
+    "Conference": "Mountain West Conference",
+    "Estimated Athlete pool": 137,
+    "Pro Players Count": 2,
+    "Draft Probability": "1.46%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "0.60%"
+  },
+  {
+    "School name": "UNLV",
+    "State": "NV",
+    "Conference": "Mountain West Conference",
+    "Estimated Athlete pool": 137,
+    "Pro Players Count": 2,
+    "Draft Probability": "1.46%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "0.60%"
+  },
+  {
+    "School name": "Utah State",
+    "State": "UT",
+    "Conference": "Mountain West Conference",
+    "Estimated Athlete pool": 137,
+    "Pro Players Count": 2,
+    "Draft Probability": "1.46%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "0.60%"
+  },
+  {
+    "School name": "Clemson",
+    "State": "SC",
+    "Conference": "Atlantic Coast Conference",
+    "Estimated Athlete pool": 140,
+    "Pro Players Count": 2,
+    "Draft Probability": "1.43%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "0.57%"
+  },
+  {
+    "School name": "Pepperdine",
+    "State": "CA",
+    "Conference": "West Coast Conference",
+    "Estimated Athlete pool": 140,
+    "Pro Players Count": 2,
+    "Draft Probability": "1.43%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "0.57%"
+  },
+  {
+    "School name": "Weber State",
+    "State": "UT",
+    "Conference": "Big Sky Conference",
+    "Estimated Athlete pool": 140,
+    "Pro Players Count": 2,
+    "Draft Probability": "1.43%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "0.57%"
+  },
+  {
+    "School name": "Saint Joseph's",
+    "State": "PA",
+    "Conference": "Atlantic 10 Conference",
+    "Estimated Athlete pool": 143,
+    "Pro Players Count": 2,
+    "Draft Probability": "1.40%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "0.54%"
+  },
+  {
+    "School name": "Georgetown",
+    "State": "DC",
+    "Conference": "Big East Conference",
+    "Estimated Athlete pool": 147,
+    "Pro Players Count": 2,
+    "Draft Probability": "1.36%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "0.50%"
+  },
+  {
+    "School name": "San Diego State",
+    "State": "CA",
+    "Conference": "Mountain West Conference",
+    "Estimated Athlete pool": 147,
+    "Pro Players Count": 2,
+    "Draft Probability": "1.36%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "0.50%"
+  },
+  {
+    "School name": "Seton Hall",
+    "State": "NJ",
+    "Conference": "Big East Conference",
+    "Estimated Athlete pool": 147,
+    "Pro Players Count": 2,
+    "Draft Probability": "1.36%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "0.50%"
+  },
+  {
+    "School name": "Minnesota",
+    "State": "MN",
+    "Conference": "Big Ten Conference",
+    "Estimated Athlete pool": 147,
+    "Pro Players Count": 2,
+    "Draft Probability": "1.36%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "0.50%"
+  },
+  {
+    "School name": "Xavier",
+    "State": "OH",
+    "Conference": "Big East Conference",
+    "Estimated Athlete pool": 147,
+    "Pro Players Count": 2,
+    "Draft Probability": "1.36%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "0.50%"
+  },
+  {
+    "School name": "Boston College",
+    "State": "MA",
+    "Conference": "Atlantic Coast Conference",
+    "Estimated Athlete pool": 150,
+    "Pro Players Count": 2,
+    "Draft Probability": "1.33%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "0.47%"
+  },
+  {
+    "School name": "Rutgers",
+    "State": "NJ",
+    "Conference": "Big Ten Conference",
+    "Estimated Athlete pool": 150,
+    "Pro Players Count": 2,
+    "Draft Probability": "1.33%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "0.47%"
+  },
+  {
+    "School name": "Utah",
+    "State": "UT",
+    "Conference": "Big 12 Conference",
+    "Estimated Athlete pool": 150,
+    "Pro Players Count": 2,
+    "Draft Probability": "1.33%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "0.47%"
+  },
+  {
+    "School name": "Wake Forest",
+    "State": "NC",
+    "Conference": "Atlantic Coast Conference",
+    "Estimated Athlete pool": 150,
+    "Pro Players Count": 2,
+    "Draft Probability": "1.33%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "0.47%"
+  },
+  {
+    "School name": "Wisconsin",
+    "State": "WI",
+    "Conference": "Big Ten Conference",
+    "Estimated Athlete pool": 153,
+    "Pro Players Count": 2,
+    "Draft Probability": "1.31%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "0.45%"
+  },
+  {
+    "School name": "Charleston",
+    "State": "SC",
+    "Conference": "Coastal Athletic Association",
+    "Estimated Athlete pool": 157,
+    "Pro Players Count": 2,
+    "Draft Probability": "1.27%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "0.41%"
+  },
+  {
+    "School name": "Santa Clara",
+    "State": "CA",
+    "Conference": "West Coast Conference",
+    "Estimated Athlete pool": 157,
+    "Pro Players Count": 2,
+    "Draft Probability": "1.27%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "0.41%"
+  },
+  {
+    "School name": "Toledo",
+    "State": "OH",
+    "Conference": "Mid-American Conference",
+    "Estimated Athlete pool": 123,
+    "Pro Players Count": 1,
+    "Draft Probability": "0.81%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.05%"
+  },
+  {
+    "School name": "Ohio",
+    "State": "OH",
+    "Conference": "Mid-American Conference",
+    "Estimated Athlete pool": 127,
+    "Pro Players Count": 1,
+    "Draft Probability": "0.79%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.07%"
+  },
+  {
+    "School name": "Hofstra",
+    "State": "NY",
+    "Conference": "Coastal Athletic Association",
+    "Estimated Athlete pool": 133,
+    "Pro Players Count": 1,
+    "Draft Probability": "0.75%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.11%"
+  },
+  {
+    "School name": "Texas A&M",
+    "State": "TX",
+    "Conference": "Southeastern Conference",
+    "Estimated Athlete pool": 133,
+    "Pro Players Count": 1,
+    "Draft Probability": "0.75%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.11%"
+  },
+  {
+    "School name": "Pittsburgh",
+    "State": "PA",
+    "Conference": "Atlantic Coast Conference",
+    "Estimated Athlete pool": 133,
+    "Pro Players Count": 1,
+    "Draft Probability": "0.75%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.11%"
+  },
+  {
+    "School name": "DePaul",
+    "State": "IL",
+    "Conference": "Big East Conference",
+    "Estimated Athlete pool": 137,
+    "Pro Players Count": 1,
+    "Draft Probability": "0.73%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.13%"
+  },
+  {
+    "School name": "Missouri State",
+    "State": "MO",
+    "Conference": "Conference USA",
+    "Estimated Athlete pool": 137,
+    "Pro Players Count": 1,
+    "Draft Probability": "0.73%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.13%"
+  },
+  {
+    "School name": "Northwestern",
+    "State": "IL",
+    "Conference": "Big Ten Conference",
+    "Estimated Athlete pool": 137,
+    "Pro Players Count": 1,
+    "Draft Probability": "0.73%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.13%"
+  },
+  {
+    "School name": "Akron",
+    "State": "OH",
+    "Conference": "Mid-American Conference",
+    "Estimated Athlete pool": 137,
+    "Pro Players Count": 1,
+    "Draft Probability": "0.73%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.13%"
+  },
+  {
+    "School name": "UT Arlington",
+    "State": "TX",
+    "Conference": "Western Athletic Conference",
+    "Estimated Athlete pool": 137,
+    "Pro Players Count": 1,
+    "Draft Probability": "0.73%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.13%"
+  },
+  {
+    "School name": "Wichita State",
+    "State": "KS",
+    "Conference": "American Conference",
+    "Estimated Athlete pool": 137,
+    "Pro Players Count": 1,
+    "Draft Probability": "0.73%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.13%"
+  },
+  {
+    "School name": "Georgia Tech",
+    "State": "GA",
+    "Conference": "Atlantic Coast Conference",
+    "Estimated Athlete pool": 140,
+    "Pro Players Count": 1,
+    "Draft Probability": "0.71%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.15%"
+  },
+  {
+    "School name": "Liberty",
+    "State": "VA",
+    "Conference": "Conference USA",
+    "Estimated Athlete pool": 140,
+    "Pro Players Count": 1,
+    "Draft Probability": "0.71%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.15%"
+  },
+  {
+    "School name": "Murray State",
+    "State": "KY",
+    "Conference": "Missouri Valley Conference",
+    "Estimated Athlete pool": 140,
+    "Pro Players Count": 1,
+    "Draft Probability": "0.71%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.15%"
+  },
+  {
+    "School name": "Oakland",
+    "State": "MI",
+    "Conference": "Horizon League",
+    "Estimated Athlete pool": 140,
+    "Pro Players Count": 1,
+    "Draft Probability": "0.71%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.15%"
+  },
+  {
+    "School name": "Wyoming",
+    "State": "WY",
+    "Conference": "Mountain West Conference",
+    "Estimated Athlete pool": 140,
+    "Pro Players Count": 1,
+    "Draft Probability": "0.71%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.15%"
+  },
+  {
+    "School name": "Eastern Michigan",
+    "State": "MI",
+    "Conference": "Mid-American Conference",
+    "Estimated Athlete pool": 143,
+    "Pro Players Count": 1,
+    "Draft Probability": "0.70%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.16%"
+  },
+  {
+    "School name": "Furman",
+    "State": "SC",
+    "Conference": "Southern Conference",
+    "Estimated Athlete pool": 143,
+    "Pro Players Count": 1,
+    "Draft Probability": "0.70%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.16%"
+  },
+  {
+    "School name": "New Mexico State",
+    "State": "NM",
+    "Conference": "Conference USA",
+    "Estimated Athlete pool": 143,
+    "Pro Players Count": 1,
+    "Draft Probability": "0.70%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.16%"
+  },
+  {
+    "School name": "Tulane",
+    "State": "LA",
+    "Conference": "American Conference",
+    "Estimated Athlete pool": 143,
+    "Pro Players Count": 1,
+    "Draft Probability": "0.70%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.16%"
+  },
+  {
+    "School name": "San Francisco",
+    "State": "CA",
+    "Conference": "West Coast Conference",
+    "Estimated Athlete pool": 143,
+    "Pro Players Count": 1,
+    "Draft Probability": "0.70%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.16%"
+  },
+  {
+    "School name": "Cincinnati",
+    "State": "OH",
+    "Conference": "Big 12 Conference",
+    "Estimated Athlete pool": 147,
+    "Pro Players Count": 1,
+    "Draft Probability": "0.68%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.18%"
+  },
+  {
+    "School name": "Valparaiso",
+    "State": "IN",
+    "Conference": "Missouri Valley Conference",
+    "Estimated Athlete pool": 147,
+    "Pro Players Count": 1,
+    "Draft Probability": "0.68%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.18%"
+  },
+  {
+    "School name": "Western Kentucky",
+    "State": "KY",
+    "Conference": "Conference USA",
+    "Estimated Athlete pool": 147,
+    "Pro Players Count": 1,
+    "Draft Probability": "0.68%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.18%"
+  },
+  {
+    "School name": "Loyola",
+    "State": "MD",
+    "Conference": "Patriot League",
+    "Estimated Athlete pool": 150,
+    "Pro Players Count": 1,
+    "Draft Probability": "0.67%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.19%"
+  },
+  {
+    "School name": "NC State",
+    "State": "NC",
+    "Conference": "Atlantic Coast Conference",
+    "Estimated Athlete pool": 150,
+    "Pro Players Count": 1,
+    "Draft Probability": "0.67%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.19%"
+  },
+  {
+    "School name": "TCU",
+    "State": "TX",
+    "Conference": "Big 12 Conference",
+    "Estimated Athlete pool": 150,
+    "Pro Players Count": 1,
+    "Draft Probability": "0.67%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.19%"
+  },
+  {
+    "School name": "Yale",
+    "State": "CT",
+    "Conference": "Ivy League",
+    "Estimated Athlete pool": 150,
+    "Pro Players Count": 1,
+    "Draft Probability": "0.67%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.19%"
+  },
+  {
+    "School name": "UCF",
+    "State": "FL",
+    "Conference": "Big 12 Conference",
+    "Estimated Athlete pool": 153,
+    "Pro Players Count": 1,
+    "Draft Probability": "0.65%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.21%"
+  },
+  {
+    "School name": "Milwaukee",
+    "State": "WI",
+    "Conference": "Horizon League",
+    "Estimated Athlete pool": 153,
+    "Pro Players Count": 1,
+    "Draft Probability": "0.65%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.21%"
+  },
+  {
+    "School name": "Arizona State",
+    "State": "AZ",
+    "Conference": "Big 12 Conference",
+    "Estimated Athlete pool": 157,
+    "Pro Players Count": 1,
+    "Draft Probability": "0.64%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.22%"
+  },
+  {
+    "School name": "BYU",
+    "State": "UT",
+    "Conference": "Big 12 Conference",
+    "Estimated Athlete pool": 160,
+    "Pro Players Count": 1,
+    "Draft Probability": "0.63%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.24%"
+  },
+  {
+    "School name": "UC Santa Barbara",
+    "State": "CA",
+    "Conference": "Big West Conference",
+    "Estimated Athlete pool": 173,
+    "Pro Players Count": 1,
+    "Draft Probability": "0.58%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.28%"
+  },
+  {
+    "School name": "Abilene Christian",
+    "State": "TX",
+    "Conference": "Western Athletic Conference",
+    "Estimated Athlete pool": 137,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Alabama A&M",
+    "State": "AL",
+    "Conference": "Southwestern Athletic Conference",
+    "Estimated Athlete pool": 177,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Alabama State",
+    "State": "AL",
+    "Conference": "Southwestern Athletic Conference",
+    "Estimated Athlete pool": 147,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Alcorn State",
+    "State": "MS",
+    "Conference": "Southwestern Athletic Conference",
+    "Estimated Athlete pool": 150,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "American",
+    "State": "DC",
+    "Conference": "Patriot League",
+    "Estimated Athlete pool": 167,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Appalachian State",
+    "State": "NC",
+    "Conference": "Sun Belt Conference",
+    "Estimated Athlete pool": 150,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Arkansas State",
+    "State": "AR",
+    "Conference": "Sun Belt Conference",
+    "Estimated Athlete pool": 147,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Austin Peay",
+    "State": "TN",
+    "Conference": "Atlantic Sun Conference",
+    "Estimated Athlete pool": 137,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Ball State",
+    "State": "IN",
+    "Conference": "Mid-American Conference",
+    "Estimated Athlete pool": 133,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Bellarmine",
+    "State": "KY",
+    "Conference": "Atlantic Sun Conference",
+    "Estimated Athlete pool": 140,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Bethune–Cookman",
+    "State": "FL",
+    "Conference": "Southwestern Athletic Conference",
+    "Estimated Athlete pool": 147,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Boston University",
+    "State": "MA",
+    "Conference": "Patriot League",
+    "Estimated Athlete pool": 150,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Bowling Green",
+    "State": "OH",
+    "Conference": "Mid-American Conference",
+    "Estimated Athlete pool": 147,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Bradley",
+    "State": "IL",
+    "Conference": "Missouri Valley Conference",
+    "Estimated Athlete pool": 150,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Brown",
+    "State": "RI",
+    "Conference": "Ivy League",
+    "Estimated Athlete pool": 150,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Bryant",
+    "State": "RI",
+    "Conference": "America East Conference",
+    "Estimated Athlete pool": 153,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Bucknell",
+    "State": "PA",
+    "Conference": "Patriot League",
+    "Estimated Athlete pool": 137,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Butler",
+    "State": "IN",
+    "Conference": "Big East Conference",
+    "Estimated Athlete pool": 133,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Cal Baptist",
+    "State": "CA",
+    "Conference": "Western Athletic Conference",
+    "Estimated Athlete pool": 143,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Cal Poly",
+    "State": "CA",
+    "Conference": "Big West Conference",
+    "Estimated Athlete pool": 153,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Bakersfield",
+    "State": "CA",
+    "Conference": "Big West Conference",
+    "Estimated Athlete pool": 130,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Fresno State",
+    "State": "CA",
+    "Conference": "Mountain West Conference",
+    "Estimated Athlete pool": 137,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Cal State Fullerton",
+    "State": "CA",
+    "Conference": "Big West Conference",
+    "Estimated Athlete pool": 147,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Long Beach State",
+    "State": "CA",
+    "Conference": "Big West Conference",
+    "Estimated Athlete pool": 140,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Cal State Northridge / CSUN",
+    "State": "CA",
+    "Conference": "Big West Conference",
+    "Estimated Athlete pool": 140,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Sacramento State",
+    "State": "CA",
+    "Conference": "Big Sky Conference",
+    "Estimated Athlete pool": 137,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Campbell",
+    "State": "NC",
+    "Conference": "Coastal Athletic Association",
+    "Estimated Athlete pool": 140,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Canisius",
+    "State": "NY",
+    "Conference": "Metro Atlantic Athletic Conference",
+    "Estimated Athlete pool": 140,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Central Connecticut",
+    "State": "CT",
+    "Conference": "NEC",
+    "Estimated Athlete pool": 137,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Central Michigan",
+    "State": "MI",
+    "Conference": "Mid-American Conference",
+    "Estimated Athlete pool": 133,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Charleston Southern",
+    "State": "SC",
+    "Conference": "Big South Conference",
+    "Estimated Athlete pool": 137,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Chicago State",
+    "State": "IL",
+    "Conference": "NEC",
+    "Estimated Athlete pool": 143,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Cleveland State",
+    "State": "OH",
+    "Conference": "Horizon League",
+    "Estimated Athlete pool": 137,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Coastal Carolina",
+    "State": "SC",
+    "Conference": "Sun Belt Conference",
+    "Estimated Athlete pool": 140,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Colgate",
+    "State": "NY",
+    "Conference": "Patriot League",
+    "Estimated Athlete pool": 150,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Holy Cross",
+    "State": "MA",
+    "Conference": "Patriot League",
+    "Estimated Athlete pool": 143,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Columbia",
+    "State": "NY",
+    "Conference": "Ivy League",
+    "Estimated Athlete pool": 157,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Coppin State",
+    "State": "MD",
+    "Conference": "Mid-Eastern Athletic Conference",
+    "Estimated Athlete pool": 157,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Cornell",
+    "State": "NY",
+    "Conference": "Ivy League",
+    "Estimated Athlete pool": 193,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Dartmouth",
+    "State": "NH",
+    "Conference": "Ivy League",
+    "Estimated Athlete pool": 140,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Davidson",
+    "State": "NC",
+    "Conference": "Atlantic 10 Conference",
+    "Estimated Athlete pool": 153,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Delaware State",
+    "State": "DE",
+    "Conference": "Mid-Eastern Athletic Conference",
+    "Estimated Athlete pool": 150,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Drake",
+    "State": "IA",
+    "Conference": "Missouri Valley Conference",
+    "Estimated Athlete pool": 117,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Drexel",
+    "State": "PA",
+    "Conference": "Coastal Athletic Association",
+    "Estimated Athlete pool": 137,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Duquesne",
+    "State": "PA",
+    "Conference": "Atlantic 10 Conference",
+    "Estimated Athlete pool": 160,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "East Carolina",
+    "State": "NC",
+    "Conference": "American Conference",
+    "Estimated Athlete pool": 153,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Eastern Illinois",
+    "State": "IL",
+    "Conference": "Ohio Valley Conference",
+    "Estimated Athlete pool": 150,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Eastern Kentucky",
+    "State": "KY",
+    "Conference": "Atlantic Sun Conference",
+    "Estimated Athlete pool": 143,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Eastern Washington",
+    "State": "WA",
+    "Conference": "Big Sky Conference",
+    "Estimated Athlete pool": 133,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "East Tennessee State",
+    "State": "TN",
+    "Conference": "Southern Conference",
+    "Estimated Athlete pool": 137,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "East Texas A&M",
+    "State": "TX",
+    "Conference": "Southland Conference",
+    "Estimated Athlete pool": 147,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Elon",
+    "State": "NC",
+    "Conference": "Coastal Athletic Association",
+    "Estimated Athlete pool": 147,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Fairfield",
+    "State": "CT",
+    "Conference": "Metro Atlantic Athletic Conference",
+    "Estimated Athlete pool": 163,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Fairleigh Dickinson",
+    "State": "NJ",
+    "Conference": "NEC",
+    "Estimated Athlete pool": 147,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Florida A&M",
+    "State": "FL",
+    "Conference": "Southwestern Athletic Conference",
+    "Estimated Athlete pool": 160,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Florida Atlantic",
+    "State": "FL",
+    "Conference": "American Conference",
+    "Estimated Athlete pool": 137,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "FGCU",
+    "State": "FL",
+    "Conference": "Atlantic Sun Conference",
+    "Estimated Athlete pool": 137,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "FIU",
+    "State": "FL",
+    "Conference": "Conference USA",
+    "Estimated Athlete pool": 157,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Fordham",
+    "State": "NY",
+    "Conference": "Atlantic 10 Conference",
+    "Estimated Athlete pool": 153,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Gardner–Webb",
+    "State": "NC",
+    "Conference": "Big South Conference",
+    "Estimated Athlete pool": 150,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "George Mason",
+    "State": "VA",
+    "Conference": "Atlantic 10 Conference",
+    "Estimated Athlete pool": 147,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Georgia Southern",
+    "State": "GA",
+    "Conference": "Sun Belt Conference",
+    "Estimated Athlete pool": 153,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Georgia State",
+    "State": "GA",
+    "Conference": "Sun Belt Conference",
+    "Estimated Athlete pool": 147,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Grambling State",
+    "State": "LA",
+    "Conference": "Southwestern Athletic Conference",
+    "Estimated Athlete pool": 143,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Grand Canyon",
+    "State": "AZ",
+    "Conference": "Mountain West Conference",
+    "Estimated Athlete pool": 140,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Hampton",
+    "State": "VA",
+    "Conference": "Coastal Athletic Association",
+    "Estimated Athlete pool": 157,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Harvard",
+    "State": "MA",
+    "Conference": "Ivy League",
+    "Estimated Athlete pool": 150,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "High Point",
+    "State": "NC",
+    "Conference": "Big South Conference",
+    "Estimated Athlete pool": 170,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Houston Christian",
+    "State": "TX",
+    "Conference": "Southland Conference",
+    "Estimated Athlete pool": 143,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Howard",
+    "State": "DC",
+    "Conference": "Mid-Eastern Athletic Conference",
+    "Estimated Athlete pool": 153,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Idaho State",
+    "State": "ID",
+    "Conference": "Big Sky Conference",
+    "Estimated Athlete pool": 137,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Illinois State",
+    "State": "IL",
+    "Conference": "Missouri Valley Conference",
+    "Estimated Athlete pool": 137,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Indiana State",
+    "State": "IN",
+    "Conference": "Missouri Valley Conference",
+    "Estimated Athlete pool": 147,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "IU Indy",
+    "State": "IN",
+    "Conference": "Horizon League",
+    "Estimated Athlete pool": 140,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Iona",
+    "State": "NY",
+    "Conference": "Metro Atlantic Athletic Conference",
+    "Estimated Athlete pool": 147,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Iowa State",
+    "State": "IA",
+    "Conference": "Big 12 Conference",
+    "Estimated Athlete pool": 137,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Jackson State",
+    "State": "MS",
+    "Conference": "Southwestern Athletic Conference",
+    "Estimated Athlete pool": 153,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Jax State",
+    "State": "AL",
+    "Conference": "Conference USA",
+    "Estimated Athlete pool": 140,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Jacksonville",
+    "State": "FL",
+    "Conference": "Atlantic Sun Conference",
+    "Estimated Athlete pool": 147,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "James Madison",
+    "State": "VA",
+    "Conference": "Sun Belt Conference",
+    "Estimated Athlete pool": 153,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Kennesaw State",
+    "State": "GA",
+    "Conference": "Conference USA",
+    "Estimated Athlete pool": 160,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Kent State",
+    "State": "OH",
+    "Conference": "Mid-American Conference",
+    "Estimated Athlete pool": 150,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Lafayette",
+    "State": "PA",
+    "Conference": "Patriot League",
+    "Estimated Athlete pool": 143,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Lamar",
+    "State": "TX",
+    "Conference": "Southland Conference",
+    "Estimated Athlete pool": 133,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "La Salle",
+    "State": "PA",
+    "Conference": "Atlantic 10 Conference",
+    "Estimated Athlete pool": 147,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Lehigh",
+    "State": "PA",
+    "Conference": "Patriot League",
+    "Estimated Athlete pool": 150,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Lindenwood",
+    "State": "MO",
+    "Conference": "Ohio Valley Conference",
+    "Estimated Athlete pool": 137,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Lipscomb",
+    "State": "TN",
+    "Conference": "Atlantic Sun Conference",
+    "Estimated Athlete pool": 150,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "LIU",
+    "State": "NY",
+    "Conference": "NEC",
+    "Estimated Athlete pool": 127,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Longwood",
+    "State": "VA",
+    "Conference": "Big South Conference",
+    "Estimated Athlete pool": 150,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "LSU",
+    "State": "LA",
+    "Conference": "Southeastern Conference",
+    "Estimated Athlete pool": 147,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Louisiana Tech",
+    "State": "LA",
+    "Conference": "Conference USA",
+    "Estimated Athlete pool": 140,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Loyola Marymount",
+    "State": "CA",
+    "Conference": "West Coast Conference",
+    "Estimated Athlete pool": 143,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Loyola Chicago",
+    "State": "IL",
+    "Conference": "Atlantic 10 Conference",
+    "Estimated Athlete pool": 160,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Manhattan",
+    "State": "NY",
+    "Conference": "Metro Atlantic Athletic Conference",
+    "Estimated Athlete pool": 170,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Marist",
+    "State": "NY",
+    "Conference": "Metro Atlantic Athletic Conference",
+    "Estimated Athlete pool": 140,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Marshall",
+    "State": "WV",
+    "Conference": "Sun Belt Conference",
+    "Estimated Athlete pool": 147,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "McNeese",
+    "State": "LA",
+    "Conference": "Southland Conference",
+    "Estimated Athlete pool": 140,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Mercer",
+    "State": "GA",
+    "Conference": "Southern Conference",
+    "Estimated Athlete pool": 140,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Merrimack",
+    "State": "MA",
+    "Conference": "Metro Atlantic Athletic Conference",
+    "Estimated Athlete pool": 137,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Miami (Ohio)",
+    "State": "OH",
+    "Conference": "Mid-American Conference",
+    "Estimated Athlete pool": 157,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Middle Tennessee",
+    "State": "TN",
+    "Conference": "Conference USA",
+    "Estimated Athlete pool": 147,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Mississippi Valley State",
+    "State": "MS",
+    "Conference": "Southwestern Athletic Conference",
+    "Estimated Athlete pool": 163,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Monmouth",
+    "State": "NJ",
+    "Conference": "Coastal Athletic Association",
+    "Estimated Athlete pool": 167,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Montana State",
+    "State": "MT",
+    "Conference": "Big Sky Conference",
+    "Estimated Athlete pool": 140,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Morehead State",
+    "State": "KY",
+    "Conference": "Ohio Valley Conference",
+    "Estimated Athlete pool": 127,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Morgan State",
+    "State": "MD",
+    "Conference": "Mid-Eastern Athletic Conference",
+    "Estimated Athlete pool": 150,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Mount St. Mary's",
+    "State": "MD",
+    "Conference": "Metro Atlantic Athletic Conference",
+    "Estimated Athlete pool": 147,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "NJIT",
+    "State": "NJ",
+    "Conference": "America East Conference",
+    "Estimated Athlete pool": 147,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Niagara",
+    "State": "NY",
+    "Conference": "Metro Atlantic Athletic Conference",
+    "Estimated Athlete pool": 127,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Nicholls",
+    "State": "LA",
+    "Conference": "Southland Conference",
+    "Estimated Athlete pool": 137,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Norfolk State",
+    "State": "VA",
+    "Conference": "Mid-Eastern Athletic Conference",
+    "Estimated Athlete pool": 140,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "North Carolina A&T",
+    "State": "NC",
+    "Conference": "Coastal Athletic Association",
+    "Estimated Athlete pool": 137,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "North Carolina Central",
+    "State": "NC",
+    "Conference": "Mid-Eastern Athletic Conference",
+    "Estimated Athlete pool": 143,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "North Dakota State",
+    "State": "ND",
+    "Conference": "Summit League",
+    "Estimated Athlete pool": 127,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Northeastern",
+    "State": "MA",
+    "Conference": "Coastal Athletic Association",
+    "Estimated Athlete pool": 133,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Northern Arizona",
+    "State": "AZ",
+    "Conference": "Big Sky Conference",
+    "Estimated Athlete pool": 130,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Northern Illinois",
+    "State": "IL",
+    "Conference": "Mid-American Conference",
+    "Estimated Athlete pool": 160,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Northern Kentucky",
+    "State": "KY",
+    "Conference": "Horizon League",
+    "Estimated Athlete pool": 137,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Northwestern State",
+    "State": "LA",
+    "Conference": "Southland Conference",
+    "Estimated Athlete pool": 143,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Oklahoma State",
+    "State": "OK",
+    "Conference": "Big 12 Conference",
+    "Estimated Athlete pool": 147,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Old Dominion",
+    "State": "VA",
+    "Conference": "Sun Belt Conference",
+    "Estimated Athlete pool": 157,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Oral Roberts",
+    "State": "OK",
+    "Conference": "Summit League",
+    "Estimated Athlete pool": 143,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Oregon State",
+    "State": "OR",
+    "Conference": "Pac-12 Conference",
+    "Estimated Athlete pool": 147,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Portland State",
+    "State": "OR",
+    "Conference": "Big Sky Conference",
+    "Estimated Athlete pool": 133,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Prairie View A&M",
+    "State": "TX",
+    "Conference": "Southwestern Athletic Conference",
+    "Estimated Athlete pool": 143,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Presbyterian",
+    "State": "SC",
+    "Conference": "Big South Conference",
+    "Estimated Athlete pool": 127,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Princeton",
+    "State": "NJ",
+    "Conference": "Ivy League",
+    "Estimated Athlete pool": 157,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Purdue Fort Wayne",
+    "State": "IN",
+    "Conference": "Horizon League",
+    "Estimated Athlete pool": 133,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Queens (NC)",
+    "State": "NC",
+    "Conference": "Atlantic Sun Conference",
+    "Estimated Athlete pool": 150,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Quinnipiac",
+    "State": "CT",
+    "Conference": "Metro Atlantic Athletic Conference",
+    "Estimated Athlete pool": 137,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Radford",
+    "State": "VA",
+    "Conference": "Big South Conference",
+    "Estimated Athlete pool": 137,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Rider",
+    "State": "NJ",
+    "Conference": "Metro Atlantic Athletic Conference",
+    "Estimated Athlete pool": 143,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Robert Morris",
+    "State": "PA",
+    "Conference": "Horizon League",
+    "Estimated Athlete pool": 137,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Sacred Heart",
+    "State": "CT",
+    "Conference": "Metro Atlantic Athletic Conference",
+    "Estimated Athlete pool": 143,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "St. Bonaventure",
+    "State": "NY",
+    "Conference": "Atlantic 10 Conference",
+    "Estimated Athlete pool": 143,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Saint Francis (PA)",
+    "State": "PA",
+    "Conference": "NEC",
+    "Estimated Athlete pool": 173,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "St. John's",
+    "State": "NY",
+    "Conference": "Big East Conference",
+    "Estimated Athlete pool": 140,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Saint Louis",
+    "State": "MO",
+    "Conference": "Atlantic 10 Conference",
+    "Estimated Athlete pool": 153,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Saint Mary's",
+    "State": "CA",
+    "Conference": "West Coast Conference",
+    "Estimated Athlete pool": 133,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Saint Peter's",
+    "State": "NJ",
+    "Conference": "Metro Atlantic Athletic Conference",
+    "Estimated Athlete pool": 127,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Sam Houston",
+    "State": "TX",
+    "Conference": "Conference USA",
+    "Estimated Athlete pool": 140,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Samford",
+    "State": "AL",
+    "Conference": "Southern Conference",
+    "Estimated Athlete pool": 173,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "San Jose State",
+    "State": "CA",
+    "Conference": "Mountain West Conference",
+    "Estimated Athlete pool": 137,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Seattle",
+    "State": "WA",
+    "Conference": "West Coast Conference",
+    "Estimated Athlete pool": 140,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Siena",
+    "State": "NY",
+    "Conference": "Metro Atlantic Athletic Conference",
+    "Estimated Athlete pool": 163,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "South Carolina State",
+    "State": "SC",
+    "Conference": "Mid-Eastern Athletic Conference",
+    "Estimated Athlete pool": 153,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "South Dakota State",
+    "State": "SD",
+    "Conference": "Summit League",
+    "Estimated Athlete pool": 120,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "SEMO",
+    "State": "MO",
+    "Conference": "Ohio Valley Conference",
+    "Estimated Athlete pool": 137,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Southeastern Louisiana",
+    "State": "LA",
+    "Conference": "Southland Conference",
+    "Estimated Athlete pool": 140,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Southern",
+    "State": "LA",
+    "Conference": "Southwestern Athletic Conference",
+    "Estimated Athlete pool": 163,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Southern Illinois",
+    "State": "IL",
+    "Conference": "Missouri Valley Conference",
+    "Estimated Athlete pool": 127,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "SIUE",
+    "State": "IL",
+    "Conference": "Ohio Valley Conference",
+    "Estimated Athlete pool": 147,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Southern Utah",
+    "State": "UT",
+    "Conference": "Western Athletic Conference",
+    "Estimated Athlete pool": 157,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Great Danes",
+    "State": "NY",
+    "Conference": "America East Conference",
+    "Estimated Athlete pool": 150,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Binghamton",
+    "State": "NY",
+    "Conference": "America East Conference",
+    "Estimated Athlete pool": 133,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Buffalo",
+    "State": "NY",
+    "Conference": "Mid-American Conference",
+    "Estimated Athlete pool": 127,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Stony Brook",
+    "State": "NY",
+    "Conference": "Coastal Athletic Association",
+    "Estimated Athlete pool": 133,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Stephen F. Austin",
+    "State": "TX",
+    "Conference": "Southland Conference",
+    "Estimated Athlete pool": 150,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Stetson",
+    "State": "FL",
+    "Conference": "Atlantic Sun Conference",
+    "Estimated Athlete pool": 150,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Stonehill",
+    "State": "MA",
+    "Conference": "NEC",
+    "Estimated Athlete pool": 157,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Tarleton State",
+    "State": "TX",
+    "Conference": "Western Athletic Conference",
+    "Estimated Athlete pool": 167,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Temple",
+    "State": "PA",
+    "Conference": "American Conference",
+    "Estimated Athlete pool": 147,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Tennessee State",
+    "State": "TN",
+    "Conference": "Ohio Valley Conference",
+    "Estimated Athlete pool": 150,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Tennessee Tech",
+    "State": "TN",
+    "Conference": "Ohio Valley Conference",
+    "Estimated Athlete pool": 150,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Texas A&M-Corpus Christi",
+    "State": "TX",
+    "Conference": "Southland Conference",
+    "Estimated Athlete pool": 157,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Texas Southern",
+    "State": "TX",
+    "Conference": "Southwestern Athletic Conference",
+    "Estimated Athlete pool": 157,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Texas State",
+    "State": "TX",
+    "Conference": "Sun Belt Conference",
+    "Estimated Athlete pool": 133,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "The Citadel",
+    "State": "SC",
+    "Conference": "Southern Conference",
+    "Estimated Athlete pool": 167,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "William & Mary",
+    "State": "VA",
+    "Conference": "Coastal Athletic Association",
+    "Estimated Athlete pool": 143,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "George Washington",
+    "State": "DC",
+    "Conference": "Atlantic 10 Conference",
+    "Estimated Athlete pool": 147,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Ole Miss",
+    "State": "MS",
+    "Conference": "Southeastern Conference",
+    "Estimated Athlete pool": 140,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "New Mexico",
+    "State": "NM",
+    "Conference": "Mountain West Conference",
+    "Estimated Athlete pool": 127,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Chattanooga",
+    "State": "TN",
+    "Conference": "Southern Conference",
+    "Estimated Athlete pool": 150,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "UT Martin",
+    "State": "TN",
+    "Conference": "Ohio Valley Conference",
+    "Estimated Athlete pool": 147,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "UTEP",
+    "State": "TX",
+    "Conference": "Conference USA",
+    "Estimated Athlete pool": 140,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "UTRGV",
+    "State": "TX",
+    "Conference": "Southland Conference",
+    "Estimated Athlete pool": 153,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "UTSA",
+    "State": "TX",
+    "Conference": "American Conference",
+    "Estimated Athlete pool": 140,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Tulsa",
+    "State": "OK",
+    "Conference": "American Conference",
+    "Estimated Athlete pool": 143,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Vermont",
+    "State": "VT",
+    "Conference": "America East Conference",
+    "Estimated Athlete pool": 137,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Towson",
+    "State": "MD",
+    "Conference": "Coastal Athletic Association",
+    "Estimated Athlete pool": 147,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Troy",
+    "State": "AL",
+    "Conference": "Sun Belt Conference",
+    "Estimated Athlete pool": 143,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Air Force",
+    "State": "CO",
+    "Conference": "Mountain West Conference",
+    "Estimated Athlete pool": 160,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Army / Army West Point",
+    "State": "NY",
+    "Conference": "Patriot League",
+    "Estimated Athlete pool": 220,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Navy",
+    "State": "MD",
+    "Conference": "Patriot League",
+    "Estimated Athlete pool": 210,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "UAB",
+    "State": "AL",
+    "Conference": "American Conference",
+    "Estimated Athlete pool": 147,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Little Rock",
+    "State": "AR",
+    "Conference": "Ohio Valley Conference",
+    "Estimated Athlete pool": 137,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Arkansas-Pine Bluff",
+    "State": "AR",
+    "Conference": "Southwestern Athletic Conference",
+    "Estimated Athlete pool": 137,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "UC Davis",
+    "State": "CA",
+    "Conference": "Big West Conference",
+    "Estimated Athlete pool": 137,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "UC Irvine",
+    "State": "CA",
+    "Conference": "Big West Conference",
+    "Estimated Athlete pool": 150,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "UC Riverside",
+    "State": "CA",
+    "Conference": "Big West Conference",
+    "Estimated Athlete pool": 137,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "UC San Diego",
+    "State": "CA",
+    "Conference": "Big West Conference",
+    "Estimated Athlete pool": 140,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Central Arkansas",
+    "State": "AR",
+    "Conference": "Atlantic Sun Conference",
+    "Estimated Athlete pool": 157,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Delaware",
+    "State": "DE",
+    "Conference": "Conference USA",
+    "Estimated Athlete pool": 140,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Denver",
+    "State": "CO",
+    "Conference": "Summit League",
+    "Estimated Athlete pool": 143,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Detroit Mercy",
+    "State": "MI",
+    "Conference": "Horizon League",
+    "Estimated Athlete pool": 157,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Evansville",
+    "State": "IN",
+    "Conference": "Missouri Valley Conference",
+    "Estimated Athlete pool": 157,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Hawaiʻi",
+    "State": "HI",
+    "Conference": "Big West Conference",
+    "Estimated Athlete pool": 133,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Idaho",
+    "State": "ID",
+    "Conference": "Big Sky Conference",
+    "Estimated Athlete pool": 150,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "UIC",
+    "State": "IL",
+    "Conference": "Missouri Valley Conference",
+    "Estimated Athlete pool": 133,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Louisiana",
+    "State": "LA",
+    "Conference": "Sun Belt Conference",
+    "Estimated Athlete pool": 133,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "ULM",
+    "State": "LA",
+    "Conference": "Sun Belt Conference",
+    "Estimated Athlete pool": 137,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Maine",
+    "State": "ME",
+    "Conference": "America East Conference",
+    "Estimated Athlete pool": 143,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "UMBC",
+    "State": "MD",
+    "Conference": "America East Conference",
+    "Estimated Athlete pool": 150,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Maryland Eastern Shore",
+    "State": "MD",
+    "Conference": "Mid-Eastern Athletic Conference",
+    "Estimated Athlete pool": 137,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "UMass / Massachusetts",
+    "State": "MA",
+    "Conference": "Mid-American Conference",
+    "Estimated Athlete pool": 143,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "UMass Lowell",
+    "State": "MA",
+    "Conference": "America East Conference",
+    "Estimated Athlete pool": 130,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Missouri",
+    "State": "MO",
+    "Conference": "Southeastern Conference",
+    "Estimated Athlete pool": 153,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Kansas City",
+    "State": "MO",
+    "Conference": "Summit League",
+    "Estimated Athlete pool": 143,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Montana",
+    "State": "MT",
+    "Conference": "Big Sky Conference",
+    "Estimated Athlete pool": 140,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Omaha",
+    "State": "NE",
+    "Conference": "Summit League",
+    "Estimated Athlete pool": 133,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "New Hampshire",
+    "State": "NH",
+    "Conference": "America East Conference",
+    "Estimated Athlete pool": 137,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "New Orleans",
+    "State": "LA",
+    "Conference": "Southland Conference",
+    "Estimated Athlete pool": 147,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "North Alabama",
+    "State": "AL",
+    "Conference": "Atlantic Sun Conference",
+    "Estimated Athlete pool": 147,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "UNC Asheville",
+    "State": "NC",
+    "Conference": "Big South Conference",
+    "Estimated Athlete pool": 143,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Charlotte",
+    "State": "NC",
+    "Conference": "American Conference",
+    "Estimated Athlete pool": 143,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "UNC Greensboro",
+    "State": "NC",
+    "Conference": "Southern Conference",
+    "Estimated Athlete pool": 143,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "UNCW",
+    "State": "NC",
+    "Conference": "Coastal Athletic Association",
+    "Estimated Athlete pool": 147,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "North Dakota",
+    "State": "ND",
+    "Conference": "Summit League",
+    "Estimated Athlete pool": 137,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Northern Colorado",
+    "State": "CO",
+    "Conference": "Big Sky Conference",
+    "Estimated Athlete pool": 137,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Northern Iowa",
+    "State": "IA",
+    "Conference": "Missouri Valley Conference",
+    "Estimated Athlete pool": 150,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "North Florida",
+    "State": "FL",
+    "Conference": "Atlantic Sun Conference",
+    "Estimated Athlete pool": 123,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "North Texas",
+    "State": "TX",
+    "Conference": "American Conference",
+    "Estimated Athlete pool": 133,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Notre Dame",
+    "State": "IN",
+    "Conference": "Atlantic Coast Conference",
+    "Estimated Athlete pool": 160,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Penn",
+    "State": "PA",
+    "Conference": "Ivy League",
+    "Estimated Athlete pool": 157,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Portland",
+    "State": "OR",
+    "Conference": "West Coast Conference",
+    "Estimated Athlete pool": 147,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Rhode Island",
+    "State": "RI",
+    "Conference": "Atlantic 10 Conference",
+    "Estimated Athlete pool": 147,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Richmond",
+    "State": "VA",
+    "Conference": "Atlantic 10 Conference",
+    "Estimated Athlete pool": 153,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "St. Thomas",
+    "State": "MN",
+    "Conference": "Summit League",
+    "Estimated Athlete pool": 140,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "San Diego",
+    "State": "CA",
+    "Conference": "West Coast Conference",
+    "Estimated Athlete pool": 180,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "South Alabama",
+    "State": "AL",
+    "Conference": "Sun Belt Conference",
+    "Estimated Athlete pool": 120,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "USC Upstate",
+    "State": "SC",
+    "Conference": "Big South Conference",
+    "Estimated Athlete pool": 133,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "South Dakota",
+    "State": "SD",
+    "Conference": "Summit League",
+    "Estimated Athlete pool": 147,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Southern Indiana",
+    "State": "IN",
+    "Conference": "Ohio Valley Conference",
+    "Estimated Athlete pool": 150,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Southern Miss",
+    "State": "MS",
+    "Conference": "Sun Belt Conference",
+    "Estimated Athlete pool": 160,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "South Florida",
+    "State": "FL",
+    "Conference": "American Conference",
+    "Estimated Athlete pool": 137,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Incarnate Word",
+    "State": "TX",
+    "Conference": "Southland Conference",
+    "Estimated Athlete pool": 147,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Pacific",
+    "State": "CA",
+    "Conference": "West Coast Conference",
+    "Estimated Athlete pool": 153,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Green Bay",
+    "State": "WI",
+    "Conference": "Horizon League",
+    "Estimated Athlete pool": 143,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Utah Tech",
+    "State": "UT",
+    "Conference": "Western Athletic Conference",
+    "Estimated Athlete pool": 143,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Utah Valley",
+    "State": "UT",
+    "Conference": "Western Athletic Conference",
+    "Estimated Athlete pool": 130,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "VMI",
+    "State": "VA",
+    "Conference": "Southern Conference",
+    "Estimated Athlete pool": 140,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Virginia Tech",
+    "State": "VA",
+    "Conference": "Atlantic Coast Conference",
+    "Estimated Athlete pool": 140,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Wagner",
+    "State": "NY",
+    "Conference": "NEC",
+    "Estimated Athlete pool": 123,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Western Carolina",
+    "State": "NC",
+    "Conference": "Southern Conference",
+    "Estimated Athlete pool": 137,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Western Illinois",
+    "State": "IL",
+    "Conference": "Ohio Valley Conference",
+    "Estimated Athlete pool": 137,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Western Michigan",
+    "State": "MI",
+    "Conference": "Mid-American Conference",
+    "Estimated Athlete pool": 137,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Rice",
+    "State": "TX",
+    "Conference": "American Conference",
+    "Estimated Athlete pool": 153,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Winthrop",
+    "State": "SC",
+    "Conference": "Big South Conference",
+    "Estimated Athlete pool": 147,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Wofford",
+    "State": "SC",
+    "Conference": "Southern Conference",
+    "Estimated Athlete pool": 127,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Wright State",
+    "State": "OH",
+    "Conference": "Horizon League",
+    "Estimated Athlete pool": 127,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  },
+  {
+    "School name": "Youngstown State",
+    "State": "OH",
+    "Conference": "Horizon League",
+    "Estimated Athlete pool": 127,
+    "Pro Players Count": 0,
+    "Draft Probability": "0.00%",
+    "National Average": "0.86%",
+    "Vs_National_Average": "-0.86%"
+  }
+]
