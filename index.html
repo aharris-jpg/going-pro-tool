@@ -685,7 +685,7 @@
     table {
       width: 100%;
       border-collapse: collapse;
-      min-width: 900px;
+      min-width: 860px;
     }
 
     th, td {
@@ -1060,7 +1060,7 @@
                 <th>Rank</th>
                 <th>School</th>
                 <th>State</th>
-                <th>Conference</th>
+                <th id="conferenceHeader">Conference</th>
                 <th>Pro Players</th>
                 <th>Athlete Pool</th>
                 <th>Probability</th>
@@ -1301,10 +1301,16 @@
       return null;
     }
 
+    function normalizeConference(value) {
+      const cleaned = String(value ?? "").trim();
+      if (!cleaned || cleaned === "—" || cleaned === "-") return "";
+      return cleaned;
+    }
+
     function normalizeSchoolRecord(row, sport) {
       const schoolName = getValue(row, ["school_name", "School name", "School_Name", "Drafted Out of"]);
       const state = getValue(row, ["state", "State"]);
-      const conference = getValue(row, ["conference", "Conference"]) || "—";
+      const conference = normalizeConference(getValue(row, ["conference", "Conference"]));
       const estimatedAthletePool = parseNumber(getValue(row, ["estimated_athlete_pool", "Estimated Athlete pool", "Estimated Athlete Pool"]));
       const proPlayersCount = parseNumber(getValue(row, ["pro_players_count", "Pro Players Count"]));
       const schoolProbability = parseNumber(getValue(row, ["school_probability", "Draft Probability", "Pro_Probability"]));
@@ -1314,7 +1320,7 @@
         school_name: String(schoolName ?? "").trim(),
         sport,
         state: normalizeState(state),
-        conference: String(conference ?? "—").trim() || "—",
+        conference,
         estimated_athlete_pool: estimatedAthletePool,
         pro_players_count: proPlayersCount,
         school_probability: schoolProbability,
@@ -1395,6 +1401,18 @@
 
     function getSelectedTeamTier() {
       return document.getElementById("teamTierSelect").value;
+    }
+
+    function isConferenceVisibleForSport(sport) {
+      return sport !== "Baseball";
+    }
+
+    function updateConferenceVisibility() {
+      const sport = getSelectedSport();
+      const showConference = isConferenceVisibleForSport(sport);
+
+      document.getElementById("conferencePill").classList.toggle("hidden", !showConference);
+      document.getElementById("conferenceHeader").classList.toggle("hidden", !showConference);
     }
 
     function getProfileMultiplier() {
@@ -1490,6 +1508,8 @@
 
     function renderTopSchools() {
       const sport = getSelectedSport();
+      const showConference = isConferenceVisibleForSport(sport);
+
       const rows = getSportSchools(sport)
         .filter(row => row.school_probability !== null)
         .sort((a, b) => (b.school_probability ?? -1) - (a.school_probability ?? -1))
@@ -1498,13 +1518,13 @@
       document.getElementById("topSchoolsTitle").textContent = `Top 10 Schools in ${sport}`;
       document.getElementById("topSchoolsSubtitle").textContent = `Schools with the strongest historical odds of producing pro athletes in ${sport}.`;
 
-      document.getElementById("topSchools").innerHTML = rows.map((row, index) =>
-        createRankingItem(
-          index + 1,
-          row.school_name,
-          `${getStateName(row.state)} · ${row.conference} · ${formatOddsFromProb(row.school_probability)} · ${formatPercent(row.school_probability)}`
-        )
-      ).join("");
+      document.getElementById("topSchools").innerHTML = rows.map((row, index) => {
+        const subtitle = showConference
+          ? `${getStateName(row.state)} · ${row.conference} · ${formatOddsFromProb(row.school_probability)} · ${formatPercent(row.school_probability)}`
+          : `${getStateName(row.state)} · ${formatOddsFromProb(row.school_probability)} · ${formatPercent(row.school_probability)}`;
+
+        return createRankingItem(index + 1, row.school_name, subtitle);
+      }).join("");
     }
 
     function renderTopStates() {
@@ -1642,20 +1662,21 @@
 
     function renderFullRanking() {
       const rows = getFilteredRankingRows();
+      const showConference = isConferenceVisibleForSport(getSelectedSport());
 
       document.getElementById("fullRankingBody").innerHTML = rows.length ? rows.map((row, index) => `
         <tr>
           <td>${index + 1}</td>
           <td><strong>${escapeHtml(row.school_name)}</strong></td>
           <td>${escapeHtml(getStateName(row.state))}</td>
-          <td>${escapeHtml(row.conference || "—")}</td>
+          ${showConference ? `<td>${escapeHtml(row.conference)}</td>` : ""}
           <td>${formatWhole(row.pro_players_count)}</td>
           <td>${formatWhole(row.estimated_athlete_pool)}</td>
           <td>${formatPercent(row.school_probability)}</td>
           <td>${formatOddsFromProb(row.school_probability)}</td>
         </tr>
       `).join("") : `
-        <tr><td colspan="8">No matching schools found.</td></tr>
+        <tr><td colspan="${showConference ? 8 : 7}">No matching schools found.</td></tr>
       `;
     }
 
@@ -1663,6 +1684,7 @@
       currentRenderedSchool = record;
       const adjusted = getAdjustedProbability(record);
       const stateProb = getStateProbability(record.state, record.sport);
+      const showConference = isConferenceVisibleForSport(record.sport);
 
       document.getElementById("resultSection").classList.remove("hidden");
       document.getElementById("noResults").classList.add("hidden");
@@ -1672,7 +1694,9 @@
 
       document.getElementById("sportPill").textContent = record.sport;
       document.getElementById("statePill").textContent = getStateName(record.state);
-      document.getElementById("conferencePill").textContent = record.conference || "—";
+
+      document.getElementById("conferencePill").classList.toggle("hidden", !showConference);
+      document.getElementById("conferencePill").textContent = record.conference || "";
 
       document.getElementById("adjustedProbability").textContent = formatPercent(adjusted);
       document.getElementById("adjustedOdds").textContent = formatOddsFromProb(adjusted);
@@ -1745,12 +1769,18 @@
         return;
       }
 
-      box.innerHTML = matches.map((row, index) => `
-        <div class="autocomplete-item ${index === autocompleteIndex ? "active" : ""}" data-school="${escapeHtml(row.school_name)}">
-          <div class="autocomplete-title">${escapeHtml(row.school_name)}</div>
-          <div class="autocomplete-sub">${escapeHtml(getStateName(row.state))} · ${escapeHtml(row.conference || "—")} · ${formatOddsFromProb(row.school_probability)}</div>
-        </div>
-      `).join("");
+      box.innerHTML = matches.map((row, index) => {
+        const sub = isConferenceVisibleForSport(row.sport)
+          ? `${escapeHtml(getStateName(row.state))} · ${escapeHtml(row.conference)} · ${formatOddsFromProb(row.school_probability)}`
+          : `${escapeHtml(getStateName(row.state))} · ${formatOddsFromProb(row.school_probability)}`;
+
+        return `
+          <div class="autocomplete-item ${index === autocompleteIndex ? "active" : ""}" data-school="${escapeHtml(row.school_name)}">
+            <div class="autocomplete-title">${escapeHtml(row.school_name)}</div>
+            <div class="autocomplete-sub">${sub}</div>
+          </div>
+        `;
+      }).join("");
 
       box.classList.remove("hidden");
 
@@ -1807,6 +1837,7 @@
     }
 
     function renderAllSportSections() {
+      updateConferenceVisibility();
       updateSportVisuals();
       renderTopSchools();
       renderTopStates();
