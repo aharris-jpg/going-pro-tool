@@ -249,7 +249,7 @@
       margin-bottom: 18px;
     }
 
-    .sport-feature {
+    .feature-split {
       display: grid;
       grid-template-columns: minmax(280px, 0.95fr) minmax(0, 1.05fr);
       gap: 22px;
@@ -257,29 +257,30 @@
       overflow: hidden;
     }
 
-    .sport-feature-image {
+    .feature-image {
       min-height: 300px;
       border-radius: 22px;
       background-size: cover;
       background-position: center;
       transition: background-image 0.35s ease;
+      box-shadow: var(--shadow-soft);
     }
 
-    .sport-feature-copy {
+    .feature-copy {
       display: flex;
       flex-direction: column;
       justify-content: center;
       padding: 6px 0;
     }
 
-    .sport-feature-copy h2 {
+    .feature-copy h2 {
       margin: 0 0 10px;
       font-size: 34px;
       line-height: 1.04;
       letter-spacing: -0.03em;
     }
 
-    .sport-feature-copy p {
+    .feature-copy p {
       margin: 0 0 14px;
       color: var(--muted);
       font-size: 16px;
@@ -287,14 +288,14 @@
       max-width: 640px;
     }
 
-    .sport-feature-meta {
+    .feature-meta {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
       margin-top: 4px;
     }
 
-    .sport-feature-chip,
+    .feature-chip,
     .pill {
       display: inline-block;
       padding: 9px 12px;
@@ -305,27 +306,36 @@
       color: #355188;
     }
 
-    .sport-gallery {
+    .inline-image-card {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 14px;
+      grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+      gap: 22px;
+      align-items: center;
+      overflow: hidden;
     }
 
-    .gallery-tile {
-      position: relative;
-      min-height: 200px;
-      border-radius: 20px;
-      overflow: hidden;
+    .inline-image {
+      min-height: 260px;
+      border-radius: 22px;
       background-size: cover;
       background-position: center;
+      transition: background-image 0.35s ease;
       box-shadow: var(--shadow-soft);
     }
 
-    .gallery-tile::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(180deg, rgba(16, 32, 25, 0.02) 0%, rgba(11, 20, 36, 0.22) 100%);
+    .inline-copy h2 {
+      margin: 0 0 10px;
+      font-size: 30px;
+      line-height: 1.06;
+      letter-spacing: -0.03em;
+    }
+
+    .inline-copy p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.6;
+      max-width: 620px;
     }
 
     .result-grid {
@@ -514,10 +524,6 @@
       grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
       gap: 22px;
       align-items: start;
-    }
-
-    .top-grid.single-column {
-      grid-template-columns: 1fr;
     }
 
     .source-grid {
@@ -762,11 +768,8 @@
 
     @media (max-width: 1080px) {
       .search-box,
-      .sport-gallery {
-        grid-template-columns: 1fr 1fr 1fr;
-      }
-
-      .sport-feature,
+      .feature-split,
+      .inline-image-card,
       .result-grid,
       .explain-grid,
       .findings-grid,
@@ -775,7 +778,8 @@
         grid-template-columns: 1fr;
       }
 
-      .sport-feature-image {
+      .feature-image,
+      .inline-image {
         min-height: 240px;
       }
     }
@@ -789,13 +793,14 @@
       .result-title { font-size: 30px; }
       .result-summary { font-size: 17px; }
       .score-value { font-size: 58px; }
-      .search-box,
-      .sport-gallery { grid-template-columns: 1fr; }
+      .search-box { grid-template-columns: 1fr; }
       .mini-stats { grid-template-columns: 1fr; }
       .findings-grid { gap: 14px; }
       .ranking-item { min-height: auto; }
-      .sport-feature-copy h2 { font-size: 28px; }
-      .gallery-tile { min-height: 180px; }
+      .feature-copy h2,
+      .inline-copy h2 { font-size: 28px; }
+      .feature-image,
+      .inline-image { min-height: 200px; }
     }
   </style>
 </head>
@@ -872,32 +877,18 @@
       <button class="btn" onclick="scrollToSection('methodSection')">Methodology</button>
     </div>
 
-    <section class="section-card sport-feature">
-      <div class="sport-feature-image" id="sportFeatureImage"></div>
-      <div class="sport-feature-copy">
+    <section class="section-card feature-split">
+      <div class="feature-image" id="sportFeatureImage"></div>
+      <div class="feature-copy">
         <h2 id="sportFeatureTitle">Football pipelines can be dramatically different from one program to the next.</h2>
         <p id="sportFeatureText">
           At the top end, the best football schools produce pros at multiples of the national baseline. That makes school context one of the biggest variables in the pathway to the next level.
         </p>
-        <div class="sport-feature-meta">
-          <span class="sport-feature-chip" id="sportFeatureChip1">School pipeline data</span>
-          <span class="sport-feature-chip" id="sportFeatureChip2">State comparison available</span>
-          <span class="sport-feature-chip" id="sportFeatureChip3">Profile-based estimate</span>
+        <div class="feature-meta">
+          <span class="feature-chip" id="sportFeatureChip1">School pipeline data</span>
+          <span class="feature-chip" id="sportFeatureChip2">State comparison available</span>
+          <span class="feature-chip" id="sportFeatureChip3">Profile-based estimate</span>
         </div>
-      </div>
-    </section>
-
-    <section class="section-card">
-      <div class="section-heading">
-        <div>
-          <h2>Sport Gallery</h2>
-          <p>Three visuals that change with the selected sport to give the page more personality.</p>
-        </div>
-      </div>
-      <div class="sport-gallery">
-        <div class="gallery-tile" id="galleryTile1"></div>
-        <div class="gallery-tile" id="galleryTile2"></div>
-        <div class="gallery-tile" id="galleryTile3"></div>
       </div>
     </section>
 
@@ -1004,6 +995,16 @@
         </div>
 
         <div class="findings-grid" id="findingsGrid"></div>
+      </section>
+
+      <section class="section-card inline-image-card">
+        <div class="inline-image" id="inlineSportImage"></div>
+        <div class="inline-copy">
+          <h2 id="inlineImageTitle">Where you play can shape the story as much as how you play.</h2>
+          <p id="inlineImageText">
+            The same athlete can face very different odds depending on the school pipeline they enter. That is what makes the environment layer so important in this tool.
+          </p>
+        </div>
       </section>
 
       <section id="topSection" class="section-card">
@@ -1141,31 +1142,19 @@
 
     const SPORT_IMAGES = {
       "Football": {
-        hero: "https://images.unsplash.com/photo-1566577739112-5180d4bf9390?q=80&w=1452&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        feature: "https://images.unsplash.com/flagged/photo-1576552308911-9096e1029bd3?q=80&w=928&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        gallery: [
-          "https://images.unsplash.com/flagged/photo-1576552308911-9096e1029bd3?q=80&w=928&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          "https://images.unsplash.com/photo-1566577739112-5180d4bf9390?q=80&w=1452&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          "https://images.unsplash.com/photo-1625982503303-5a3e849260a7?q=80&w=1436&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        ]
+        hero: "https://images.unsplash.com/flagged/photo-1576552308911-9096e1029bd3?q=80&w=928&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        feature: "https://images.unsplash.com/photo-1566577739112-5180d4bf9390?q=80&w=1452&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        inline: "https://images.unsplash.com/photo-1625982503303-5a3e849260a7?q=80&w=1436&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       },
       "Basketball": {
         hero: "https://images.unsplash.com/photo-1546519638-68e109498ffc?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         feature: "https://images.unsplash.com/photo-1504450758481-7338eba7524a?q=80&w=1738&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        gallery: [
-          "https://images.unsplash.com/photo-1546519638-68e109498ffc?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          "https://images.unsplash.com/photo-1504450758481-7338eba7524a?q=80&w=1738&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          "https://images.unsplash.com/photo-1629901925121-8a141c2a42f4?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        ]
+        inline: "https://images.unsplash.com/photo-1629901925121-8a141c2a42f4?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       },
       "Baseball": {
         hero: "https://images.unsplash.com/photo-1516731415730-0c607149933a?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         feature: "https://images.unsplash.com/photo-1624375664562-fff61869fe8f?q=80&w=2062&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        gallery: [
-          "https://images.unsplash.com/photo-1516731415730-0c607149933a?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          "https://images.unsplash.com/photo-1624375664562-fff61869fe8f?q=80&w=2062&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          "https://images.unsplash.com/photo-1475440197469-e367ec8eeb19?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        ]
+        inline: "https://images.unsplash.com/photo-1475440197469-e367ec8eeb19?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
       }
     };
 
@@ -1173,17 +1162,23 @@
       "Football": {
         title: "Football pipelines can be dramatically different from one program to the next.",
         text: "At the top end, the best football schools produce pros at multiples of the national baseline. That makes school context one of the biggest variables in the pathway to the next level.",
-        chips: ["School pipeline data", "State comparison available", "Profile-based estimate"]
+        chips: ["School pipeline data", "State comparison available", "Profile-based estimate"],
+        inlineTitle: "Football is where pipeline strength becomes easiest to see.",
+        inlineText: "The strongest programs consistently turn roster depth into pro output, which is why school history matters so much in the football version of the tool."
       },
       "Basketball": {
         title: "Basketball is the most compressed pipeline in the tool.",
         text: "With fewer roster spots and fewer pro opportunities, small differences between schools can make a huge difference in the odds. That makes the top basketball programs especially powerful filters.",
-        chips: ["Highly concentrated pathway", "State comparison available", "Profile-based estimate"]
+        chips: ["Highly concentrated pathway", "State comparison available", "Profile-based estimate"],
+        inlineTitle: "Basketball rewards a small group of elite pipelines.",
+        inlineText: "Because the pathway is so narrow, top basketball schools can separate sharply from the rest of the field, even before you layer on player profile adjustments."
       },
       "Baseball": {
         title: "Baseball combines strong pipelines with bigger athlete pools.",
         text: "The strongest baseball programs separate through both raw pro-player output and progression rate. That makes school environment a major part of the story, even before profile adjustments are applied.",
-        chips: ["School pipeline data", "Derived state rankings", "Profile-based estimate"]
+        chips: ["School pipeline data", "Derived state rankings", "Profile-based estimate"],
+        inlineTitle: "Baseball's story is not just efficiency. It is also volume.",
+        inlineText: "The best baseball schools can combine bigger athlete pools with unusually strong progression rates, which helps explain why a few programs stand out so clearly."
       }
     };
 
@@ -1481,15 +1476,16 @@
 
       document.getElementById("heroSection").style.backgroundImage = `url('${imageSet.hero}')`;
       document.getElementById("sportFeatureImage").style.backgroundImage = `url('${imageSet.feature}')`;
+      document.getElementById("inlineSportImage").style.backgroundImage = `url('${imageSet.inline}')`;
+
       document.getElementById("sportFeatureTitle").textContent = copySet.title;
       document.getElementById("sportFeatureText").textContent = copySet.text;
       document.getElementById("sportFeatureChip1").textContent = copySet.chips[0];
       document.getElementById("sportFeatureChip2").textContent = copySet.chips[1];
       document.getElementById("sportFeatureChip3").textContent = copySet.chips[2];
 
-      document.getElementById("galleryTile1").style.backgroundImage = `url('${imageSet.gallery[0]}')`;
-      document.getElementById("galleryTile2").style.backgroundImage = `url('${imageSet.gallery[1]}')`;
-      document.getElementById("galleryTile3").style.backgroundImage = `url('${imageSet.gallery[2]}')`;
+      document.getElementById("inlineImageTitle").textContent = copySet.inlineTitle;
+      document.getElementById("inlineImageText").textContent = copySet.inlineText;
     }
 
     function renderTopSchools() {
@@ -1518,12 +1514,7 @@
         .sort((a, b) => (b.state_probability ?? -1) - (a.state_probability ?? -1))
         .slice(0, 10);
 
-      const topGrid = document.getElementById("topGrid");
-      const topStatesWrap = document.getElementById("topStatesWrap");
       const wrapper = document.getElementById("topStates");
-
-      topGrid.classList.remove("single-column");
-      topStatesWrap.classList.remove("hidden");
 
       document.getElementById("topStatesTitle").textContent = `Top 10 States in ${sport}`;
       document.getElementById("topStatesSubtitle").textContent = `States with the strongest pro progression rates in ${sport}.`;
