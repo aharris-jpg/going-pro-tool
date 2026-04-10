@@ -8,23 +8,24 @@
     name="description"
     content="Search your school and sport to estimate the odds of going pro, then compare your school against state and national baselines."
   />
-
   <meta property="og:title" content="The Odds of Going Pro: What Are Your Chances?" />
   <meta property="og:description" content="Search your school and sport to estimate your odds of going pro." />
   <meta property="og:type" content="website" />
 
   <style>
     :root {
-      --bg: #f5f7f6;
+      --bg: #f5f7f8;
       --card: rgba(255,255,255,0.92);
       --text: #102019;
       --muted: #667872;
       --border: #dce6e1;
-      --brand-dark: #0c1713;
-      --brand-green: #1f9a64;
-      --brand-green-dark: #16774d;
-      --brand-green-soft: #e9f6ef;
-      --brand-charcoal: #17261f;
+
+      --brand-dark: #0b1424;
+      --brand-green: #1f3c88;
+      --brand-green-dark: #162e66;
+      --brand-green-soft: #e9effb;
+      --brand-charcoal: #18253d;
+
       --shadow: 0 14px 36px rgba(13, 31, 24, 0.08);
       --shadow-soft: 0 10px 24px rgba(13, 31, 24, 0.05);
       --radius: 24px;
@@ -38,9 +39,9 @@
       font-family: Arial, Helvetica, sans-serif;
       color: var(--text);
       background:
-        radial-gradient(circle at top left, rgba(31, 154, 100, 0.08), transparent 25%),
-        radial-gradient(circle at top right, rgba(13, 31, 24, 0.06), transparent 22%),
-        linear-gradient(180deg, #edf3f0 0%, #f5f7f6 20%, #f5f7f6 100%);
+        radial-gradient(circle at top left, rgba(31, 60, 136, 0.08), transparent 25%),
+        radial-gradient(circle at top right, rgba(11, 20, 36, 0.06), transparent 22%),
+        linear-gradient(180deg, #eef2f7 0%, #f5f7f8 20%, #f5f7f8 100%);
     }
 
     .page {
@@ -51,9 +52,9 @@
 
     .hero {
       background:
-        radial-gradient(circle at 88% 20%, rgba(78, 214, 143, 0.22), transparent 16%),
-        radial-gradient(circle at 12% 90%, rgba(37, 184, 113, 0.16), transparent 18%),
-        linear-gradient(135deg, #0a1511 0%, #0f261d 42%, #17613f 100%);
+        radial-gradient(circle at 88% 20%, rgba(122, 164, 255, 0.22), transparent 16%),
+        radial-gradient(circle at 12% 90%, rgba(77, 124, 255, 0.16), transparent 18%),
+        linear-gradient(135deg, #0a1324 0%, #132644 42%, #1f3c88 100%);
       color: #fff;
       border-radius: 30px;
       padding: 28px 20px 18px;
@@ -175,7 +176,7 @@
 
     .autocomplete-item:last-child { border-bottom: none; }
     .autocomplete-item:hover,
-    .autocomplete-item.active { background: #f5fbf8; }
+    .autocomplete-item.active { background: #f5f8ff; }
 
     .autocomplete-title {
       font-size: 14px;
@@ -269,13 +270,13 @@
       border-radius: 999px;
       font-size: 13px;
       font-weight: 700;
-      background: #eef4f1;
-      color: #355147;
+      background: #eef4fb;
+      color: #355188;
     }
 
     .score-card {
-      background: linear-gradient(135deg, #eef8f2 0%, #f8fcfa 100%);
-      border: 1px solid #d8e9df;
+      background: linear-gradient(135deg, #eef3fb 0%, #f8fbfe 100%);
+      border: 1px solid #d8e2f0;
       border-radius: 24px;
       padding: 22px;
       display: flex;
@@ -341,7 +342,7 @@
     .mini-stats {
       margin-top: 16px;
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 14px;
     }
 
@@ -408,7 +409,7 @@
       height: 100%;
       border-radius: 999px;
       transition: width 0.45s ease;
-      background: linear-gradient(90deg, var(--brand-green), #27b373);
+      background: linear-gradient(90deg, var(--brand-green), #4d77dc);
     }
 
     .bar-scale {
@@ -444,7 +445,8 @@
     .copy-box h3,
     .finding h3 {
       margin: 0 0 8px;
-      font-size: 17px;
+      font-size: 18px;
+      line-height: 1.3;
     }
 
     .copy-box p,
@@ -699,7 +701,7 @@
       <div class="eyebrow">Going Pro Odds Index 2026</div>
       <h1>The Odds of Going Pro: What Are Your Chances?</h1>
       <p class="subhead">
-        Search your school and sport to estimate your chances of reaching the pros, then compare your program against state and national baselines.
+        Search your school and sport to estimate your chances of reaching the pros, based on real progression data from more than 1,000 school-sport combinations.
       </p>
 
       <div class="search-panel">
@@ -746,7 +748,7 @@
 
         <div class="search-meta">
           <div id="searchHint">
-            Try: <strong>University of Alabama</strong>, <strong>Duke University</strong>, <strong>Vanderbilt University</strong>
+            Try: <strong>Penn State</strong>, <strong>Duke</strong>, <strong>Arkansas</strong>
           </div>
           <div id="datasetCount">Loading dataset...</div>
         </div>
@@ -800,7 +802,7 @@
             <div class="mini-help" id="schoolBaselineProb">0%</div>
           </div>
 
-          <div class="mini-stat">
+          <div class="mini-stat" id="stateAverageCard">
             <div class="mini-label">State Average</div>
             <div class="mini-value" id="stateAverageOdds">1 in —</div>
             <div class="mini-help" id="stateAverageProb">0%</div>
@@ -862,31 +864,11 @@
         <div class="section-heading">
           <div>
             <h2>Key Findings</h2>
-            <p>The main story in this tool is not just talent. It is environment.</p>
+            <p id="findingsIntro">These are the clearest patterns in the selected sport.</p>
           </div>
         </div>
 
-        <div class="findings-grid">
-          <div class="finding">
-            <h3>School matters more than most athletes think.</h3>
-            <p>Two players in the same sport can face very different odds depending on the school pipeline they enter. Program history changes the baseline dramatically.</p>
-          </div>
-
-          <div class="finding">
-            <h3>Even the best pipelines still produce long odds.</h3>
-            <p>Top schools outperform the national average, but reaching the pros remains rare. That tension between ambition and reality is the core story of the index.</p>
-          </div>
-
-          <div class="finding">
-            <h3>State context helps explain broader opportunity.</h3>
-            <p>Some states consistently outperform others in athlete-to-pro conversion, which helps explain why school odds sit above or below the national average.</p>
-          </div>
-
-          <div class="finding">
-            <h3>Profile inputs nudge the estimate, but do not override the data.</h3>
-            <p>Year, role, and team tier affect the estimate modestly. The school’s historical pipeline remains the foundation of the result.</p>
-          </div>
-        </div>
+        <div class="findings-grid" id="findingsGrid"></div>
       </section>
 
       <section id="topSection" class="section-card">
@@ -968,7 +950,7 @@
               This tool starts with school-level progression rates by sport. Each school’s baseline probability reflects historical pro output relative to its estimated athlete pool.
             </p>
             <p>
-              The page then compares that school baseline with the state average and national average for the same sport.
+              The page then compares that school baseline with the state average and national average for the same sport, where sport-specific state data is available.
             </p>
             <p>
               To make the tool more interactive, it also applies a light profile adjustment based on year, playing level, and team tier. These are directional estimate refinements, not guarantees.
@@ -997,7 +979,7 @@
               </div>
               <div class="source-card">
                 <strong>State-level data</strong>
-                <p>Sport-by-state pro progression probabilities used for state comparison.</p>
+                <p>Sport-by-state pro progression probabilities used for state comparison where available.</p>
               </div>
               <div class="source-card">
                 <strong>Calculator layer</strong>
@@ -1020,6 +1002,60 @@
       basketball: "./data/basketball_data.json",
       baseball: "./data/baseball_data.json",
       states: "./data/state_probs.json"
+    };
+
+    const STATE_NAMES = {
+      AL: "Alabama",
+      AK: "Alaska",
+      AZ: "Arizona",
+      AR: "Arkansas",
+      CA: "California",
+      CO: "Colorado",
+      CT: "Connecticut",
+      DE: "Delaware",
+      FL: "Florida",
+      GA: "Georgia",
+      HI: "Hawaii",
+      ID: "Idaho",
+      IL: "Illinois",
+      IN: "Indiana",
+      IA: "Iowa",
+      KS: "Kansas",
+      KY: "Kentucky",
+      LA: "Louisiana",
+      ME: "Maine",
+      MD: "Maryland",
+      MA: "Massachusetts",
+      MI: "Michigan",
+      MN: "Minnesota",
+      MS: "Mississippi",
+      MO: "Missouri",
+      MT: "Montana",
+      NE: "Nebraska",
+      NV: "Nevada",
+      NH: "New Hampshire",
+      NJ: "New Jersey",
+      NM: "New Mexico",
+      NY: "New York",
+      NC: "North Carolina",
+      ND: "North Dakota",
+      OH: "Ohio",
+      OK: "Oklahoma",
+      OR: "Oregon",
+      PA: "Pennsylvania",
+      RI: "Rhode Island",
+      SC: "South Carolina",
+      SD: "South Dakota",
+      TN: "Tennessee",
+      TX: "Texas",
+      UT: "Utah",
+      VT: "Vermont",
+      VA: "Virginia",
+      WA: "Washington",
+      WV: "West Virginia",
+      WI: "Wisconsin",
+      WY: "Wyoming",
+      DC: "District of Columbia"
     };
 
     const YEAR_MULTIPLIERS = {
@@ -1112,6 +1148,11 @@
 
     function normalizeState(value) {
       return String(value ?? "").trim();
+    }
+
+    function getStateName(code) {
+      const state = normalizeState(code);
+      return STATE_NAMES[state] || state || "—";
     }
 
     function getValue(obj, keys) {
@@ -1212,7 +1253,10 @@
     function buildIntro(record) {
       const adjusted = getAdjustedProbability(record);
       const stateProb = getStateProbability(record.state, record.sport);
-      return `${record.school_name} in ${record.sport} has a school baseline of ${formatOddsFromProb(record.school_probability)}. With your selected profile, the estimate shifts to ${formatOddsFromProb(adjusted)} (${formatPercent(adjusted)}). The ${record.state} state average is ${formatOddsFromProb(stateProb)}, while the national average is ${formatOddsFromProb(record.national_probability)}.`;
+      const stateText = stateProb !== null
+        ? ` The ${getStateName(record.state)} state average is ${formatOddsFromProb(stateProb)}.`
+        : "";
+      return `${record.school_name} in ${record.sport} has a school baseline of ${formatOddsFromProb(record.school_probability)}. With your selected profile, the estimate shifts to ${formatOddsFromProb(adjusted)} (${formatPercent(adjusted)}).${stateText} The national average is ${formatOddsFromProb(record.national_probability)}.`;
     }
 
     function buildEstimateExplanation(record) {
@@ -1261,7 +1305,7 @@
         createRankingItem(
           index + 1,
           row.school_name,
-          `${row.state} · ${row.conference} · ${formatOddsFromProb(row.school_probability)} · ${formatPercent(row.school_probability)}`
+          `${getStateName(row.state)} · ${row.conference} · ${formatOddsFromProb(row.school_probability)} · ${formatPercent(row.school_probability)}`
         )
       ).join("");
     }
@@ -1276,13 +1320,105 @@
       document.getElementById("topStatesTitle").textContent = `Top 10 States in ${sport}`;
       document.getElementById("topStatesSubtitle").textContent = `States with the strongest pro progression rates in ${sport}.`;
 
-      document.getElementById("topStates").innerHTML = rows.map((row, index) =>
+      const wrapper = document.getElementById("topStates");
+
+      if (!rows.length) {
+        wrapper.innerHTML = `
+          <div class="ranking-item">
+            <div class="ranking-number">—</div>
+            <div>
+              <div class="ranking-title">State comparison unavailable</div>
+              <div class="ranking-sub">This version does not include state-level comparison data for ${sport}.</div>
+            </div>
+          </div>
+        `;
+        return;
+      }
+
+      wrapper.innerHTML = rows.map((row, index) =>
         createRankingItem(
           index + 1,
-          row.state,
+          getStateName(row.state),
           `${formatOddsFromProb(row.state_probability)} · ${formatPercent(row.state_probability)}`
         )
       ).join("");
+    }
+
+    function renderSportFindings() {
+      const sport = getSelectedSport();
+      const rows = getSportSchools(sport)
+        .filter(row => row.school_probability !== null && row.national_probability !== null)
+        .sort((a, b) => (b.school_probability ?? -1) - (a.school_probability ?? -1));
+
+      const topSchool = rows[0] || null;
+      const secondSchool = rows[1] || null;
+      const medianSchool = rows[Math.floor(rows.length / 2)] || null;
+      const nationalProb = topSchool ? parseNumber(topSchool.national_probability) : null;
+
+      const stateRows = allStateProbs
+        .filter(row => row.sport === sport && row.state_probability !== null)
+        .sort((a, b) => (b.state_probability ?? -1) - (a.state_probability ?? -1));
+
+      const topState = stateRows[0] || null;
+      const secondState = stateRows[1] || null;
+      const thirdState = stateRows[2] || null;
+
+      document.getElementById("findingsIntro").textContent =
+        `These are the clearest patterns in ${sport}, based on the current dataset.`;
+
+      const cards = [];
+
+      if (topSchool && nationalProb !== null) {
+        const ratio = nationalProb > 0 ? (parseNumber(topSchool.school_probability) / nationalProb) : null;
+        cards.push({
+          title: `${topSchool.school_name} sets the pace in ${sport.toLowerCase()}.`,
+          text: `${topSchool.school_name} leads at <strong>${formatPercent(topSchool.school_probability)}</strong>, or <strong>${formatOddsFromProb(topSchool.school_probability)}</strong>. The national average is <strong>${formatPercent(nationalProb)}</strong>, or <strong>${formatOddsFromProb(nationalProb)}</strong>${ratio ? `, making the top program about <strong>${ratio.toFixed(1)}x</strong> the national rate.` : "."}`
+        });
+      }
+
+      if (secondSchool) {
+        cards.push({
+          title: `The top tier pulls away quickly.`,
+          text: `${secondSchool.school_name} ranks near the top at <strong>${formatPercent(secondSchool.school_probability)}</strong>, or <strong>${formatOddsFromProb(secondSchool.school_probability)}</strong>, showing how sharply elite pipelines separate from the rest of the field.`
+        });
+      }
+
+      if (medianSchool && nationalProb !== null) {
+        cards.push({
+          title: `Most programs still offer long odds.`,
+          text: `Around the middle of the ${sport.toLowerCase()} dataset, ${medianSchool.school_name} sits at <strong>${formatPercent(medianSchool.school_probability)}</strong>, or <strong>${formatOddsFromProb(medianSchool.school_probability)}</strong>. That helps show how rare pro progression remains outside the very top pipelines.`
+        });
+      }
+
+      if (topState) {
+        let stateText = `${getStateName(topState.state)} leads state-level ${sport.toLowerCase()} progression at <strong>${formatPercent(topState.state_probability)}</strong>, or <strong>${formatOddsFromProb(topState.state_probability)}</strong>.`;
+        if (secondState && thirdState) {
+          stateText += ` It is followed by <strong>${getStateName(secondState.state)}</strong> at <strong>${formatPercent(secondState.state_probability)}</strong> and <strong>${getStateName(thirdState.state)}</strong> at <strong>${formatPercent(thirdState.state_probability)}</strong>.`;
+        }
+        cards.push({
+          title: `Geography still matters.`,
+          text: stateText
+        });
+      } else {
+        cards.push({
+          title: `This sport is driven mainly by school pipeline in this version.`,
+          text: `State-level comparison is not currently available for ${sport.toLowerCase()}, so the strongest signals here come from school history, athlete pool size, and pro output.`
+        });
+      }
+
+      cards.push({
+        title: `Profile changes help, but school history drives the estimate.`,
+        text: `Year, role, and team tier can move the estimate up or down, but every result still starts from the school's actual historical baseline in ${sport.toLowerCase()}.`
+      });
+
+      const trimmedCards = cards.slice(0, 5);
+
+      document.getElementById("findingsGrid").innerHTML = trimmedCards.map(card => `
+        <div class="finding">
+          <h3>${card.title}</h3>
+          <p>${card.text}</p>
+        </div>
+      `).join("");
     }
 
     function setSortButtons() {
@@ -1320,7 +1456,7 @@
         <tr>
           <td>${index + 1}</td>
           <td><strong>${escapeHtml(row.school_name)}</strong></td>
-          <td>${escapeHtml(row.state || "—")}</td>
+          <td>${escapeHtml(getStateName(row.state))}</td>
           <td>${escapeHtml(row.conference || "—")}</td>
           <td>${formatWhole(row.pro_players_count)}</td>
           <td>${formatWhole(row.estimated_athlete_pool)}</td>
@@ -1344,7 +1480,7 @@
       document.getElementById("schoolIntro").textContent = buildIntro(record);
 
       document.getElementById("sportPill").textContent = record.sport;
-      document.getElementById("statePill").textContent = record.state || "—";
+      document.getElementById("statePill").textContent = getStateName(record.state);
       document.getElementById("conferencePill").textContent = record.conference || "—";
 
       document.getElementById("adjustedProbability").textContent = formatPercent(adjusted);
@@ -1355,8 +1491,14 @@
       document.getElementById("schoolBaselineOdds").textContent = formatOddsFromProb(record.school_probability);
       document.getElementById("schoolBaselineProb").textContent = formatPercent(record.school_probability);
 
-      document.getElementById("stateAverageOdds").textContent = formatOddsFromProb(stateProb);
-      document.getElementById("stateAverageProb").textContent = formatPercent(stateProb);
+      const stateCard = document.getElementById("stateAverageCard");
+      if (stateProb !== null) {
+        stateCard.classList.remove("hidden");
+        document.getElementById("stateAverageOdds").textContent = formatOddsFromProb(stateProb);
+        document.getElementById("stateAverageProb").textContent = formatPercent(stateProb);
+      } else {
+        stateCard.classList.add("hidden");
+      }
 
       document.getElementById("nationalAverageOdds").textContent = formatOddsFromProb(record.national_probability);
       document.getElementById("nationalAverageProb").textContent = formatPercent(record.national_probability);
@@ -1415,7 +1557,7 @@
       box.innerHTML = matches.map((row, index) => `
         <div class="autocomplete-item ${index === autocompleteIndex ? "active" : ""}" data-school="${escapeHtml(row.school_name)}">
           <div class="autocomplete-title">${escapeHtml(row.school_name)}</div>
-          <div class="autocomplete-sub">${escapeHtml(row.state)} · ${escapeHtml(row.conference || "—")} · ${formatOddsFromProb(row.school_probability)}</div>
+          <div class="autocomplete-sub">${escapeHtml(getStateName(row.state))} · ${escapeHtml(row.conference || "—")} · ${formatOddsFromProb(row.school_probability)}</div>
         </div>
       `).join("");
 
@@ -1473,6 +1615,13 @@
       history.replaceState({}, "", url);
     }
 
+    function renderAllSportSections() {
+      renderTopSchools();
+      renderTopStates();
+      renderSportFindings();
+      renderFullRanking();
+    }
+
     function applyUrlParams() {
       const params = new URLSearchParams(window.location.search);
       const school = params.get("school");
@@ -1484,9 +1633,7 @@
         if (exists) select.value = sport;
       }
 
-      renderTopSchools();
-      renderTopStates();
-      renderFullRanking();
+      renderAllSportSections();
 
       if (school) {
         document.getElementById("schoolSearch").value = school;
@@ -1583,9 +1730,7 @@
 
     document.getElementById("sportSelect").addEventListener("change", function () {
       hideAutocomplete();
-      renderTopSchools();
-      renderTopStates();
-      renderFullRanking();
+      renderAllSportSections();
 
       const schoolInput = document.getElementById("schoolSearch").value.trim();
       if (schoolInput) {
