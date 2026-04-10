@@ -15,15 +15,15 @@
   <style>
     :root {
       --bg: #f5f7f8;
-      --card: rgba(255,255,255,0.92);
+      --card: rgba(255,255,255,0.94);
       --text: #102019;
       --muted: #667872;
       --border: #dce6e1;
 
       --brand-dark: #0b1424;
-      --brand-green: #1f3c88;
-      --brand-green-dark: #162e66;
-      --brand-green-soft: #e9effb;
+      --brand-blue: #1f3c88;
+      --brand-blue-dark: #162e66;
+      --brand-blue-soft: #e9effb;
       --brand-charcoal: #18253d;
 
       --shadow: 0 14px 36px rgba(13, 31, 24, 0.08);
@@ -45,16 +45,12 @@
     }
 
     .page {
-      max-width: 1160px;
+      max-width: 1180px;
       margin: 0 auto;
       padding: 20px 14px 72px;
     }
 
     .hero {
-      background:
-        radial-gradient(circle at 88% 20%, rgba(122, 164, 255, 0.22), transparent 16%),
-        radial-gradient(circle at 12% 90%, rgba(77, 124, 255, 0.16), transparent 18%),
-        linear-gradient(135deg, #0a1324 0%, #132644 42%, #1f3c88 100%);
       color: #fff;
       border-radius: 30px;
       padding: 28px 20px 18px;
@@ -62,6 +58,23 @@
       margin-bottom: 18px;
       position: relative;
       overflow: hidden;
+      background-size: cover;
+      background-position: center;
+      transition: background-image 0.35s ease;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(135deg, rgba(10, 19, 36, 0.88) 0%, rgba(19, 38, 68, 0.78) 42%, rgba(31, 60, 136, 0.68) 100%);
+      z-index: 0;
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 1;
     }
 
     .eyebrow {
@@ -74,20 +87,21 @@
       text-transform: uppercase;
       letter-spacing: 0.07em;
       margin-bottom: 14px;
+      backdrop-filter: blur(4px);
     }
 
     h1 {
       margin: 0 0 12px;
       font-size: 54px;
       line-height: 0.95;
-      max-width: 800px;
+      max-width: 820px;
       letter-spacing: -0.04em;
     }
 
     .subhead {
       margin: 0;
-      max-width: 820px;
-      color: rgba(255,255,255,0.92);
+      max-width: 860px;
+      color: rgba(255,255,255,0.94);
       font-size: 18px;
       line-height: 1.42;
     }
@@ -98,11 +112,12 @@
       border: 1px solid rgba(255,255,255,0.14);
       border-radius: 22px;
       padding: 14px;
+      backdrop-filter: blur(6px);
     }
 
     .search-box {
       display: grid;
-      grid-template-columns: 1.5fr 0.9fr 0.8fr 0.9fr 0.9fr auto;
+      grid-template-columns: 1.6fr 0.9fr 0.8fr 0.9fr 0.9fr auto;
       gap: 10px;
       align-items: start;
     }
@@ -198,7 +213,7 @@
       gap: 8px;
       margin-top: 10px;
       font-size: 14px;
-      color: rgba(255,255,255,0.84);
+      color: rgba(255,255,255,0.86);
     }
 
     .loading,
@@ -229,16 +244,71 @@
     .section-card {
       background: var(--card);
       border-radius: var(--radius);
-      padding: 18px;
+      padding: 20px;
       box-shadow: var(--shadow-soft);
       border: 1px solid var(--border);
-      margin-bottom: 16px;
+      margin-bottom: 18px;
+    }
+
+    .sport-feature {
+      display: grid;
+      grid-template-columns: minmax(280px, 0.95fr) minmax(0, 1.05fr);
+      gap: 22px;
+      align-items: stretch;
+      overflow: hidden;
+    }
+
+    .sport-feature-image {
+      min-height: 300px;
+      border-radius: 22px;
+      background-size: cover;
+      background-position: center;
+      transition: background-image 0.35s ease;
+    }
+
+    .sport-feature-copy {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 6px 0;
+    }
+
+    .sport-feature-copy h2 {
+      margin: 0 0 10px;
+      font-size: 34px;
+      line-height: 1.04;
+      letter-spacing: -0.03em;
+    }
+
+    .sport-feature-copy p {
+      margin: 0 0 14px;
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.55;
+      max-width: 640px;
+    }
+
+    .sport-feature-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 4px;
+    }
+
+    .sport-feature-chip {
+      display: inline-block;
+      padding: 9px 12px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 700;
+      background: #eef4fb;
+      color: #355188;
     }
 
     .result-grid {
       display: grid;
       grid-template-columns: 1.1fr 0.9fr;
-      gap: 18px;
+      gap: 22px;
     }
 
     .result-title {
@@ -252,7 +322,7 @@
       margin: 12px 0 0;
       color: var(--muted);
       line-height: 1.45;
-      max-width: 680px;
+      max-width: 700px;
       font-size: 18px;
     }
 
@@ -278,13 +348,11 @@
       background: linear-gradient(135deg, #eef3fb 0%, #f8fbfe 100%);
       border: 1px solid #d8e2f0;
       border-radius: 24px;
-      padding: 22px;
+      padding: 24px;
       display: flex;
       flex-direction: column;
       justify-content: center;
       min-height: 250px;
-      position: relative;
-      overflow: hidden;
       box-shadow: inset 0 1px 0 rgba(255,255,255,0.7);
     }
 
@@ -294,9 +362,7 @@
       font-weight: 700;
       margin-bottom: 10px;
       line-height: 1.35;
-      max-width: 280px;
-      position: relative;
-      z-index: 1;
+      max-width: 300px;
     }
 
     .score-value {
@@ -305,8 +371,6 @@
       font-weight: 800;
       color: var(--brand-charcoal);
       letter-spacing: -0.05em;
-      position: relative;
-      z-index: 1;
     }
 
     .score-sub {
@@ -314,7 +378,7 @@
       font-size: 20px;
       line-height: 1.2;
       font-weight: 800;
-      color: var(--brand-green-dark);
+      color: var(--brand-blue-dark);
     }
 
     .score-note {
@@ -322,9 +386,7 @@
       font-size: 14px;
       line-height: 1.5;
       color: #51615c;
-      max-width: 340px;
-      position: relative;
-      z-index: 1;
+      max-width: 360px;
     }
 
     .share-row {
@@ -335,12 +397,12 @@
     }
 
     .share-btn {
-      background: var(--brand-green);
+      background: var(--brand-blue);
       color: #fff;
     }
 
     .mini-stats {
-      margin-top: 16px;
+      margin-top: 18px;
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 14px;
@@ -378,7 +440,7 @@
     }
 
     .bar-wrap {
-      margin-top: 16px;
+      margin-top: 18px;
       background: #fbfcfc;
       border: 1px solid var(--border);
       border-radius: 18px;
@@ -409,7 +471,7 @@
       height: 100%;
       border-radius: 999px;
       transition: width 0.45s ease;
-      background: linear-gradient(90deg, var(--brand-green), #4d77dc);
+      background: linear-gradient(90deg, var(--brand-blue), #4d77dc);
     }
 
     .bar-scale {
@@ -420,33 +482,51 @@
       color: #7a8984;
     }
 
-    .explain-grid,
-    .findings-grid,
-    .top-grid,
-    .source-grid {
+    .explain-grid {
       display: grid;
-      gap: 14px;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 18px;
     }
 
-    .explain-grid,
-    .top-grid { grid-template-columns: 1fr 1fr; }
-    .findings-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    .source-grid { grid-template-columns: 1fr 1fr 1fr; }
+    .findings-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      margin-top: 8px;
+    }
+
+    .top-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
+      gap: 22px;
+      align-items: start;
+    }
+
+    .top-grid.single-column {
+      grid-template-columns: 1fr;
+    }
+
+    .source-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 14px;
+    }
 
     .copy-box,
     .finding,
     .source-card {
       border: 1px solid var(--border);
       border-radius: 18px;
-      padding: 16px;
+      padding: 18px;
       background: #fff;
     }
 
     .copy-box h3,
     .finding h3 {
-      margin: 0 0 8px;
+      margin: 0 0 10px;
       font-size: 18px;
-      line-height: 1.3;
+      line-height: 1.34;
     }
 
     .copy-box p,
@@ -454,7 +534,7 @@
     .source-card p {
       margin: 0;
       color: #53645f;
-      line-height: 1.55;
+      line-height: 1.58;
       font-size: 15px;
     }
 
@@ -464,7 +544,7 @@
       gap: 14px;
       align-items: center;
       flex-wrap: wrap;
-      margin-bottom: 12px;
+      margin-bottom: 14px;
     }
 
     .section-heading h2 {
@@ -485,7 +565,7 @@
     .ranking-list {
       display: flex;
       flex-direction: column;
-      gap: 12px;
+      gap: 14px;
     }
 
     .ranking-item {
@@ -493,11 +573,11 @@
       grid-template-columns: auto 1fr;
       gap: 12px;
       align-items: center;
-      padding: 16px;
+      padding: 18px;
       border-radius: 20px;
       border: 1px solid var(--border);
       background: linear-gradient(180deg, #ffffff 0%, #fbfdfc 100%);
-      min-height: 92px;
+      min-height: 96px;
     }
 
     .ranking-number {
@@ -508,8 +588,8 @@
       place-items: center;
       font-size: 13px;
       font-weight: 800;
-      color: var(--brand-green-dark);
-      background: var(--brand-green-soft);
+      color: var(--brand-blue-dark);
+      background: var(--brand-blue-soft);
       flex-shrink: 0;
     }
 
@@ -552,9 +632,9 @@
     }
 
     .toggle-btn.active {
-      background: var(--brand-green);
+      background: var(--brand-blue);
       color: #fff;
-      border-color: var(--brand-green);
+      border-color: var(--brand-blue);
     }
 
     .small-link-btn {
@@ -672,12 +752,21 @@
         grid-template-columns: 1fr 1fr 1fr;
       }
 
+      .sport-feature,
       .result-grid,
       .explain-grid,
       .findings-grid,
       .top-grid,
       .source-grid {
         grid-template-columns: 1fr;
+      }
+
+      .top-grid.single-column {
+        grid-template-columns: 1fr;
+      }
+
+      .sport-feature-image {
+        min-height: 240px;
       }
     }
 
@@ -692,69 +781,74 @@
       .score-value { font-size: 58px; }
       .search-box { grid-template-columns: 1fr; }
       .mini-stats { grid-template-columns: 1fr; }
+      .findings-grid { gap: 14px; }
+      .ranking-item { min-height: auto; }
+      .sport-feature-copy h2 { font-size: 28px; }
     }
   </style>
 </head>
 <body>
   <div class="page" id="top">
-    <header class="hero">
-      <div class="eyebrow">Going Pro Odds Index 2026</div>
-      <h1>The Odds of Going Pro: What Are Your Chances?</h1>
-      <p class="subhead">
-        Search your school and sport to estimate your chances of reaching the pros, based on real progression data from more than 1,000 school-sport combinations.
-      </p>
+    <header class="hero" id="heroSection">
+      <div class="hero-inner">
+        <div class="eyebrow">Going Pro Odds Index 2026</div>
+        <h1>The Odds of Going Pro: What Are Your Chances?</h1>
+        <p class="subhead">
+          Search your school and sport to estimate your chances of reaching the pros, based on real progression data from more than 1,000 school-sport combinations.
+        </p>
 
-      <div class="search-panel">
-        <div class="search-box">
-          <div class="search-field">
-            <input
-              type="text"
-              id="schoolSearch"
-              placeholder="Search for a school"
-              autocomplete="off"
-            />
-            <div id="autocomplete" class="autocomplete hidden"></div>
+        <div class="search-panel">
+          <div class="search-box">
+            <div class="search-field">
+              <input
+                type="text"
+                id="schoolSearch"
+                placeholder="Search for a school"
+                autocomplete="off"
+              />
+              <div id="autocomplete" class="autocomplete hidden"></div>
+            </div>
+
+            <select id="sportSelect" aria-label="Select sport">
+              <option value="Football">Football</option>
+              <option value="Basketball">Basketball</option>
+              <option value="Baseball">Baseball</option>
+            </select>
+
+            <select id="yearSelect" aria-label="Select year">
+              <option value="Freshman">Freshman</option>
+              <option value="Sophomore">Sophomore</option>
+              <option value="Junior">Junior</option>
+              <option value="Senior">Senior</option>
+            </select>
+
+            <select id="playingLevelSelect" aria-label="Select playing role">
+              <option value="Starter">Starter</option>
+              <option value="Key Contributor">Key Contributor</option>
+              <option value="Limited Role">Limited Role</option>
+              <option value="Depth Player">Depth Player</option>
+            </select>
+
+            <select id="teamTierSelect" aria-label="Select team tier">
+              <option value="Elite / Ranked">Elite / Ranked</option>
+              <option value="Strong">Strong</option>
+              <option value="Average">Average</option>
+              <option value="Lower">Lower</option>
+            </select>
+
+            <button id="searchButton">Search</button>
           </div>
 
-          <select id="sportSelect" aria-label="Select sport">
-            <option value="American Football">American Football</option>
-            <option value="Basketball">Basketball</option>
-            <option value="Baseball">Baseball</option>
-          </select>
-
-          <select id="yearSelect" aria-label="Select year">
-            <option value="Freshman">Freshman</option>
-            <option value="Sophomore">Sophomore</option>
-            <option value="Junior">Junior</option>
-            <option value="Senior">Senior</option>
-          </select>
-
-          <select id="playingLevelSelect" aria-label="Select playing level">
-            <option value="Starter">Starter</option>
-            <option value="Rotation">Rotation</option>
-            <option value="Bench">Bench</option>
-            <option value="Squad">Squad</option>
-          </select>
-
-          <select id="teamTierSelect" aria-label="Select team tier">
-            <option value="Elite / Ranked">Elite / Ranked</option>
-            <option value="Strong">Strong</option>
-            <option value="Average">Average</option>
-            <option value="Lower">Lower</option>
-          </select>
-
-          <button id="searchButton">Search</button>
-        </div>
-
-        <div class="search-meta">
-          <div id="searchHint">
-            Try: <strong>Penn State</strong>, <strong>Duke</strong>, <strong>Arkansas</strong>
+          <div class="search-meta">
+            <div id="searchHint">
+              Try: <strong>Penn State</strong>, <strong>Duke</strong>, <strong>Arkansas</strong>
+            </div>
+            <div id="datasetCount">Loading dataset...</div>
           </div>
-          <div id="datasetCount">Loading dataset...</div>
-        </div>
 
-        <div id="loadingState" class="loading">Loading school datasets...</div>
-        <div id="noResults" class="error hidden">No matching school found for that sport. Try a more exact school name.</div>
+          <div id="loadingState" class="loading">Loading school datasets...</div>
+          <div id="noResults" class="error hidden">No matching school found for that sport. Try a more exact school name.</div>
+        </div>
       </div>
     </header>
 
@@ -765,6 +859,21 @@
       <button class="btn" onclick="scrollToSection('rankingSection')">Full ranking</button>
       <button class="btn" onclick="scrollToSection('methodSection')">Methodology</button>
     </div>
+
+    <section class="section-card sport-feature">
+      <div class="sport-feature-image" id="sportFeatureImage"></div>
+      <div class="sport-feature-copy">
+        <h2 id="sportFeatureTitle">Football pipelines are defined by environment.</h2>
+        <p id="sportFeatureText">
+          The gap between top programs and the national baseline can be dramatic. This tool shows how much that environment can shape the path from college to the pros.
+        </p>
+        <div class="sport-feature-meta">
+          <span class="sport-feature-chip" id="sportFeatureChip1">School pipeline data</span>
+          <span class="sport-feature-chip" id="sportFeatureChip2">State comparison where available</span>
+          <span class="sport-feature-chip" id="sportFeatureChip3">Profile-based estimate</span>
+        </div>
+      </div>
+    </section>
 
     <main>
       <section id="resultSection" class="section-card hidden">
@@ -786,10 +895,10 @@
           </div>
 
           <div class="score-card">
-            <div class="score-label">Your Estimated Odds of Going Pro</div>
+            <div class="score-label">Your Estimated Odds of Going Pro Based on Your Profile</div>
             <div class="score-value" id="adjustedProbability">0%</div>
             <div class="score-sub" id="adjustedOdds">1 in —</div>
-            <div class="score-note" id="scoreNote">
+            <div class="score-note">
               This estimate starts with your school’s historical pipeline and applies light profile adjustments.
             </div>
           </div>
@@ -872,8 +981,8 @@
       </section>
 
       <section id="topSection" class="section-card">
-        <div class="top-grid">
-          <div>
+        <div class="top-grid" id="topGrid">
+          <div id="topSchoolsWrap">
             <div class="section-heading">
               <div>
                 <h2 id="topSchoolsTitle">Top 10 Schools</h2>
@@ -883,7 +992,7 @@
             <div id="topSchools" class="ranking-list"></div>
           </div>
 
-          <div>
+          <div id="topStatesWrap">
             <div class="section-heading">
               <div>
                 <h2 id="topStatesTitle">Top 10 States</h2>
@@ -953,11 +1062,11 @@
               The page then compares that school baseline with the state average and national average for the same sport, where sport-specific state data is available.
             </p>
             <p>
-              To make the tool more interactive, it also applies a light profile adjustment based on year, playing level, and team tier. These are directional estimate refinements, not guarantees.
+              To make the tool more interactive, it also applies a light profile adjustment based on year, playing role, and team tier. These are directional estimate refinements, not guarantees.
             </p>
             <p>
               In simple terms, the model is:
-              <strong>School Probability × Year Multiplier × Playing Level Multiplier × Team Tier Multiplier</strong>,
+              <strong>School Probability × Year × Playing Role × Team Tier</strong>,
               with the final result capped so the profile layer cannot overwhelm the school baseline.
             </p>
           </div>
@@ -983,7 +1092,7 @@
               </div>
               <div class="source-card">
                 <strong>Calculator layer</strong>
-                <p>Light profile multipliers based on year, playing level, and team tier to personalize the estimate.</p>
+                <p>Light profile multipliers based on year, playing role, and team tier to personalize the estimate.</p>
               </div>
             </div>
 
@@ -1002,6 +1111,39 @@
       basketball: "./data/basketball_data.json",
       baseball: "./data/baseball_data.json",
       states: "./data/state_probs.json"
+    };
+
+    const SPORT_IMAGES = {
+      "Football": {
+        hero: "https://images.unsplash.com/photo-1566577739112-5180d4bf9390?q=80&w=1452&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        feature: "https://images.unsplash.com/flagged/photo-1576552308911-9096e1029bd3?q=80&w=928&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      },
+      "Basketball": {
+        hero: "https://images.unsplash.com/photo-1546519638-68e109498ffc?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        feature: "https://images.unsplash.com/photo-1504450758481-7338eba7524a?q=80&w=1738&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      },
+      "Baseball": {
+        hero: "https://images.unsplash.com/photo-1516731415730-0c607149933a?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        feature: "https://images.unsplash.com/photo-1624375664562-fff61869fe8f?q=80&w=2062&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      }
+    };
+
+    const SPORT_COPY = {
+      "Football": {
+        title: "Football pipelines can be dramatically different from one program to the next.",
+        text: "At the top end, the best football schools produce pros at multiples of the national baseline. That makes school context one of the biggest variables in the pathway to the next level.",
+        chips: ["School pipeline data", "State comparison available", "Profile-based estimate"]
+      },
+      "Basketball": {
+        title: "Basketball is the most compressed pipeline in the tool.",
+        text: "With fewer roster spots and fewer pro opportunities, small differences between schools can make a huge difference in the odds. That makes the top basketball programs especially powerful filters.",
+        chips: ["Highly concentrated pathway", "State comparison available", "Profile-based estimate"]
+      },
+      "Baseball": {
+        title: "Baseball follows a longer and less uniform development path.",
+        text: "Unlike football and basketball, baseball progression is less concentrated and more school-driven in this version of the dataset. The strongest signals come from school pipeline history and pro player output.",
+        chips: ["School pipeline data", "National comparison available", "Profile-based estimate"]
+      }
     };
 
     const STATE_NAMES = {
@@ -1067,9 +1209,9 @@
 
     const PLAYING_LEVEL_MULTIPLIERS = {
       "Starter": 1.20,
-      "Rotation": 1.00,
-      "Bench": 0.82,
-      "Squad": 0.68
+      "Key Contributor": 1.00,
+      "Limited Role": 0.82,
+      "Depth Player": 0.68
     };
 
     const TEAM_TIER_MULTIPLIERS = {
@@ -1140,7 +1282,7 @@
     function normalizeSport(value) {
       const raw = String(value ?? "").trim().toLowerCase();
       if (!raw) return "";
-      if (raw.includes("football")) return "American Football";
+      if (raw.includes("football")) return "Football";
       if (raw.includes("basketball")) return "Basketball";
       if (raw.includes("baseball") || raw.includes("mlb")) return "Baseball";
       return value;
@@ -1170,7 +1312,6 @@
       const proPlayersCount = parseNumber(getValue(row, ["pro_players_count", "Pro Players Count"]));
       const schoolProbability = parseNumber(getValue(row, ["school_probability", "Draft Probability", "Pro_Probability"]));
       const nationalProbability = parseNumber(getValue(row, ["national_probability", "National Average", "College_to_Pro_Percentage"]));
-      const vsNational = parseNumber(getValue(row, ["vs_national_average", "Vs_National_Average", "Vs National Average"]));
 
       return {
         school_name: String(schoolName ?? "").trim(),
@@ -1181,7 +1322,6 @@
         pro_players_count: proPlayersCount,
         school_probability: schoolProbability,
         national_probability: nationalProbability,
-        vs_national_average: vsNational,
         rank_in_sport: null
       };
     }
@@ -1195,7 +1335,7 @@
     }
 
     function buildRankings() {
-      const sports = ["American Football", "Basketball", "Baseball"];
+      const sports = ["Football", "Basketball", "Baseball"];
       sports.forEach(sport => {
         const rows = allSchools
           .filter(row => row.sport === sport && row.school_probability !== null)
@@ -1253,7 +1393,7 @@
     function buildIntro(record) {
       const adjusted = getAdjustedProbability(record);
       const stateProb = getStateProbability(record.state, record.sport);
-      const stateText = stateProb !== null
+      const stateText = stateProb !== null && record.sport !== "Baseball"
         ? ` The ${getStateName(record.state)} state average is ${formatOddsFromProb(stateProb)}.`
         : "";
       return `${record.school_name} in ${record.sport} has a school baseline of ${formatOddsFromProb(record.school_probability)}. With your selected profile, the estimate shifts to ${formatOddsFromProb(adjusted)} (${formatPercent(adjusted)}).${stateText} The national average is ${formatOddsFromProb(record.national_probability)}.`;
@@ -1270,8 +1410,12 @@
       if (base === null || adjusted === null) return "Your profile adjustment is unavailable for this school.";
 
       const diff = adjusted - base;
-      const direction = diff > 0.00001 ? "above" : diff < -0.00001 ? "below" : "roughly in line with";
-      return `As a ${getSelectedYear().toLowerCase()} player in a ${getSelectedPlayingLevel().toLowerCase()} role on a ${getSelectedTeamTier().toLowerCase()} team, your estimate sits ${direction} the school baseline. These profile changes are directional estimate refinements, not guarantees.`;
+      const direction =
+        diff > 0.00001 ? "above"
+        : diff < -0.00001 ? "below"
+        : "roughly in line with";
+
+      return `As a ${getSelectedYear().toLowerCase()} player in a ${getSelectedPlayingLevel().toLowerCase()} role on a ${getSelectedTeamTier().toLowerCase()} team, your estimate sits ${direction} the school baseline. These role levels reflect typical involvement, from starters to depth players, and are used to slightly adjust the estimate rather than redefine it.`;
     }
 
     function buildShareText(record) {
@@ -1289,6 +1433,20 @@
           </div>
         </div>
       `;
+    }
+
+    function updateSportVisuals() {
+      const sport = getSelectedSport();
+      const imageSet = SPORT_IMAGES[sport];
+      const copySet = SPORT_COPY[sport];
+
+      document.getElementById("heroSection").style.backgroundImage = `url('${imageSet.hero}')`;
+      document.getElementById("sportFeatureImage").style.backgroundImage = `url('${imageSet.feature}')`;
+      document.getElementById("sportFeatureTitle").textContent = copySet.title;
+      document.getElementById("sportFeatureText").textContent = copySet.text;
+      document.getElementById("sportFeatureChip1").textContent = copySet.chips[0];
+      document.getElementById("sportFeatureChip2").textContent = copySet.chips[1];
+      document.getElementById("sportFeatureChip3").textContent = copySet.chips[2];
     }
 
     function renderTopSchools() {
@@ -1317,23 +1475,22 @@
         .sort((a, b) => (b.state_probability ?? -1) - (a.state_probability ?? -1))
         .slice(0, 10);
 
-      document.getElementById("topStatesTitle").textContent = `Top 10 States in ${sport}`;
-      document.getElementById("topStatesSubtitle").textContent = `States with the strongest pro progression rates in ${sport}.`;
-
+      const topGrid = document.getElementById("topGrid");
+      const topStatesWrap = document.getElementById("topStatesWrap");
       const wrapper = document.getElementById("topStates");
 
-      if (!rows.length) {
-        wrapper.innerHTML = `
-          <div class="ranking-item">
-            <div class="ranking-number">—</div>
-            <div>
-              <div class="ranking-title">State comparison unavailable</div>
-              <div class="ranking-sub">This version does not include state-level comparison data for ${sport}.</div>
-            </div>
-          </div>
-        `;
+      if (!rows.length || sport === "Baseball") {
+        topGrid.classList.add("single-column");
+        topStatesWrap.classList.add("hidden");
+        wrapper.innerHTML = "";
         return;
       }
+
+      topGrid.classList.remove("single-column");
+      topStatesWrap.classList.remove("hidden");
+
+      document.getElementById("topStatesTitle").textContent = `Top 10 States in ${sport}`;
+      document.getElementById("topStatesSubtitle").textContent = `States with the strongest pro progression rates in ${sport}.`;
 
       wrapper.innerHTML = rows.map((row, index) =>
         createRankingItem(
@@ -1352,7 +1509,7 @@
 
       const topSchool = rows[0] || null;
       const secondSchool = rows[1] || null;
-      const medianSchool = rows[Math.floor(rows.length / 2)] || null;
+      const fifthSchool = rows[4] || null;
       const nationalProb = topSchool ? parseNumber(topSchool.national_probability) : null;
 
       const stateRows = allStateProbs
@@ -1369,51 +1526,50 @@
       const cards = [];
 
       if (topSchool && nationalProb !== null) {
-        const ratio = nationalProb > 0 ? (parseNumber(topSchool.school_probability) / nationalProb) : null;
+        const ratio = nationalProb > 0 ? parseNumber(topSchool.school_probability) / nationalProb : null;
         cards.push({
-          title: `${topSchool.school_name} sets the pace in ${sport.toLowerCase()}.`,
-          text: `${topSchool.school_name} leads at <strong>${formatPercent(topSchool.school_probability)}</strong>, or <strong>${formatOddsFromProb(topSchool.school_probability)}</strong>. The national average is <strong>${formatPercent(nationalProb)}</strong>, or <strong>${formatOddsFromProb(nationalProb)}</strong>${ratio ? `, making the top program about <strong>${ratio.toFixed(1)}x</strong> the national rate.` : "."}`
+          title: `${topSchool.school_name} leads ${sport.toLowerCase()}.`,
+          text: `${topSchool.school_name} sits at <strong>${formatPercent(topSchool.school_probability)}</strong>, or <strong>${formatOddsFromProb(topSchool.school_probability)}</strong>. The national average is <strong>${formatPercent(nationalProb)}</strong>, or <strong>${formatOddsFromProb(nationalProb)}</strong>${ratio ? `, putting the top program at about <strong>${ratio.toFixed(1)}x</strong> the national rate.` : "."}`
         });
       }
 
-      if (secondSchool) {
+      if (secondSchool && fifthSchool) {
         cards.push({
-          title: `The top tier pulls away quickly.`,
-          text: `${secondSchool.school_name} ranks near the top at <strong>${formatPercent(secondSchool.school_probability)}</strong>, or <strong>${formatOddsFromProb(secondSchool.school_probability)}</strong>, showing how sharply elite pipelines separate from the rest of the field.`
+          title: `The top tier separates quickly.`,
+          text: `${secondSchool.school_name} is still at <strong>${formatPercent(secondSchool.school_probability)}</strong>, or <strong>${formatOddsFromProb(secondSchool.school_probability)}</strong>, while ${fifthSchool.school_name} is down to <strong>${formatPercent(fifthSchool.school_probability)}</strong>, or <strong>${formatOddsFromProb(fifthSchool.school_probability)}</strong>.`
         });
       }
 
-      if (medianSchool && nationalProb !== null) {
+      if (sport === "Football" && topState && secondState && thirdState) {
         cards.push({
-          title: `Most programs still offer long odds.`,
-          text: `Around the middle of the ${sport.toLowerCase()} dataset, ${medianSchool.school_name} sits at <strong>${formatPercent(medianSchool.school_probability)}</strong>, or <strong>${formatOddsFromProb(medianSchool.school_probability)}</strong>. That helps show how rare pro progression remains outside the very top pipelines.`
+          title: `State pipelines are strongest in the South and Midwest.`,
+          text: `${getStateName(topState.state)} leads at <strong>${formatPercent(topState.state_probability)}</strong>, followed by ${getStateName(secondState.state)} at <strong>${formatPercent(secondState.state_probability)}</strong> and ${getStateName(thirdState.state)} at <strong>${formatPercent(thirdState.state_probability)}</strong>.`
+        });
+      } else if (sport === "Basketball" && topState && secondState && thirdState) {
+        cards.push({
+          title: `State-level basketball opportunity is tightly clustered.`,
+          text: `${getStateName(topState.state)} leads at <strong>${formatPercent(topState.state_probability)}</strong>, with ${getStateName(secondState.state)} and ${getStateName(thirdState.state)} close behind.`
+        });
+      } else if (sport === "Baseball") {
+        cards.push({
+          title: `Baseball is more school-driven in this version.`,
+          text: `This release does not include a full state comparison layer for baseball, so the strongest signals come from individual school pipelines, pro player counts, and athlete pool size.`
         });
       }
 
-      if (topState) {
-        let stateText = `${getStateName(topState.state)} leads state-level ${sport.toLowerCase()} progression at <strong>${formatPercent(topState.state_probability)}</strong>, or <strong>${formatOddsFromProb(topState.state_probability)}</strong>.`;
-        if (secondState && thirdState) {
-          stateText += ` It is followed by <strong>${getStateName(secondState.state)}</strong> at <strong>${formatPercent(secondState.state_probability)}</strong> and <strong>${getStateName(thirdState.state)}</strong> at <strong>${formatPercent(thirdState.state_probability)}</strong>.`;
-        }
+      if (fifthSchool) {
         cards.push({
-          title: `Geography still matters.`,
-          text: stateText
-        });
-      } else {
-        cards.push({
-          title: `This sport is driven mainly by school pipeline in this version.`,
-          text: `State-level comparison is not currently available for ${sport.toLowerCase()}, so the strongest signals here come from school history, athlete pool size, and pro output.`
+          title: `Even strong programs still leave long odds.`,
+          text: `${fifthSchool.school_name} remains one of the better pipelines in ${sport.toLowerCase()} at <strong>${formatPercent(fifthSchool.school_probability)}</strong>, or <strong>${formatOddsFromProb(fifthSchool.school_probability)}</strong>, which still shows how selective the pro path remains.`
         });
       }
 
       cards.push({
-        title: `Profile changes help, but school history drives the estimate.`,
-        text: `Year, role, and team tier can move the estimate up or down, but every result still starts from the school's actual historical baseline in ${sport.toLowerCase()}.`
+        title: `Profile changes matter, but school history still leads.`,
+        text: `Year, role, and team tier can move the estimate up or down, but every result still starts from the program's actual historical baseline in ${sport.toLowerCase()}.`
       });
 
-      const trimmedCards = cards.slice(0, 5);
-
-      document.getElementById("findingsGrid").innerHTML = trimmedCards.map(card => `
+      document.getElementById("findingsGrid").innerHTML = cards.slice(0, 4).map(card => `
         <div class="finding">
           <h3>${card.title}</h3>
           <p>${card.text}</p>
@@ -1492,7 +1648,7 @@
       document.getElementById("schoolBaselineProb").textContent = formatPercent(record.school_probability);
 
       const stateCard = document.getElementById("stateAverageCard");
-      if (stateProb !== null) {
+      if (stateProb !== null && record.sport !== "Baseball") {
         stateCard.classList.remove("hidden");
         document.getElementById("stateAverageOdds").textContent = formatOddsFromProb(stateProb);
         document.getElementById("stateAverageProb").textContent = formatPercent(stateProb);
@@ -1616,6 +1772,7 @@
     }
 
     function renderAllSportSections() {
+      updateSportVisuals();
       renderTopSchools();
       renderTopStates();
       renderSportFindings();
@@ -1661,7 +1818,7 @@
         ]);
 
         allSchools = [
-          ...football.map(row => normalizeSchoolRecord(row, "American Football")),
+          ...football.map(row => normalizeSchoolRecord(row, "Football")),
           ...basketball.map(row => normalizeSchoolRecord(row, "Basketball")),
           ...baseball.map(row => normalizeSchoolRecord(row, "Baseball"))
         ].filter(row => row.school_name);
