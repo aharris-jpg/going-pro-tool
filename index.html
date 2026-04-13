@@ -811,7 +811,7 @@
         <div class="eyebrow">Going Pro Odds Index 2026</div>
         <h1>The Odds of Going Pro: What Are Your Chances?</h1>
         <p class="subhead">
-          Search your school and sport to estimate your chances of reaching the pros, based on real progression data from more than 1,000 school-sport combinations.
+          Search your school and sport to see how often athletes from that program reach the pros, then compare those odds with state and national averages.
         </p>
 
         <div class="search-panel">
@@ -880,14 +880,14 @@
     <section class="section-card feature-split">
       <div class="feature-image" id="sportFeatureImage"></div>
       <div class="feature-copy">
-        <h2 id="sportFeatureTitle">Football pipelines can be dramatically different from one program to the next.</h2>
+        <h2 id="sportFeatureTitle">Some schools give athletes a much stronger shot than others.</h2>
         <p id="sportFeatureText">
-          At the top end, the best football schools produce pros at multiples of the national baseline. That makes school context one of the biggest variables in the pathway to the next level.
+          The strongest programs in each sport produce professionals at rates well above the national average, which shows how much school environment can shape the odds.
         </p>
         <div class="feature-meta">
-          <span class="feature-chip" id="sportFeatureChip1">School pipeline data</span>
-          <span class="feature-chip" id="sportFeatureChip2">State comparison available</span>
-          <span class="feature-chip" id="sportFeatureChip3">Profile-based estimate</span>
+          <span class="feature-chip" id="sportFeatureChip1">Top school vs national average</span>
+          <span class="feature-chip" id="sportFeatureChip2">State comparison</span>
+          <span class="feature-chip" id="sportFeatureChip3">Profile-adjusted estimate</span>
         </div>
       </div>
     </section>
@@ -912,11 +912,11 @@
           </div>
 
           <div class="score-card">
-            <div class="score-label">Your Estimated Odds of Going Pro Based on Your Profile</div>
+            <div class="score-label">Your Estimated Odds of Going Pro</div>
             <div class="score-value" id="adjustedProbability">0%</div>
             <div class="score-sub" id="adjustedOdds">1 in —</div>
             <div class="score-note">
-              This estimate starts with your school’s historical pipeline and applies light profile adjustments.
+              This starts with your school’s historical record and then applies light adjustments based on year, role, and team strength.
             </div>
           </div>
         </div>
@@ -949,13 +949,13 @@
           <div class="mini-stat">
             <div class="mini-label">Pro Players Count</div>
             <div class="mini-value" id="proPlayersCount">—</div>
-            <div class="mini-help">Number of pro players produced in the indexed time window.</div>
+            <div class="mini-help">Number of pros produced in the indexed time window.</div>
           </div>
 
           <div class="mini-stat">
             <div class="mini-label">Estimated Athlete Pool</div>
             <div class="mini-value" id="athletePool">—</div>
-            <div class="mini-help">Estimated athlete pool used to calculate the school pipeline rate.</div>
+            <div class="mini-help">Estimated athlete pool used to calculate the school rate.</div>
           </div>
         </div>
 
@@ -975,12 +975,12 @@
 
         <div class="explain-grid">
           <div class="copy-box">
-            <h3>How this estimate works</h3>
+            <h3>How this result is calculated</h3>
             <p id="estimateExplanation"></p>
           </div>
 
           <div class="copy-box">
-            <h3>What changes your result</h3>
+            <h3>What changes the estimate</h3>
             <p id="profileExplanation"></p>
           </div>
         </div>
@@ -1000,9 +1000,9 @@
       <section class="section-card inline-image-card">
         <div class="inline-image" id="inlineSportImage"></div>
         <div class="inline-copy">
-          <h2 id="inlineImageTitle">Where you play can shape the story as much as how you play.</h2>
+          <h2 id="inlineImageTitle">School choice can change the odds fast.</h2>
           <p id="inlineImageText">
-            The same athlete can face very different odds depending on the school pipeline they enter. That is what makes the environment layer so important in this tool.
+            The difference between the strongest schools and the rest is often large, which is why environment matters almost as much as individual profile.
           </p>
         </div>
       </section>
@@ -1076,25 +1076,25 @@
         <details>
           <summary>
             <span>
-              How We Built This Tool
-              <span class="summary-sub">What comes from the underlying school and state datasets, and what this calculator adds.</span>
+              How We Built This Study
+              <span class="summary-sub">What comes from the school and state data, and what the estimate adds on top.</span>
             </span>
             <span class="summary-mark">+</span>
           </summary>
           <div class="accordion-body">
             <p>
-              This tool starts with school-level progression rates by sport. Each school’s baseline probability reflects historical pro output relative to its estimated athlete pool.
+              The starting point is each school’s historical rate of producing professional athletes in a given sport. That rate is based on pro player output relative to the school’s estimated athlete pool.
             </p>
             <p>
-              The page then compares that school baseline with the state average and national average for the same sport, including a baseball state view derived from school-level totals.
+              The page then compares that school baseline with the state average and national average for the same sport. For baseball, the state view is built from school-level totals.
             </p>
             <p>
-              To make the tool more interactive, it also applies a light profile adjustment based on year, playing role, and team tier. These are directional estimate refinements, not guarantees.
+              To make the result more personal, the estimate also applies light adjustments based on year, role, and team strength. These are directional changes, not guarantees.
             </p>
             <p>
               In simple terms, the model is:
               <strong>School Probability × Year × Playing Role × Team Tier</strong>,
-              with the final result capped so the profile layer cannot overwhelm the school baseline.
+              with the final result capped so those adjustments do not overwhelm the school baseline.
             </p>
           </div>
         </details>
@@ -1103,7 +1103,7 @@
           <summary>
             <span>
               Sources
-              <span class="summary-sub">The school-level, state-level, and comparison data behind the tool.</span>
+              <span class="summary-sub">The school-level, state-level, and comparison data behind the study.</span>
             </span>
             <span class="summary-mark">+</span>
           </summary>
@@ -1115,16 +1115,16 @@
               </div>
               <div class="source-card">
                 <strong>State-level data</strong>
-                <p>Sport-by-state pro progression probabilities used for state comparison, with baseball states aggregated from school-level data.</p>
+                <p>Sport-by-state progression probabilities used for state comparison, with baseball states aggregated from school-level data.</p>
               </div>
               <div class="source-card">
-                <strong>Calculator layer</strong>
-                <p>Light profile multipliers based on year, playing role, and team tier to personalize the estimate.</p>
+                <strong>Estimate layer</strong>
+                <p>Light profile multipliers based on year, playing role, and team strength to personalize the result.</p>
               </div>
             </div>
 
             <div class="footer-note">
-              Data pipeline: school and state datasets → browser normalization → calculator and rankings.
+              Data flow: school and state datasets, then browser-based normalization, calculation, and ranking.
             </div>
           </div>
         </details>
@@ -1160,25 +1160,25 @@
 
     const SPORT_COPY = {
       "Football": {
-        title: "Football pipelines can be dramatically different from one program to the next.",
-        text: "At the top end, the best football schools produce pros at multiples of the national baseline. That makes school context one of the biggest variables in the pathway to the next level.",
-        chips: ["School pipeline data", "State comparison available", "Profile-based estimate"],
-        inlineTitle: "Football is where pipeline strength becomes easiest to see.",
-        inlineText: "The strongest programs consistently turn roster depth into pro output, which is why school history matters so much in the football version of the tool."
+        fallbackTitle: "Some football schools give athletes a much stronger shot than others.",
+        fallbackText: "In football, the gap between the strongest schools and the national average is wide. That makes school choice one of the biggest influences on the odds.",
+        chips: ["Top school vs national average", "State comparison", "Profile-adjusted estimate"],
+        inlineFallbackTitle: "In football, the strongest schools stand well clear of the rest.",
+        inlineFallbackText: "Even among competitive programs, the top football schools produce professional players at a noticeably higher rate than most others."
       },
       "Basketball": {
-        title: "Basketball is the most compressed pipeline in the tool.",
-        text: "With fewer roster spots and fewer pro opportunities, small differences between schools can make a huge difference in the odds. That makes the top basketball programs especially powerful filters.",
-        chips: ["Highly concentrated pathway", "State comparison available", "Profile-based estimate"],
-        inlineTitle: "Basketball rewards a small group of elite pipelines.",
-        inlineText: "Because the pathway is so narrow, top basketball schools can separate sharply from the rest of the field, even before you layer on player profile adjustments."
+        fallbackTitle: "Basketball has the steepest climb of the three sports here.",
+        fallbackText: "With fewer roster spots and fewer professional opportunities, even strong basketball schools still leave long odds. The best schools help, but the path remains narrow.",
+        chips: ["Top school vs national average", "State comparison", "Profile-adjusted estimate"],
+        inlineFallbackTitle: "In basketball, small differences in school strength can matter a lot.",
+        inlineFallbackText: "Because the sport offers fewer openings at the top level, the distance between strong schools and average ones can have a big effect on the odds."
       },
       "Baseball": {
-        title: "Baseball combines strong pipelines with bigger athlete pools.",
-        text: "The strongest baseball programs separate through both raw pro-player output and progression rate. That makes school environment a major part of the story, even before profile adjustments are applied.",
-        chips: ["School pipeline data", "Derived state rankings", "Profile-based estimate"],
-        inlineTitle: "Baseball's story is not just efficiency. It is also volume.",
-        inlineText: "The best baseball schools can combine bigger athlete pools with unusually strong progression rates, which helps explain why a few programs stand out so clearly."
+        fallbackTitle: "A small group of baseball schools stand out quickly.",
+        fallbackText: "In baseball, the strongest schools separate themselves both by sending more players to the pros and by doing so more often relative to their athlete base.",
+        chips: ["Top school vs national average", "State comparison", "Profile-adjusted estimate"],
+        inlineFallbackTitle: "In baseball, both output and efficiency matter.",
+        inlineFallbackText: "The strongest baseball schools do not just produce more pros overall. They also turn athletes into pros at a higher rate than most of the field."
       }
     };
 
@@ -1446,20 +1446,20 @@
       const adjusted = getAdjustedProbability(record);
       const stateProb = getStateProbability(record.state, record.sport);
       const stateText = stateProb !== null
-        ? ` The ${getStateName(record.state)} state average is ${formatOddsFromProb(stateProb)}.`
+        ? ` The ${getStateName(record.state)} average is ${formatOddsFromProb(stateProb)}.`
         : "";
-      return `${record.school_name} in ${record.sport} has a school baseline of ${formatOddsFromProb(record.school_probability)}. With your selected profile, the estimate shifts to ${formatOddsFromProb(adjusted)} (${formatPercent(adjusted)}).${stateText} The national average is ${formatOddsFromProb(record.national_probability)}.`;
+      return `${record.school_name} in ${record.sport} has a historical school rate of ${formatOddsFromProb(record.school_probability)}. With your selected profile, that estimate shifts to ${formatOddsFromProb(adjusted)} (${formatPercent(adjusted)}).${stateText} The national average is ${formatOddsFromProb(record.national_probability)}.`;
     }
 
     function buildEstimateExplanation(record) {
       const adjusted = getAdjustedProbability(record);
-      return `This result starts with ${record.school_name}'s historical school-level probability in ${record.sport}: ${formatPercent(record.school_probability)} (${formatOddsFromProb(record.school_probability)}). Your profile then nudges that estimate to ${formatPercent(adjusted)} (${formatOddsFromProb(adjusted)}), while keeping the school pipeline as the core driver.`;
+      return `This result starts with ${record.school_name}'s historical rate in ${record.sport}: ${formatPercent(record.school_probability)} (${formatOddsFromProb(record.school_probability)}). Your selected profile then moves that estimate to ${formatPercent(adjusted)} (${formatOddsFromProb(adjusted)}), while the school’s long-term record remains the main driver.`;
     }
 
     function buildProfileExplanation(record) {
       const base = parseNumber(record.school_probability);
       const adjusted = getAdjustedProbability(record);
-      if (base === null || adjusted === null) return "Your profile adjustment is unavailable for this school.";
+      if (base === null || adjusted === null) return "A profile-based estimate is unavailable for this school.";
 
       const diff = adjusted - base;
       const direction =
@@ -1467,12 +1467,12 @@
         : diff < -0.00001 ? "below"
         : "roughly in line with";
 
-      return `As a ${getSelectedYear().toLowerCase()} player in a ${getSelectedPlayingLevel().toLowerCase()} role on a ${getSelectedTeamTier().toLowerCase()} team, your estimate sits ${direction} the school baseline. These role levels reflect typical involvement, from starters to depth players, and are used to slightly adjust the estimate rather than redefine it.`;
+      return `As a ${getSelectedYear().toLowerCase()} athlete in a ${getSelectedPlayingLevel().toLowerCase()} role on a ${getSelectedTeamTier().toLowerCase()} team, your estimate sits ${direction} the school’s baseline. These adjustments are modest. The school’s historical record still carries the most weight.`;
     }
 
     function buildShareText(record) {
       const adjusted = getAdjustedProbability(record);
-      return `At ${record.school_name}, the baseline odds of going pro in ${record.sport} are ${formatOddsFromProb(record.school_probability)}. Based on my profile, my estimated odds are ${formatOddsFromProb(adjusted)} (${formatPercent(adjusted)}).`;
+      return `At ${record.school_name}, the historical odds of going pro in ${record.sport} are ${formatOddsFromProb(record.school_probability)}. Based on my selected profile, the estimate is ${formatOddsFromProb(adjusted)} (${formatPercent(adjusted)}).`;
     }
 
     function createRankingItem(rankNumber, title, subtitle) {
@@ -1490,20 +1490,79 @@
     function updateSportVisuals() {
       const sport = getSelectedSport();
       const imageSet = SPORT_IMAGES[sport];
-      const copySet = SPORT_COPY[sport];
 
       document.getElementById("heroSection").style.backgroundImage = `url('${imageSet.hero}')`;
       document.getElementById("sportFeatureImage").style.backgroundImage = `url('${imageSet.feature}')`;
       document.getElementById("inlineSportImage").style.backgroundImage = `url('${imageSet.inline}')`;
+    }
 
-      document.getElementById("sportFeatureTitle").textContent = copySet.title;
-      document.getElementById("sportFeatureText").textContent = copySet.text;
-      document.getElementById("sportFeatureChip1").textContent = copySet.chips[0];
-      document.getElementById("sportFeatureChip2").textContent = copySet.chips[1];
-      document.getElementById("sportFeatureChip3").textContent = copySet.chips[2];
+    function updateFeatureStory() {
+      const sport = getSelectedSport();
+      const copy = SPORT_COPY[sport];
 
-      document.getElementById("inlineImageTitle").textContent = copySet.inlineTitle;
-      document.getElementById("inlineImageText").textContent = copySet.inlineText;
+      const rows = getSportSchools(sport)
+        .filter(row => row.school_probability !== null && row.national_probability !== null)
+        .sort((a, b) => (b.school_probability ?? -1) - (a.school_probability ?? -1));
+
+      const topSchool = rows[0];
+      const secondSchool = rows[1];
+      const nationalProb = topSchool ? parseNumber(topSchool.national_probability) : null;
+
+      let title = copy.fallbackTitle;
+      let text = copy.fallbackText;
+
+      if (topSchool && nationalProb !== null) {
+        const topProb = parseNumber(topSchool.school_probability);
+        const ratio = nationalProb > 0 ? topProb / nationalProb : null;
+
+        if (sport === "Football") {
+          title = `${topSchool.school_name} sets the standard in football.`;
+          text = `${topSchool.school_name} leads the football dataset at ${formatPercent(topProb)}, compared with a national average of ${formatPercent(nationalProb)}${ratio ? `. That is about ${ratio.toFixed(1)} times the national rate.` : "."}`;
+        } else if (sport === "Basketball") {
+          title = `${topSchool.school_name} shows how selective basketball really is.`;
+          text = `${topSchool.school_name} leads basketball at ${formatPercent(topProb)}, while the national average sits at ${formatPercent(nationalProb)}. Even the strongest basketball schools still reflect a steep climb to the pros.`;
+        } else if (sport === "Baseball") {
+          title = `${topSchool.school_name} leads a baseball field that narrows quickly.`;
+          text = `${topSchool.school_name} tops the baseball dataset at ${formatPercent(topProb)}, compared with a national average of ${formatPercent(nationalProb)}${secondSchool ? `. ${secondSchool.school_name} ranks next, which shows how quickly a small group of schools pull away.` : "."}`;
+        }
+      }
+
+      document.getElementById("sportFeatureTitle").textContent = title;
+      document.getElementById("sportFeatureText").textContent = text;
+      document.getElementById("sportFeatureChip1").textContent = copy.chips[0];
+      document.getElementById("sportFeatureChip2").textContent = copy.chips[1];
+      document.getElementById("sportFeatureChip3").textContent = copy.chips[2];
+    }
+
+    function updateInlineStory() {
+      const sport = getSelectedSport();
+      const copy = SPORT_COPY[sport];
+
+      const rows = getSportSchools(sport)
+        .filter(row => row.school_probability !== null && row.national_probability !== null)
+        .sort((a, b) => (b.school_probability ?? -1) - (a.school_probability ?? -1));
+
+      const fifthSchool = rows[4];
+      const topStateRows = getStateRowsForSport(sport)
+        .filter(row => row.state_probability !== null)
+        .sort((a, b) => (b.state_probability ?? -1) - (a.state_probability ?? -1));
+
+      let title = copy.inlineFallbackTitle;
+      let text = copy.inlineFallbackText;
+
+      if (sport === "Football" && fifthSchool) {
+        title = `Even strong football schools still leave long odds.`;
+        text = `${fifthSchool.school_name}, one of the better football schools in the dataset, still sits at ${formatPercent(fifthSchool.school_probability)}. The story here is not certainty. It is how much stronger the very best schools look than the rest.`;
+      } else if (sport === "Basketball" && fifthSchool) {
+        title = `In basketball, the gap between strong schools and average ones matters.`;
+        text = `${fifthSchool.school_name} still ranks among the better basketball schools in the dataset, yet the odds remain tight. That is what makes basketball the narrowest path of the three sports here.`;
+      } else if (sport === "Baseball" && topStateRows.length) {
+        title = `Baseball also shows clear differences from state to state.`;
+        text = `${getStateName(topStateRows[0].state)} leads the baseball state view at ${formatPercent(topStateRows[0].state_probability)}. That suggests the wider environment matters too, not just the school.`;
+      }
+
+      document.getElementById("inlineImageTitle").textContent = title;
+      document.getElementById("inlineImageText").textContent = text;
     }
 
     function renderTopSchools() {
@@ -1545,7 +1604,7 @@
             <div class="ranking-number">—</div>
             <div>
               <div class="ranking-title">State comparison unavailable</div>
-              <div class="ranking-sub">This version does not include a state ranking for ${sport}.</div>
+              <div class="ranking-sub">State-level data is not available for this sport.</div>
             </div>
           </div>
         `;
@@ -1581,7 +1640,7 @@
       const thirdState = stateRows[2] || null;
 
       document.getElementById("findingsIntro").textContent =
-        `These are the clearest patterns in ${sport}, based on the current dataset.`;
+        `These are the clearest patterns in ${sport}, based on the current data.`;
 
       const cards = [];
 
@@ -1589,39 +1648,39 @@
         const ratio = nationalProb > 0 ? parseNumber(topSchool.school_probability) / nationalProb : null;
         cards.push({
           title: `${topSchool.school_name} leads ${sport.toLowerCase()}.`,
-          text: `${topSchool.school_name} sits at <strong>${formatPercent(topSchool.school_probability)}</strong>, or <strong>${formatOddsFromProb(topSchool.school_probability)}</strong>. The national average is <strong>${formatPercent(nationalProb)}</strong>, or <strong>${formatOddsFromProb(nationalProb)}</strong>${ratio ? `, putting the top program at about <strong>${ratio.toFixed(1)}x</strong> the national rate.` : "."}`
+          text: `${topSchool.school_name} sits at <strong>${formatPercent(topSchool.school_probability)}</strong>, or <strong>${formatOddsFromProb(topSchool.school_probability)}</strong>. The national average is <strong>${formatPercent(nationalProb)}</strong>, or <strong>${formatOddsFromProb(nationalProb)}</strong>${ratio ? `, putting the top school at about <strong>${ratio.toFixed(1)}x</strong> the national rate.` : "."}`
         });
       }
 
       if (secondSchool && fifthSchool) {
         cards.push({
-          title: `The top tier separates quickly.`,
-          text: `${secondSchool.school_name} is still at <strong>${formatPercent(secondSchool.school_probability)}</strong>, or <strong>${formatOddsFromProb(secondSchool.school_probability)}</strong>, while ${fifthSchool.school_name} is down to <strong>${formatPercent(fifthSchool.school_probability)}</strong>, or <strong>${formatOddsFromProb(fifthSchool.school_probability)}</strong>.`
+          title: `The gap opens up quickly near the top.`,
+          text: `${secondSchool.school_name} is at <strong>${formatPercent(secondSchool.school_probability)}</strong>, or <strong>${formatOddsFromProb(secondSchool.school_probability)}</strong>, while ${fifthSchool.school_name} is down to <strong>${formatPercent(fifthSchool.school_probability)}</strong>, or <strong>${formatOddsFromProb(fifthSchool.school_probability)}</strong>.`
         });
       }
 
       if (topState && secondState && thirdState) {
         cards.push({
-          title: `Geography still shapes the picture.`,
+          title: `State-level differences are visible too.`,
           text: `${getStateName(topState.state)} leads at <strong>${formatPercent(topState.state_probability)}</strong>, followed by ${getStateName(secondState.state)} at <strong>${formatPercent(secondState.state_probability)}</strong> and ${getStateName(thirdState.state)} at <strong>${formatPercent(thirdState.state_probability)}</strong>.`
         });
       }
 
       if (sport === "Baseball" && topSchool) {
         cards.push({
-          title: `Baseball's best programs pair volume with conversion.`,
-          text: `${topSchool.school_name} is not just efficient at <strong>${formatPercent(topSchool.school_probability)}</strong>. It also sits near the top of the sport's pro-player output, showing how elite baseball schools can combine scale with strong progression.`
+          title: `Baseball's strongest schools combine scale with strong results.`,
+          text: `${topSchool.school_name} is not only efficient at <strong>${formatPercent(topSchool.school_probability)}</strong>. It also sits near the top of the sport in total pros produced, which helps explain why a small group of schools stands out so clearly.`
         });
       } else if (fifthSchool) {
         cards.push({
-          title: `Even strong programs still leave long odds.`,
-          text: `${fifthSchool.school_name} remains one of the better pipelines in ${sport.toLowerCase()} at <strong>${formatPercent(fifthSchool.school_probability)}</strong>, or <strong>${formatOddsFromProb(fifthSchool.school_probability)}</strong>, which still shows how selective the pro path remains.`
+          title: `Even strong schools still leave long odds.`,
+          text: `${fifthSchool.school_name} remains one of the better schools in ${sport.toLowerCase()} at <strong>${formatPercent(fifthSchool.school_probability)}</strong>, or <strong>${formatOddsFromProb(fifthSchool.school_probability)}</strong>, which shows how difficult the path still is.`
         });
       }
 
       cards.push({
-        title: `Profile changes matter, but school history still leads.`,
-        text: `Year, role, and team tier can move the estimate up or down, but every result still starts from the program's actual historical baseline in ${sport.toLowerCase()}.`
+        title: `Your profile changes the estimate, but only within limits.`,
+        text: `Year, role, and team strength can move the estimate up or down, but the school’s historical record remains the foundation of the result.`
       });
 
       document.getElementById("findingsGrid").innerHTML = cards.slice(0, 4).map(card => `
@@ -1839,6 +1898,8 @@
     function renderAllSportSections() {
       updateConferenceVisibility();
       updateSportVisuals();
+      updateFeatureStory();
+      updateInlineStory();
       renderTopSchools();
       renderTopStates();
       renderSportFindings();
