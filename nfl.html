@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Colleges Giving Players the Best Chance of Reaching the NFL</title>
+
+<style>
+  :root {
+    --bg: #eef2f7;
+    --card: #ffffff;
+    --navy: #0f2747;
+    --navy2: #1d4178;
+    --red: #c9272e;
+    --gold: #d6ab2f;
+    --line: #dbe3ee;
+    --text: #12233f;
+    --muted: #6c7a8f;
+  }
+
+  body {
+    margin: 0;
+    padding: 30px;
+    background: var(--bg);
+    font-family: Arial, sans-serif;
+  }
+
+  .wrap {
+    max-width: 760px;
+    margin: auto;
+  }
+
+  .card {
+    background: var(--card);
+    border-radius: 22px;
+    overflow: hidden;
+    border: 1px solid var(--line);
+    box-shadow: 0 18px 40px rgba(10, 30, 60, 0.08);
+  }
+
+  .header {
+    padding: 18px;
+    background: linear-gradient(90deg, var(--navy), var(--navy2), var(--red));
+    color: #fff;
+  }
+
+  .eyebrow {
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+
+  .title {
+    font-size: 20px;
+    font-weight: 800;
+  }
+
+  .rows {
+    padding: 12px;
+    background: linear-gradient(180deg, #fbfcfe, #f3f7fb);
+  }
+
+  .row {
+    display: grid;
+    grid-template-columns: 34px 46px 1fr auto;
+    gap: 12px;
+    align-items: center;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 12px 14px;
+    margin-bottom: 8px;
+  }
+
+  .rank {
+    width: 30px;
+    height: 30px;
+    border-radius: 999px;
+    display: grid;
+    place-items: center;
+    font-size: 12px;
+    font-weight: 800;
+    background: var(--navy);
+    color: #fff;
+  }
+
+  .top3 .rank {
+    background: var(--gold);
+    color: #12233f;
+  }
+
+  .logo {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    border: 1px solid var(--line);
+    display: grid;
+    place-items: center;
+    background: #fff;
+  }
+
+  .logo img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+  }
+
+  /* NEW TYPOGRAPHY HIERARCHY */
+
+  .school {
+    font-size: 16px;
+    font-weight: 900;
+    color: var(--text);
+    line-height: 1.1;
+  }
+
+  .top3 .school {
+    font-size: 17px;
+  }
+
+  .place {
+    font-size: 12px;
+    color: var(--muted);
+    font-weight: 600;
+    margin-top: 2px;
+  }
+
+  .score {
+    text-align: right;
+  }
+
+  .percent {
+    font-size: 20px;
+    font-weight: 900;
+    color: var(--text);
+  }
+
+  .top3 .percent {
+    color: var(--gold);
+  }
+
+  .odds {
+    font-size: 11px;
+    color: var(--muted);
+    font-weight: 700;
+    margin-top: 2px;
+  }
+
+  .footer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 16px;
+    background: #f6f8fb;
+    border-top: 1px solid var(--line);
+    font-size: 11px;
+    color: var(--muted);
+  }
+
+  .footer img {
+    width: 32px;
+  }
+
+  .footer strong {
+    color: var(--text);
+  }
+
+  @media (max-width: 640px) {
+    body {
+      padding: 12px;
+    }
+
+    .row {
+      grid-template-columns: 30px 40px 1fr;
+    }
+
+    .score {
+      grid-column: 2 / 4;
+      text-align: left;
+      padding-left: 50px;
+    }
+  }
+
+</style>
+</head>
+
+<body>
+
+<div class="wrap">
+<div class="card">
+
+<div class="header">
+  <div class="eyebrow">2026 NFL Pathway Index</div>
+  <div class="title">Colleges Giving Players the Best Chance of Reaching the NFL</div>
+</div>
+
+<div class="rows">
+
+<div class="row top3">
+  <div class="rank">1</div>
+  <div class="logo"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/194.png"></div>
+  <div>
+    <div class="school">Ohio State</div>
+    <div class="place">Columbus, OH</div>
+  </div>
+  <div class="score">
+    <div class="percent">6.9%</div>
+    <div class="odds">Chance • 1 in 14</div>
+  </div>
+</div>
+
+<div class="row top3">
+  <div class="rank">2</div>
+  <div class="logo"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/333.png"></div>
+  <div>
+    <div class="school">Alabama</div>
+    <div class="place">Tuscaloosa, AL</div>
+  </div>
+  <div class="score">
+    <div class="percent">6.8%</div>
+    <div class="odds">Chance • 1 in 15</div>
+  </div>
+</div>
+
+<div class="row top3">
+  <div class="rank">3</div>
+  <div class="logo"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/61.png"></div>
+  <div>
+    <div class="school">Georgia</div>
+    <div class="place">Athens, GA</div>
+  </div>
+  <div class="score">
+    <div class="percent">6.2%</div>
+    <div class="odds">Chance • 1 in 16</div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="rank">4</div>
+  <div class="logo"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/130.png"></div>
+  <div><div class="school">Michigan</div><div class="place">Ann Arbor, MI</div></div>
+  <div class="score"><div class="percent">5.5%</div><div class="odds">Chance • 1 in 18</div></div>
+</div>
+
+<div class="row">
+  <div class="rank">5</div>
+  <div class="logo"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/57.png"></div>
+  <div><div class="school">Florida</div><div class="place">Gainesville, FL</div></div>
+  <div class="score"><div class="percent">4.6%</div><div class="odds">Chance • 1 in 22</div></div>
+</div>
+
+<div class="row">
+  <div class="rank">6</div>
+  <div class="logo"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/87.png"></div>
+  <div><div class="school">Notre Dame</div><div class="place">South Bend, IN</div></div>
+  <div class="score"><div class="percent">4.4%</div><div class="odds">Chance • 1 in 23</div></div>
+</div>
+
+<div class="row">
+  <div class="rank">7</div>
+  <div class="logo"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/213.png"></div>
+  <div><div class="school">Penn State</div><div class="place">State College, PA</div></div>
+  <div class="score"><div class="percent">4.4%</div><div class="odds">Chance • 1 in 23</div></div>
+</div>
+
+<div class="row">
+  <div class="rank">8</div>
+  <div class="logo"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/228.png"></div>
+  <div><div class="school">Clemson</div><div class="place">Clemson, SC</div></div>
+  <div class="score"><div class="percent">3.9%</div><div class="odds">Chance • 1 in 26</div></div>
+</div>
+
+<div class="row">
+  <div class="rank">9</div>
+  <div class="logo"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/2390.png"></div>
+  <div><div class="school">Miami (FL)</div><div class="place">Coral Gables, FL</div></div>
+  <div class="score"><div class="percent">3.9%</div><div class="odds">Chance • 1 in 26</div></div>
+</div>
+
+<div class="row">
+  <div class="rank">10</div>
+  <div class="logo"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/251.png"></div>
+  <div><div class="school">Texas</div><div class="place">Austin, TX</div></div>
+  <div class="score"><div class="percent">3.9%</div><div class="odds">Chance • 1 in 26</div></div>
+</div>
+
+</div>
+
+<div class="footer">
+  <img src="https://i.postimg.cc/kGD4VbLb/download-1.png">
+  <div>
+    <strong>Source: Action Network</strong>. Estimated chance of reaching the NFL based on historical pro player output relative to athlete pool size.
+  </div>
+</div>
+
+</div>
+</div>
+
+</body>
+</html>
